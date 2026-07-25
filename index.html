@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Student, teacher, classroom and full-routine explorer for Varendra University CSE."
+    />
+    <meta name="theme-color" content="#071a2f" />
+    <title>VU CSE | Routine Workspace</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <script src="./assets/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#workspace">Skip to routine workspace</a>
+
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand brand-with-logo" href="#" aria-label="VU CSE routine home">
+          <img
+            class="brand-logo"
+            src="./assets/cse-logo.png"
+            alt="Department of CSE, Varendra University"
+          />
+          <span class="brand-divider" aria-hidden="true"></span>
+          <span>
+            <span class="brand-name">Routine Workspace</span>
+            <span class="brand-meta">Students, teachers &amp; classrooms</span>
+          </span>
+        </a>
+
+        <div class="topbar-actions">
+          <span class="live-dot"><i aria-hidden="true"></i> Live schedule</span>
+          <div class="header-clock" aria-live="polite">
+            <span id="live-day">Today</span>
+            <strong id="live-time">--:--</strong>
+            <small>Bangladesh time</small>
+          </div>
+          <button
+            class="icon-button"
+            id="theme-toggle"
+            type="button"
+            aria-label="Use dark theme"
+          >
+            <span aria-hidden="true">&#9790;</span>
+          </button>
+        </div>
+      </header>
+
+      <main id="workspace">
+        <section class="workspace-card" aria-label="Routine workspace">
+          <div class="role-switch" role="tablist" aria-label="Choose user type">
+            <button
+              class="role-option active"
+              id="student-role"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              data-role="student"
+            >
+              <span class="role-icon student-icon" aria-hidden="true"></span>
+              <strong>For students</strong>
+              <small>Semester &amp; section routine</small>
+            </button>
+            <button
+              class="role-option"
+              id="teacher-role"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              data-role="teacher"
+            >
+              <span class="role-icon teacher-icon" aria-hidden="true"></span>
+              <strong>For teachers</strong>
+              <small>Personal teaching schedule</small>
+            </button>
+          </div>
+
+          <div class="control-panel">
+            <div class="control-fields student-controls" id="student-controls">
+              <label class="control-field">
+                <span>Semester</span>
+                <select id="semester-select" aria-label="Select semester"></select>
+              </label>
+              <label class="control-field">
+                <span>Section</span>
+                <select id="section-select" aria-label="Select section"></select>
+              </label>
+            </div>
+
+            <div class="control-fields teacher-controls" id="teacher-controls" hidden>
+              <label class="control-field wide-field">
+                <span>Teacher</span>
+                <span class="search-combobox">
+                  <input
+                    id="teacher-select"
+                    type="search"
+                    placeholder="Type a teacher name"
+                    autocomplete="off"
+                    role="combobox"
+                    aria-autocomplete="list"
+                    aria-expanded="false"
+                    aria-controls="teacher-options"
+                    aria-label="Search teacher"
+                  />
+                  <button
+                    class="combobox-toggle"
+                    id="teacher-toggle"
+                    type="button"
+                    aria-label="Show teacher list"
+                    aria-controls="teacher-options"
+                    aria-expanded="false"
+                  >
+                    &#8964;
+                  </button>
+                  <span
+                    class="combobox-menu"
+                    id="teacher-options"
+                    role="listbox"
+                    aria-label="Matching teachers"
+                    hidden
+                  ></span>
+                </span>
+              </label>
+            </div>
+
+            <div class="control-fields shared-controls">
+              <label class="control-field room-field">
+                <span>Classroom explorer</span>
+                <span class="search-combobox">
+                  <input
+                    id="room-search"
+                    type="search"
+                    placeholder="Type room no., e.g. 314"
+                    autocomplete="off"
+                    role="combobox"
+                    aria-autocomplete="list"
+                    aria-expanded="false"
+                    aria-controls="room-options"
+                    aria-label="Search classroom"
+                  />
+                  <button
+                    class="combobox-toggle"
+                    id="room-toggle"
+                    type="button"
+                    aria-label="Show classroom list"
+                    aria-controls="room-options"
+                    aria-expanded="false"
+                  >
+                    &#8964;
+                  </button>
+                  <span
+                    class="combobox-menu"
+                    id="room-options"
+                    role="listbox"
+                    aria-label="Matching classrooms"
+                    hidden
+                  ></span>
+                </span>
+              </label>
+
+              <label class="control-field keyword-field">
+                <span>Quick search</span>
+                <input
+                  id="keyword-search"
+                  type="search"
+                  placeholder="Course, teacher, room..."
+                  autocomplete="off"
+                />
+              </label>
+            </div>
+
+            <div class="control-actions">
+              <div class="view-switch" role="group" aria-label="Routine view">
+                <button class="active" id="day-view" type="button" data-view="day">
+                  Day view
+                </button>
+                <button id="full-view" type="button" data-view="full">
+                  Full routine
+                </button>
+              </div>
+              <button class="default-button" id="save-default" type="button">
+                <span aria-hidden="true">&#9734;</span>
+                Save as my default
+              </button>
+              <button class="print-button" id="print-routine" type="button">
+                Save PDF
+              </button>
+            </div>
+          </div>
+
+          <div class="coverage-banner" id="coverage-banner" aria-live="polite"></div>
+
+          <div class="date-navigation" id="date-navigation">
+            <button id="previous-day" type="button" aria-label="Previous day">
+              &#8592;
+            </button>
+            <div>
+              <span id="selected-date-label">Today</span>
+              <strong id="selected-day-name">Loading...</strong>
+              <small id="selected-date-long">-</small>
+            </div>
+            <button id="next-day" type="button" aria-label="Next day">
+              &#8594;
+            </button>
+            <button class="today-button" id="go-today" type="button">Today</button>
+            <label class="compact-date-picker">
+              <span class="sr-only">Choose date</span>
+              <input id="date-picker" type="date" />
+            </label>
+          </div>
+
+          <div
+            class="week-strip"
+            id="week-strip"
+            aria-label="Current academic week"
+          ></div>
+
+          <div class="result-summary" id="result-summary" aria-live="polite"></div>
+
+          <div class="schedule-content" id="schedule-content" aria-live="polite">
+            <div class="calendar-loading">
+              <i aria-hidden="true"></i>
+              <span>Loading routine data...</span>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p><strong>VU CSE</strong> &middot; One workspace for every routine.</p>
+        <div class="footer-meta">
+          <p id="footer-coverage">Checking data coverage...</p>
+          <p class="developer-credit">
+            Developed by
+            <a
+              href="https://github.com/90xExe"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Md. Nazim Uddin Noyon on GitHub"
+            >
+              Md. Nazim Uddin Noyon
+              <span>33rd Batch &middot; @90xExe &#8599;</span>
+            </a>
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
