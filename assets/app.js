@@ -1,6 +1,9 @@
 "use strict";
 
 const PREFERENCE_KEY = "vu-cse-routine-workspace-v3";
+const VISITOR_MARKER_KEY = "vu-cse-routine-visit-counted-v1";
+const VISITOR_COUNTER_URL =
+  "https://api.counterapi.dev/v1/90xexe-class-routine/website-visits";
 const DAY_ORDER = [
   "Saturday",
   "Sunday",
@@ -94,6 +97,7 @@ const elements = {
   liveDay: document.getElementById("live-day"),
   liveTime: document.getElementById("live-time"),
   footerCoverage: document.getElementById("footer-coverage"),
+  visitorCount: document.getElementById("visitor-count"),
   toast: document.getElementById("toast"),
 };
 
@@ -128,6 +132,48 @@ function getDhakaParts(date = new Date()) {
     time: `${parts.hour}:${parts.minute} ${String(parts.dayPeriod || "").toUpperCase()}`.trim(),
     iso: `${parts.year}-${parts.month}-${parts.day}`,
   };
+}
+
+async function updateVisitorCount() {
+  if (!elements.visitorCount) return;
+
+  let shouldIncrement = true;
+  try {
+    shouldIncrement = localStorage.getItem(VISITOR_MARKER_KEY) !== "yes";
+  } catch {
+    // The counter still works when storage is disabled; this visit may be recounted.
+  }
+
+  const endpoint = `${VISITOR_COUNTER_URL}${shouldIncrement ? "/up" : "/"}`;
+
+  try {
+    const response = await fetch(endpoint, { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`Visitor counter request failed: ${response.status}`);
+    }
+
+    const data = await response.json();
+    const count = Number(data.count);
+    if (!Number.isFinite(count)) {
+      throw new Error("Visitor counter returned an invalid count");
+    }
+
+    elements.visitorCount.textContent = new Intl.NumberFormat("en-US").format(
+      count,
+    );
+
+    if (shouldIncrement) {
+      try {
+        localStorage.setItem(VISITOR_MARKER_KEY, "yes");
+      } catch {
+        // A visible count is more important than persisting the device marker.
+      }
+    }
+  } catch (error) {
+    console.warn(error);
+    elements.visitorCount.textContent = "Unavailable";
+    elements.visitorCount.closest(".visitor-counter")?.classList.add("is-offline");
+  }
 }
 
 function isoToDate(iso) {
@@ -1273,6 +1319,7 @@ async function init() {
     renderCoverage();
     renderWorkspace();
     updateLiveClock();
+    updateVisitorCount();
     window.setInterval(updateLiveClock, 30_000);
   } catch (error) {
     console.error(error);

@@ -19,6 +19,9 @@ free-room checks and a complete weekly routine.
 - Off days are clearly marked in red.
 - Student off days include one useful learning task that stays consistent for
   that date, semester and section.
+- A plain-text public `Total visits` counter appears at the bottom of the
+  footer. It counts a browser once, so refreshing the page does not inflate the
+  number.
 - A Student or Teacher setup can be saved as the device's default view.
 - Responsive light/dark interface with locally hosted Oxanium typography.
 
