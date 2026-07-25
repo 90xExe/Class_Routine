@@ -1,3 +1,43 @@
+@font-face {
+  font-family: "Oxanium";
+  src: url("./OXANIUM-EXTRALIGHT.TTF") format("truetype");
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oxanium";
+  src: url("./OXANIUM-LIGHT.TTF") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oxanium";
+  src: url("./OXANIUM-REGULAR.TTF") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oxanium";
+  src: url("./OXANIUM-MEDIUM.TTF") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oxanium";
+  src: url("./OXANIUM-SEMIBOLD.TTF") format("truetype");
+  font-style: normal;
+  font-weight: 600 900;
+  font-display: swap;
+}
+
 :root {
   color-scheme: light;
   --ink: #102235;
@@ -17,6 +57,7 @@
   --radius-lg: 28px;
   --radius-md: 18px;
   --radius-sm: 12px;
+  --font-sans: "Oxanium", "Segoe UI", Arial, sans-serif;
 }
 
 * {
@@ -38,16 +79,16 @@ body {
     radial-gradient(circle at 8% 2%, rgba(157, 229, 194, 0.2), transparent 27rem),
     var(--canvas);
   color: var(--ink);
-  font-family:
-    Inter, "Aptos", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont,
-    sans-serif;
+  font-family: var(--font-sans);
   font-size: 15px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
 button,
-input {
+input,
+select,
+textarea {
   font: inherit;
 }
 
@@ -181,7 +222,7 @@ button {
   grid-column: 2;
   grid-row: 1 / 3;
   color: var(--mint);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: 1.05rem;
   font-weight: 600;
   font-variant-numeric: tabular-nums;
@@ -232,7 +273,7 @@ button {
   max-width: 780px;
   margin: 0;
   color: var(--navy);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: clamp(3.45rem, 7vw, 7.2rem);
   font-weight: 500;
   letter-spacing: -0.07em;
@@ -334,7 +375,7 @@ button {
 #status-content h2 {
   max-width: 410px;
   margin: 8px 0 13px;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: clamp(1.8rem, 3vw, 2.65rem);
   font-weight: 500;
   letter-spacing: -0.04em;
@@ -378,7 +419,7 @@ button {
 
 .section-head h2 {
   margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: clamp(2.1rem, 4vw, 3.5rem);
   font-weight: 500;
   letter-spacing: -0.055em;
@@ -630,7 +671,7 @@ button {
 .course-title {
   margin: 10px 0 12px;
   color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: -0.02em;
@@ -667,7 +708,7 @@ button {
 .empty-search > span {
   display: block;
   color: var(--line);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: 4rem;
 }
 
@@ -929,7 +970,7 @@ body.dark .hero-tags span {
   }
 
   .mobile-day-head h3 {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-sans);
     font-size: 2rem;
     font-weight: 500;
     letter-spacing: -0.04em;
@@ -1009,7 +1050,7 @@ body.dark .hero-tags span {
   .mobile-course-head h4 {
     margin: 3px 0 0;
     color: var(--ink);
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: var(--font-sans);
     font-size: 1rem;
     line-height: 1.25;
   }
@@ -1386,7 +1427,7 @@ body.dark .hero-tags span {
 
 .date-stepper h3 {
   margin: 2px 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: clamp(1.7rem, 3vw, 2.35rem);
   font-weight: 500;
   letter-spacing: -0.04em;
@@ -1480,7 +1521,7 @@ body.dark .hero-tags span {
 .week-day > strong {
   grid-column: 1;
   align-self: end;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: 1.65rem;
   font-weight: 500;
   line-height: 1;
@@ -1649,7 +1690,7 @@ body.dark .hero-tags span {
 
 .daily-list-head h3 {
   margin-top: 2px;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: 1.8rem;
   font-weight: 500;
   letter-spacing: -0.04em;
@@ -1702,7 +1743,7 @@ body.dark .hero-tags span {
 }
 
 .daily-class-time strong {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: 1.05rem;
   font-weight: 600;
 }
@@ -1740,7 +1781,7 @@ body.dark .hero-tags span {
 
 .daily-class-main h3 {
   margin: 7px 0 8px;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: clamp(1rem, 1.6vw, 1.25rem);
   font-weight: 600;
   letter-spacing: -0.025em;
@@ -1772,7 +1813,7 @@ body.dark .hero-tags span {
 
 .daily-room strong {
   margin-top: 4px;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: 1.05rem;
 }
 
@@ -1800,7 +1841,7 @@ body.dark .hero-tags span {
   border-radius: 50%;
   background: var(--mint);
   color: var(--navy);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: 1.5rem;
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -1826,7 +1867,7 @@ body.dark .hero-tags span {
 .off-day-card h3,
 .no-match-card h3 {
   margin: 5px 0 7px;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: clamp(2rem, 4vw, 3.15rem);
   font-weight: 500;
   letter-spacing: -0.05em;
@@ -1841,7 +1882,7 @@ body.dark .hero-tags span {
 
 .no-match-card > span {
   color: var(--line);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: 4rem;
 }
 
@@ -1895,7 +1936,7 @@ body.dark .hero-tags span {
 }
 
 .dialog-head h2 {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: 2rem;
   font-weight: 500;
   letter-spacing: -0.04em;
@@ -2381,7 +2422,7 @@ body.dark .week-day.selected {
 .workspace-header h1 {
   margin: 3px 0 8px;
   color: var(--navy);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: clamp(2.25rem, 5vw, 4.5rem);
   font-weight: 500;
   letter-spacing: -0.06em;
@@ -2415,7 +2456,7 @@ body.dark .week-day.selected {
 
 .live-summary strong {
   color: var(--mint);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: 1.7rem;
   font-weight: 500;
   font-variant-numeric: tabular-nums;
@@ -2468,7 +2509,7 @@ body.dark .week-day.selected {
   border-radius: 12px;
   background: var(--surface);
   color: var(--mint-strong);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -2890,7 +2931,7 @@ body.dark .week-day.selected {
 }
 
 .date-navigation > div strong {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: 1.32rem;
   font-weight: 500;
   line-height: 1.15;
@@ -2939,7 +2980,7 @@ body.dark .week-day.selected {
 
 .result-summary h2 {
   margin: 2px 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: clamp(1.55rem, 3vw, 2.45rem);
   font-weight: 500;
   letter-spacing: -0.045em;
@@ -2967,7 +3008,7 @@ body.dark .week-day.selected {
 }
 
 .summary-metrics strong {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 1;
@@ -3018,7 +3059,7 @@ body.dark .week-day.selected {
 
 .schedule-break strong {
   color: var(--ink);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: 0.92rem;
   font-weight: 600;
 }
@@ -3058,6 +3099,21 @@ body.dark .week-day.selected {
   border-left-color: var(--coral);
 }
 
+.workspace-class-card.status-running {
+  border-color: rgba(49, 174, 123, 0.62);
+  border-left-color: var(--mint-strong);
+  box-shadow: 0 8px 24px rgba(49, 174, 123, 0.13);
+}
+
+.workspace-class-card.status-ended {
+  border-left-color: #8996a2;
+}
+
+.workspace-class-card.status-ended .class-main,
+.workspace-class-card.status-ended .class-room {
+  opacity: 0.72;
+}
+
 .class-time {
   display: flex;
   flex-direction: column;
@@ -3069,7 +3125,7 @@ body.dark .week-day.selected {
 }
 
 .class-time strong {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: 1rem;
 }
 
@@ -3101,7 +3157,70 @@ body.dark .week-day.selected {
 .class-labels {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 8px;
+}
+
+.class-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 7px;
+  border-radius: 999px;
+  font-size: 0.56rem;
+  font-weight: 900;
+  letter-spacing: 0.055em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.class-status i {
+  width: 6px;
+  height: 6px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.class-status.running {
+  background: rgba(49, 174, 123, 0.14);
+  color: #13835a;
+}
+
+.class-status.running i {
+  animation: status-pulse 1.5s ease-out infinite;
+}
+
+.class-status.ended {
+  background: rgba(93, 107, 121, 0.12);
+  color: var(--ink-soft);
+}
+
+.class-status.upcoming {
+  background: rgba(115, 181, 216, 0.16);
+  color: #28769f;
+}
+
+@keyframes status-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(49, 174, 123, 0.52);
+  }
+  70% {
+    box-shadow: 0 0 0 5px rgba(49, 174, 123, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(49, 174, 123, 0);
+  }
+}
+
+body.dark .class-status.running {
+  background: rgba(157, 229, 194, 0.13);
+  color: var(--mint);
+}
+
+body.dark .class-status.upcoming {
+  background: rgba(115, 181, 216, 0.13);
+  color: #9ed8f5;
 }
 
 .class-cohort {
@@ -3115,7 +3234,7 @@ body.dark .week-day.selected {
 
 .class-main h3 {
   margin: 7px 0 6px;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: clamp(0.98rem, 1.5vw, 1.18rem);
   letter-spacing: -0.02em;
   line-height: 1.2;
@@ -3146,7 +3265,7 @@ body.dark .week-day.selected {
 
 .class-room strong {
   margin-top: 3px;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: 1rem;
 }
 
@@ -3171,7 +3290,7 @@ body.dark .week-day.selected {
   border-radius: 50%;
   background: var(--mint);
   color: var(--navy);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: 1.25rem;
   font-weight: 800;
   box-shadow: 0 0 0 11px rgba(157, 229, 194, 0.18);
@@ -3199,7 +3318,7 @@ body.dark .week-day.selected {
 
 .workspace-empty h3 {
   margin: 4px 0 7px;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: clamp(1.8rem, 4vw, 2.9rem);
   font-weight: 500;
   letter-spacing: -0.05em;
@@ -3210,6 +3329,58 @@ body.dark .week-day.selected {
   max-width: 580px;
   color: var(--ink-soft);
   font-size: 0.75rem;
+}
+
+.workspace-empty.off-day {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.off-day-copy {
+  flex: 0 1 360px;
+}
+
+.off-day-task {
+  min-width: min(100%, 300px);
+  max-width: 470px;
+  display: grid;
+  gap: 5px;
+  flex: 1 1 340px;
+  margin-left: auto;
+  padding: 18px 20px;
+  border: 1px solid rgba(49, 174, 123, 0.28);
+  border-radius: 14px;
+  background:
+    linear-gradient(135deg, rgba(157, 229, 194, 0.18), transparent 75%),
+    var(--surface-muted);
+  text-align: left;
+}
+
+.off-day-task > span {
+  color: var(--mint-strong);
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.off-day-task > strong {
+  color: var(--ink);
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.25;
+}
+
+.off-day-task > small {
+  color: var(--ink-soft);
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+
+body.dark .off-day-task {
+  border-color: rgba(157, 229, 194, 0.2);
+  background:
+    linear-gradient(135deg, rgba(157, 229, 194, 0.09), transparent 75%),
+    var(--surface-muted);
 }
 
 .room-timeline {
@@ -3256,7 +3427,7 @@ body.dark .week-day.selected {
 .room-slot-time strong,
 .room-slot-state strong {
   margin-top: 2px;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: 0.98rem;
 }
 
@@ -3455,7 +3626,7 @@ body.dark .week-day.selected {
 
 .full-off-day strong {
   color: var(--mint-strong);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: 1rem;
 }
 
@@ -3497,7 +3668,7 @@ body.dark .week-day.selected {
 
 .grid-course p {
   margin: 5px 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-sans);
   font-size: 0.7rem;
   line-height: 1.15;
 }
@@ -3756,6 +3927,17 @@ body.dark .full-slot-head {
   .workspace-empty > span {
     width: 76px;
     height: 76px;
+  }
+
+  .off-day-copy {
+    flex-basis: auto;
+  }
+
+  .off-day-task {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0;
+    padding: 16px;
   }
 
   .room-slot {

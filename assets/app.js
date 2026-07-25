@@ -11,6 +11,41 @@ const DAY_ORDER = [
   "Friday",
 ];
 
+const OFF_DAY_TASKS = [
+  {
+    title: "Learn Python today",
+    detail: "Complete one short lesson and write a small Python program.",
+  },
+  {
+    title: "Research a useful app",
+    detail: "Choose one productivity or learning app and note three useful features.",
+  },
+  {
+    title: "Build a mini webpage",
+    detail: "Create a simple responsive page using HTML and CSS.",
+  },
+  {
+    title: "Solve two coding problems",
+    detail: "Practise two beginner-friendly problems in your preferred language.",
+  },
+  {
+    title: "Review a difficult topic",
+    detail: "Spend 30 focused minutes revising one topic from this semester.",
+  },
+  {
+    title: "Improve your GitHub profile",
+    detail: "Update a README, organise a repository or publish a small project.",
+  },
+  {
+    title: "Explore a technology",
+    detail: "Research one new tool, framework or AI feature and write a short summary.",
+  },
+  {
+    title: "Plan the next study week",
+    detail: "List your three most important academic goals for the coming week.",
+  },
+];
+
 let routine = null;
 let toastTimer = null;
 
@@ -146,6 +181,31 @@ function timeToMinutes(time) {
   return hours * 60 + minutes;
 }
 
+function dhakaMinutes(date = new Date()) {
+  const parts = Object.fromEntries(
+    new Intl.DateTimeFormat("en-GB", {
+      timeZone: routine?.meta?.timezone || "Asia/Dhaka",
+      hour: "2-digit",
+      minute: "2-digit",
+      hourCycle: "h23",
+    })
+      .formatToParts(date)
+      .map((part) => [part.type, part.value]),
+  );
+  return Number(parts.hour) * 60 + Number(parts.minute);
+}
+
+function classTimeStatus(start, end, scheduleDate = state.selectedDate) {
+  const today = getDhakaParts().iso;
+  if (scheduleDate < today) return { key: "ended", label: "Ended" };
+  if (scheduleDate > today) return { key: "upcoming", label: "Upcoming" };
+
+  const now = dhakaMinutes();
+  if (now < timeToMinutes(start)) return { key: "upcoming", label: "Upcoming" };
+  if (now >= timeToMinutes(end)) return { key: "ended", label: "Ended" };
+  return { key: "running", label: "Running" };
+}
+
 function formatDuration(start, end) {
   const total = Math.max(0, timeToMinutes(end) - timeToMinutes(start));
   const hours = Math.floor(total / 60);
@@ -153,6 +213,15 @@ function formatDuration(start, end) {
   if (!hours) return `${minutes} min`;
   if (!minutes) return `${hours} hr`;
   return `${hours} hr ${minutes} min`;
+}
+
+function offDayTask() {
+  const key = `${state.selectedDate}-${state.semesterId}-${state.sectionId}`;
+  const hash = [...key].reduce(
+    (value, character) => (value * 31 + character.charCodeAt(0)) >>> 0,
+    0,
+  );
+  return OFF_DAY_TASKS[hash % OFF_DAY_TASKS.length];
 }
 
 function slotById(id) {
@@ -171,6 +240,24 @@ function scheduleForSelection() {
       schedule.semesterId === state.semesterId &&
       schedule.sectionId === state.sectionId,
   );
+}
+
+function loadedSemesters() {
+  const loadedIds = new Set(
+    routine.schedules.map((schedule) => schedule.semesterId),
+  );
+  return routine.catalog.semesters.filter((semester) =>
+    loadedIds.has(semester.id),
+  );
+}
+
+function loadedSections(semesterId = state.semesterId) {
+  const loadedIds = new Set(
+    routine.schedules
+      .filter((schedule) => schedule.semesterId === semesterId)
+      .map((schedule) => schedule.sectionId),
+  );
+  return routine.catalog.sections.filter((section) => loadedIds.has(section.id));
 }
 
 function allInstances() {
@@ -339,7 +426,12 @@ function sectionLabel(id) {
 }
 
 function populateControls() {
-  elements.semester.innerHTML = routine.catalog.semesters
+  const semesters = loadedSemesters();
+  if (!semesters.some((semester) => semester.id === state.semesterId)) {
+    state.semesterId = semesters[0]?.id ?? state.semesterId;
+  }
+
+  elements.semester.innerHTML = semesters
     .map(
       (semester) =>
         `<option value="${semester.id}">${escapeHTML(semester.label)}</option>`,
@@ -510,17 +602,16 @@ function bindCombobox(kind) {
 }
 
 function renderSectionOptions() {
-  elements.section.innerHTML = routine.catalog.sections
-    .map((section) => {
-      const loaded = routine.schedules.some(
-        (schedule) =>
-          schedule.semesterId === state.semesterId &&
-          schedule.sectionId === section.id,
-      );
-      return `<option value="${section.id}">${escapeHTML(section.label)}${
-        loaded ? " - loaded" : ""
-      }</option>`;
-    })
+  const sections = loadedSections();
+  if (!sections.some((section) => section.id === state.sectionId)) {
+    state.sectionId = sections[0]?.id ?? state.sectionId;
+  }
+
+  elements.section.innerHTML = sections
+    .map(
+      (section) =>
+        `<option value="${section.id}">${escapeHTML(section.label)}</option>`,
+    )
     .join("");
   elements.section.value = String(state.sectionId);
 }
@@ -581,6 +672,7 @@ function updateLiveClock() {
   const now = getDhakaParts();
   elements.liveDay.textContent = now.weekday;
   elements.liveTime.textContent = now.time;
+  updateVisibleClassStatuses();
 }
 
 function renderDateNavigation() {
@@ -710,10 +802,15 @@ function renderResultSummary() {
 
 function classCard(course, options = {}) {
   const slot = slotById(course.slot);
+  const scheduleDate = options.date || state.selectedDate;
+  const status = classTimeStatus(slot.start, slot.end, scheduleDate);
   const article = document.createElement("article");
   article.className = `workspace-class-card ${course.type || "theory"}${
     options.compact ? " compact" : ""
-  }`;
+  } status-${status.key}`;
+  article.dataset.slotStart = slot.start;
+  article.dataset.slotEnd = slot.end;
+  article.dataset.scheduleDate = scheduleDate;
   article.innerHTML = `
     <div class="class-time">
       <strong>${formatTime(slot.start)}</strong>
@@ -724,6 +821,9 @@ function classCard(course, options = {}) {
       <div class="class-labels">
         <span class="course-code">${escapeHTML(course.code)}</span>
         <span class="class-cohort">${escapeHTML(course.semester)} / ${escapeHTML(course.section)}</span>
+        <span class="class-status ${status.key}" aria-label="Class status: ${status.label}">
+          <i aria-hidden="true"></i>${status.label}
+        </span>
       </div>
       <h3>${escapeHTML(course.title)}</h3>
       <p>${escapeHTML((course.teachers || []).join(", "))}</p>
@@ -734,6 +834,31 @@ function classCard(course, options = {}) {
     </div>
   `;
   return article;
+}
+
+function updateVisibleClassStatuses() {
+  if (!routine) return;
+  document
+    .querySelectorAll(".workspace-class-card[data-schedule-date]")
+    .forEach((card) => {
+      const status = classTimeStatus(
+        card.dataset.slotStart,
+        card.dataset.slotEnd,
+        card.dataset.scheduleDate,
+      );
+      card.classList.remove(
+        "status-running",
+        "status-ended",
+        "status-upcoming",
+      );
+      card.classList.add(`status-${status.key}`);
+
+      const badge = card.querySelector(".class-status");
+      if (!badge) return;
+      badge.className = `class-status ${status.key}`;
+      badge.setAttribute("aria-label", `Class status: ${status.label}`);
+      badge.innerHTML = `<i aria-hidden="true"></i>${status.label}`;
+    });
 }
 
 function breakCard(start, end, kind = "break") {
@@ -784,14 +909,25 @@ function renderOffDay(kind = "student") {
     kind === "teacher"
       ? "No teaching class is scheduled for this teacher on the selected day."
       : "No class is scheduled for this section on the selected day.";
+  const task = kind === "student" ? offDayTask() : null;
+  const taskMarkup = task
+    ? `
+      <aside class="off-day-task" aria-label="Suggested off-day task">
+        <span>Off-day task</span>
+        <strong>${escapeHTML(task.title)}</strong>
+        <small>${escapeHTML(task.detail)}</small>
+      </aside>
+    `
+    : "";
   elements.content.innerHTML = `
     <section class="workspace-empty off-day">
       <span aria-hidden="true">OFF</span>
-      <div>
+      <div class="off-day-copy">
         <p>${escapeHTML(weekdayForISO(state.selectedDate))}</p>
         <h3>${kind === "teacher" ? "No teaching class" : "Off day"}</h3>
         <small>${teacherCopy}</small>
       </div>
+      ${taskMarkup}
     </section>
   `;
 }
