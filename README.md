@@ -84,6 +84,7 @@ present:
 index.html
 routine.json
 requirements.txt
+sync_faculty.py
 sync_routines.py
 assets/app.js
 assets/styles.css
@@ -119,11 +120,13 @@ https://90xexe.github.io/Class_Routine/
 GitHub Pages serves `index.html` directly. `app.py` is only the convenient local
 launcher and is not required by GitHub Pages.
 
-## Enable automatic routine sync
+## Enable automatic routine and faculty sync
 
 The included GitHub Action signs in to the official student portal, checks every
 semester/section combination and updates `routine.json` when an official routine
-changes. It runs automatically every six hours.
+changes. The same run also reads the public VU CSE faculty directory and updates
+`assets/official-faculty.json` whenever a faculty name, designation, email,
+official profile link or photo changes. It runs automatically every six hours.
 
 ### 1. Add login secrets
 
@@ -151,9 +154,11 @@ Never write these values directly inside a source file or workflow file.
 3. Click **Run workflow**.
 4. Keep branch **main** selected and click the green **Run workflow** button.
 
-The scan checks 240 official combinations, so it normally takes about 3-5
-minutes. A green check means the sync completed. When data changes, the workflow
-commits the new `routine.json`, after which GitHub Pages deploys the updated site.
+The scan checks the faculty directory and 240 official routine combinations, so
+it normally takes about 3-5 minutes. A green check means the sync completed.
+When either source changes, the workflow commits `routine.json` and/or
+`assets/official-faculty.json`, after which GitHub Pages deploys the updated
+site.
 
 ## Sync manually
 
@@ -161,11 +166,13 @@ To update the data from your own computer instead of storing GitHub Secrets:
 
 ```bash
 python -m pip install -r requirements.txt
+python sync_faculty.py
 python sync_routines.py
 ```
 
-The script asks for the student ID and password without saving or printing them.
-After a successful sync, upload the changed `routine.json` to GitHub.
+The faculty script uses the public directory and needs no login. The routine
+script asks for the student ID and password without saving or printing them.
+After a successful sync, upload the changed JSON files to GitHub.
 
 ## Updating the website later
 
