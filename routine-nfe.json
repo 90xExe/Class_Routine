@@ -5,26 +5,2529 @@
     "timezone": "Asia/Dhaka",
     "source": "Varendra University official student routine portal",
     "updated": "2026-07-26",
-    "lastSyncedAt": "",
+    "lastSyncedAt": "2026-07-26T22:44:07+06:00",
     "coverage": {
-      "loadedSchedules": 0,
-      "isComplete": false,
-      "scannedCombinations": 0,
-      "totalClasses": 0,
-      "note": "NFE credentials are configured. Run the GitHub Action once to import the official routines."
+      "loadedSchedules": 11,
+      "isComplete": true,
+      "scannedCombinations": 240,
+      "totalClasses": 182,
+      "note": "All 240 official semester/section combinations were checked; 11 published routines were found."
     }
   },
   "catalog": {
-    "semesters": [],
-    "sections": []
+    "semesters": [
+      {
+        "id": 1,
+        "label": "1st Semester"
+      },
+      {
+        "id": 2,
+        "label": "2nd Semester"
+      },
+      {
+        "id": 3,
+        "label": "3rd Semester"
+      },
+      {
+        "id": 4,
+        "label": "4th Semester"
+      },
+      {
+        "id": 5,
+        "label": "5th Semester"
+      },
+      {
+        "id": 6,
+        "label": "6th Semester"
+      },
+      {
+        "id": 7,
+        "label": "7th Semester"
+      },
+      {
+        "id": 8,
+        "label": "8th Semester"
+      },
+      {
+        "id": 9,
+        "label": "9th Semester"
+      },
+      {
+        "id": 10,
+        "label": "10th Semester"
+      },
+      {
+        "id": 11,
+        "label": "11th Semester"
+      },
+      {
+        "id": 12,
+        "label": "12th Semester"
+      }
+    ],
+    "sections": [
+      {
+        "id": 1,
+        "label": "A"
+      },
+      {
+        "id": 2,
+        "label": "B"
+      },
+      {
+        "id": 3,
+        "label": "C"
+      },
+      {
+        "id": 4,
+        "label": "D"
+      },
+      {
+        "id": 5,
+        "label": "E"
+      },
+      {
+        "id": 6,
+        "label": "F"
+      },
+      {
+        "id": 7,
+        "label": "G"
+      },
+      {
+        "id": 8,
+        "label": "H"
+      },
+      {
+        "id": 9,
+        "label": "I"
+      },
+      {
+        "id": 10,
+        "label": "J"
+      },
+      {
+        "id": 11,
+        "label": "K"
+      },
+      {
+        "id": 12,
+        "label": "L"
+      },
+      {
+        "id": 13,
+        "label": "M"
+      },
+      {
+        "id": 14,
+        "label": "N"
+      },
+      {
+        "id": 15,
+        "label": "O"
+      },
+      {
+        "id": 16,
+        "label": "P"
+      },
+      {
+        "id": 17,
+        "label": "Q"
+      },
+      {
+        "id": 18,
+        "label": "R"
+      },
+      {
+        "id": 19,
+        "label": "S"
+      },
+      {
+        "id": 20,
+        "label": "T"
+      }
+    ]
   },
   "slots": [
-    { "id": 1, "start": "09:00", "end": "10:05" },
-    { "id": 2, "start": "10:05", "end": "11:10" },
-    { "id": 3, "start": "11:10", "end": "12:15" },
-    { "id": 4, "start": "12:15", "end": "13:15" },
-    { "id": 5, "start": "13:50", "end": "14:55" },
-    { "id": 6, "start": "14:55", "end": "16:00" }
+    {
+      "id": 1,
+      "start": "09:00",
+      "end": "10:05"
+    },
+    {
+      "id": 2,
+      "start": "10:05",
+      "end": "11:10"
+    },
+    {
+      "id": 3,
+      "start": "11:10",
+      "end": "12:15"
+    },
+    {
+      "id": 4,
+      "start": "12:15",
+      "end": "13:15"
+    },
+    {
+      "id": 5,
+      "start": "13:50",
+      "end": "14:55"
+    },
+    {
+      "id": 6,
+      "start": "14:55",
+      "end": "16:00"
+    }
   ],
-  "schedules": []
+  "schedules": [
+    {
+      "semesterId": 1,
+      "sectionId": 1,
+      "semester": "1st Semester",
+      "section": "A",
+      "days": [
+        {
+          "name": "Saturday",
+          "short": "Sat",
+          "classes": [
+            {
+              "slot": 2,
+              "code": "NFE 1107",
+              "title": "Basic Human Physiology",
+              "teachers": [
+                "Dr. Sultana Rajia"
+              ],
+              "room": "1009",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "NFE 1108",
+              "title": "Basic Human Physiology Practical",
+              "teachers": [
+                "Dr. Sultana Rajia"
+              ],
+              "room": "116",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 1104",
+              "title": "Inorganic and Physical Chemistry Practical",
+              "teachers": [
+                "Fahima Siddikey"
+              ],
+              "room": "118",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "NFE 1103",
+              "title": "Inorganic and Physical Chemistry",
+              "teachers": [
+                "Prof. M. Shahed Zaman"
+              ],
+              "room": "1011",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Sunday",
+          "short": "Sun",
+          "classes": [
+            {
+              "slot": 3,
+              "code": "AOL 101",
+              "title": "Art of Living",
+              "teachers": [
+                "NFE New Teacher 4"
+              ],
+              "room": "407",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 1101",
+              "title": "Introductory Food Science",
+              "teachers": [
+                "Mohosina Hossain Misha"
+              ],
+              "room": "1012",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Monday",
+          "short": "Mon",
+          "classes": [
+            {
+              "slot": 5,
+              "code": "NFE 1101",
+              "title": "Introductory Food Science",
+              "teachers": [
+                "Mohosina Hossain Misha"
+              ],
+              "room": "1008",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "AOL 101",
+              "title": "Art of Living",
+              "teachers": [
+                "NFE New Teacher 4"
+              ],
+              "room": "1009",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Tuesday",
+          "short": "Tue",
+          "classes": [
+            {
+              "slot": 3,
+              "code": "NFE 1105",
+              "title": "Basic Human Nutrition",
+              "teachers": [
+                "Dr. Md. Abdul Awal"
+              ],
+              "room": "1010",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "ENG 1002",
+              "title": "English Fundamentals",
+              "teachers": [
+                "Eng New Teacher 9"
+              ],
+              "room": "802",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 1104",
+              "title": "Inorganic and Physical Chemistry Practical",
+              "teachers": [
+                "Fahima Siddikey"
+              ],
+              "room": "118",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Wednesday",
+          "short": "Wed",
+          "classes": [
+            {
+              "slot": 1,
+              "code": "ENG 1002",
+              "title": "English Fundamentals",
+              "teachers": [
+                "Eng New Teacher 9"
+              ],
+              "room": "1009",
+              "type": "theory"
+            },
+            {
+              "slot": 2,
+              "code": "NFE 1105",
+              "title": "Basic Human Nutrition",
+              "teachers": [
+                "Dr. Md. Abdul Awal"
+              ],
+              "room": "1008",
+              "type": "theory"
+            },
+            {
+              "slot": 3,
+              "code": "NFE 1108",
+              "title": "Basic Human Physiology Practical",
+              "teachers": [
+                "Dr. Sultana Rajia"
+              ],
+              "room": "116",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "NFE 1107",
+              "title": "Basic Human Physiology",
+              "teachers": [
+                "Dr. Sultana Rajia"
+              ],
+              "room": "802",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "NFE 1103",
+              "title": "Inorganic and Physical Chemistry",
+              "teachers": [
+                "Prof. M. Shahed Zaman"
+              ],
+              "room": "1010",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Thursday",
+          "short": "Thu",
+          "classes": []
+        },
+        {
+          "name": "Friday",
+          "short": "Fri",
+          "classes": []
+        }
+      ]
+    },
+    {
+      "semesterId": 1,
+      "sectionId": 2,
+      "semester": "1st Semester",
+      "section": "B",
+      "days": [
+        {
+          "name": "Saturday",
+          "short": "Sat",
+          "classes": [
+            {
+              "slot": 4,
+              "code": "AOL 101",
+              "title": "Art of Living",
+              "teachers": [
+                "Md. Alahi Boxes"
+              ],
+              "room": "1009",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "NFE 1105",
+              "title": "Basic Human Nutrition",
+              "teachers": [
+                "Afroza Bashar"
+              ],
+              "room": "1010",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Sunday",
+          "short": "Sun",
+          "classes": [
+            {
+              "slot": 2,
+              "code": "ENG 1002",
+              "title": "English Fundamentals",
+              "teachers": [
+                "Jannatul Ferdous Kabita"
+              ],
+              "room": "1010",
+              "type": "theory"
+            },
+            {
+              "slot": 3,
+              "code": "NFE 1105",
+              "title": "Basic Human Nutrition",
+              "teachers": [
+                "Afroza Bashar"
+              ],
+              "room": "1010",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "NFE 1107",
+              "title": "Basic Human Physiology",
+              "teachers": [
+                "Dr. Sultana Rajia"
+              ],
+              "room": "802",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "NFE 1101",
+              "title": "Introductory Food Science",
+              "teachers": [
+                "Mohosina Hossain Misha"
+              ],
+              "room": "1012",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Monday",
+          "short": "Mon",
+          "classes": [
+            {
+              "slot": 1,
+              "code": "AOL 101",
+              "title": "Art of Living",
+              "teachers": [
+                "Md. Alahi Boxes"
+              ],
+              "room": "1012",
+              "type": "theory"
+            },
+            {
+              "slot": 3,
+              "code": "NFE 1104",
+              "title": "Inorganic and Physical Chemistry Practical",
+              "teachers": [
+                "Mrinal Kanti Debnath"
+              ],
+              "room": "118",
+              "type": "theory"
+            },
+            {
+              "slot": 3,
+              "code": "NFE 1108",
+              "title": "Basic Human Physiology Practical",
+              "teachers": [
+                "Kohinur Akter"
+              ],
+              "room": "116",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 1103",
+              "title": "Inorganic and Physical Chemistry",
+              "teachers": [
+                "Prof. Md. Monirul Islam"
+              ],
+              "room": "907",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Tuesday",
+          "short": "Tue",
+          "classes": [
+            {
+              "slot": 2,
+              "code": "NFE 1104",
+              "title": "Inorganic and Physical Chemistry Practical",
+              "teachers": [
+                "Mrinal Kanti Debnath"
+              ],
+              "room": "118",
+              "type": "theory"
+            },
+            {
+              "slot": 2,
+              "code": "NFE 1108",
+              "title": "Basic Human Physiology Practical",
+              "teachers": [
+                "Kohinur Akter"
+              ],
+              "room": "116",
+              "type": "theory"
+            },
+            {
+              "slot": 3,
+              "code": "ENG 1002",
+              "title": "English Fundamentals",
+              "teachers": [
+                "Jannatul Ferdous Kabita"
+              ],
+              "room": "802",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 1103",
+              "title": "Inorganic and Physical Chemistry",
+              "teachers": [
+                "Prof. Md. Monirul Islam"
+              ],
+              "room": "1011",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Wednesday",
+          "short": "Wed",
+          "classes": [
+            {
+              "slot": 5,
+              "code": "NFE 1107",
+              "title": "Basic Human Physiology",
+              "teachers": [
+                "Dr. Sultana Rajia"
+              ],
+              "room": "1009",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "NFE 1101",
+              "title": "Introductory Food Science",
+              "teachers": [
+                "Mohosina Hossain Misha"
+              ],
+              "room": "1012",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Thursday",
+          "short": "Thu",
+          "classes": []
+        },
+        {
+          "name": "Friday",
+          "short": "Fri",
+          "classes": []
+        }
+      ]
+    },
+    {
+      "semesterId": 1,
+      "sectionId": 3,
+      "semester": "1st Semester",
+      "section": "C",
+      "days": [
+        {
+          "name": "Saturday",
+          "short": "Sat",
+          "classes": [
+            {
+              "slot": 4,
+              "code": "NFE 1107",
+              "title": "Basic Human Physiology",
+              "teachers": [
+                "Afia Humyra Trisa"
+              ],
+              "room": "1002",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 1105",
+              "title": "Basic Human Nutrition",
+              "teachers": [
+                "Afroza Bashar"
+              ],
+              "room": "1008",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "NFE 1101",
+              "title": "Introductory Food Science",
+              "teachers": [
+                "Fahima Siddikey"
+              ],
+              "room": "1013",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Sunday",
+          "short": "Sun",
+          "classes": [
+            {
+              "slot": 1,
+              "code": "ENG 1002",
+              "title": "English Fundamentals",
+              "teachers": [
+                "Jannatul Ferdous Kabita"
+              ],
+              "room": "1008",
+              "type": "theory"
+            },
+            {
+              "slot": 2,
+              "code": "NFE 1101",
+              "title": "Introductory Food Science",
+              "teachers": [
+                "Fahima Siddikey"
+              ],
+              "room": "1008",
+              "type": "theory"
+            },
+            {
+              "slot": 3,
+              "code": "NFE 1103",
+              "title": "Inorganic and Physical Chemistry",
+              "teachers": [
+                "Prof. Md. Rezaul Haque Ansar"
+              ],
+              "room": "802",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "AOL 101",
+              "title": "Art of Living",
+              "teachers": [
+                "Afia Humyra Trisa"
+              ],
+              "room": "1009",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Monday",
+          "short": "Mon",
+          "classes": [
+            {
+              "slot": 3,
+              "code": "NFE 1104",
+              "title": "Inorganic and Physical Chemistry Practical",
+              "teachers": [
+                "NFE New Teacher 4"
+              ],
+              "room": "117",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "AOL 101",
+              "title": "Art of Living",
+              "teachers": [
+                "Afia Humyra Trisa"
+              ],
+              "room": "1010",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "NFE 1108",
+              "title": "Basic Human Physiology Practical",
+              "teachers": [
+                "Afia Humyra Trisa"
+              ],
+              "room": "116",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Tuesday",
+          "short": "Tue",
+          "classes": [
+            {
+              "slot": 1,
+              "code": "ENG 1002",
+              "title": "English Fundamentals",
+              "teachers": [
+                "Jannatul Ferdous Kabita"
+              ],
+              "room": "1010",
+              "type": "theory"
+            },
+            {
+              "slot": 2,
+              "code": "NFE 1103",
+              "title": "Inorganic and Physical Chemistry",
+              "teachers": [
+                "Prof. Md. Rezaul Haque Ansar"
+              ],
+              "room": "1009",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "NFE 1105",
+              "title": "Basic Human Nutrition",
+              "teachers": [
+                "Afroza Bashar"
+              ],
+              "room": "307",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Wednesday",
+          "short": "Wed",
+          "classes": [
+            {
+              "slot": 2,
+              "code": "NFE 1104",
+              "title": "Inorganic and Physical Chemistry Practical",
+              "teachers": [
+                "NFE New Teacher 4"
+              ],
+              "room": "118",
+              "type": "theory"
+            },
+            {
+              "slot": 2,
+              "code": "NFE 1108",
+              "title": "Basic Human Physiology Practical",
+              "teachers": [
+                "Afia Humyra Trisa"
+              ],
+              "room": "116",
+              "type": "theory"
+            },
+            {
+              "slot": 3,
+              "code": "NFE 1107",
+              "title": "Basic Human Physiology",
+              "teachers": [
+                "Afia Humyra Trisa"
+              ],
+              "room": "1009",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Thursday",
+          "short": "Thu",
+          "classes": []
+        },
+        {
+          "name": "Friday",
+          "short": "Fri",
+          "classes": []
+        }
+      ]
+    },
+    {
+      "semesterId": 1,
+      "sectionId": 4,
+      "semester": "1st Semester",
+      "section": "D",
+      "days": [
+        {
+          "name": "Saturday",
+          "short": "Sat",
+          "classes": [
+            {
+              "slot": 3,
+              "code": "NFE 1108",
+              "title": "Basic Human Physiology Practical",
+              "teachers": [
+                "NFE New Teacher 4"
+              ],
+              "room": "117",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "NFE 1104",
+              "title": "Inorganic and Physical Chemistry Practical",
+              "teachers": [
+                "NFE New Teacher 4"
+              ],
+              "room": "117",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 1107",
+              "title": "Basic Human Physiology",
+              "teachers": [
+                "NFE New Teacher 4"
+              ],
+              "room": "1009",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "NFE 1103",
+              "title": "Inorganic and Physical Chemistry",
+              "teachers": [
+                "Prof. A. Nayeem Faruqui"
+              ],
+              "room": "1009",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Sunday",
+          "short": "Sun",
+          "classes": [
+            {
+              "slot": 4,
+              "code": "NFE 1104",
+              "title": "Inorganic and Physical Chemistry Practical",
+              "teachers": [
+                "NFE New Teacher 4"
+              ],
+              "room": "117",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "ENG 1002",
+              "title": "English Fundamentals",
+              "teachers": [
+                "Eng New Teacher 9"
+              ],
+              "room": "1010",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "NFE 1107",
+              "title": "Basic Human Physiology",
+              "teachers": [
+                "NFE New Teacher 4"
+              ],
+              "room": "1011",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Monday",
+          "short": "Mon",
+          "classes": [
+            {
+              "slot": 1,
+              "code": "ENG 1002",
+              "title": "English Fundamentals",
+              "teachers": [
+                "Eng New Teacher 9"
+              ],
+              "room": "1010",
+              "type": "theory"
+            },
+            {
+              "slot": 2,
+              "code": "NFE 1105",
+              "title": "Basic Human Nutrition",
+              "teachers": [
+                "Afroza Bashar"
+              ],
+              "room": "1010",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "NFE 1101",
+              "title": "Introductory Food Science",
+              "teachers": [
+                "Fahima Siddikey"
+              ],
+              "room": "1010",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 1108",
+              "title": "Basic Human Physiology Practical",
+              "teachers": [
+                "NFE New Teacher 4"
+              ],
+              "room": "116",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Tuesday",
+          "short": "Tue",
+          "classes": [
+            {
+              "slot": 2,
+              "code": "AOL 101",
+              "title": "Art of Living",
+              "teachers": [
+                "NFE New Teacher 4"
+              ],
+              "room": "1010",
+              "type": "theory"
+            },
+            {
+              "slot": 3,
+              "code": "NFE 1101",
+              "title": "Introductory Food Science",
+              "teachers": [
+                "Fahima Siddikey"
+              ],
+              "room": "1009",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Wednesday",
+          "short": "Wed",
+          "classes": [
+            {
+              "slot": 3,
+              "code": "AOL 101",
+              "title": "Art of Living",
+              "teachers": [
+                "NFE New Teacher 4"
+              ],
+              "room": "1010",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 1105",
+              "title": "Basic Human Nutrition",
+              "teachers": [
+                "Afroza Bashar"
+              ],
+              "room": "802",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "NFE 1103",
+              "title": "Inorganic and Physical Chemistry",
+              "teachers": [
+                "Prof. A. Nayeem Faruqui"
+              ],
+              "room": "1008",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Thursday",
+          "short": "Thu",
+          "classes": []
+        },
+        {
+          "name": "Friday",
+          "short": "Fri",
+          "classes": []
+        }
+      ]
+    },
+    {
+      "semesterId": 2,
+      "sectionId": 1,
+      "semester": "2nd Semester",
+      "section": "A",
+      "days": [
+        {
+          "name": "Saturday",
+          "short": "Sat",
+          "classes": [
+            {
+              "slot": 1,
+              "code": "NFE 1207",
+              "title": "Applied Human Physiology",
+              "teachers": [
+                "Umme Salma Nahida"
+              ],
+              "room": "1009",
+              "type": "theory"
+            },
+            {
+              "slot": 2,
+              "code": "NFE 1203",
+              "title": "Principles of Food Engineering",
+              "teachers": [
+                "Md. Istiakh Jahan"
+              ],
+              "room": "1013",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "NFE 1205",
+              "title": "Post Harvest Technology",
+              "teachers": [
+                "Mohosina Hossain Misha"
+              ],
+              "room": "1008",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 1201",
+              "title": "Food Chemistry",
+              "teachers": [
+                "Mohosina Hossain Misha"
+              ],
+              "room": "1011",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Sunday",
+          "short": "Sun",
+          "classes": [
+            {
+              "slot": 1,
+              "code": "NFE 1207",
+              "title": "Applied Human Physiology",
+              "teachers": [
+                "Umme Salma Nahida"
+              ],
+              "room": "802",
+              "type": "theory"
+            },
+            {
+              "slot": 2,
+              "code": "NFE 1201",
+              "title": "Food Chemistry",
+              "teachers": [
+                "Mohosina Hossain Misha"
+              ],
+              "room": "802",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "NFE 1204",
+              "title": "Principles of Food Engineering Practical",
+              "teachers": [
+                "Md. Istiakh Jahan"
+              ],
+              "room": "107",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Monday",
+          "short": "Mon",
+          "classes": [
+            {
+              "slot": 5,
+              "code": "NFE 1202",
+              "title": "Food Chemistry Practical",
+              "teachers": [
+                "Mrinal Kanti Debnath"
+              ],
+              "room": "117",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "NFE 1204",
+              "title": "Principles of Food Engineering Practical",
+              "teachers": [
+                "Md. Istiakh Jahan"
+              ],
+              "room": "107",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Tuesday",
+          "short": "Tue",
+          "classes": [
+            {
+              "slot": 1,
+              "code": "NFE 1115",
+              "title": "Oral Assessment I",
+              "teachers": [
+                "Dr. Sultana Rajia"
+              ],
+              "room": "1004",
+              "type": "theory"
+            },
+            {
+              "slot": 2,
+              "code": "NFE 1203",
+              "title": "Principles of Food Engineering",
+              "teachers": [
+                "Md. Istiakh Jahan"
+              ],
+              "room": "802",
+              "type": "theory"
+            },
+            {
+              "slot": 3,
+              "code": "CSE 1003",
+              "title": "Computer Fundamentals",
+              "teachers": [
+                "Md. Nour Nabi"
+              ],
+              "room": "109 (ICT Cell Lab)",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Wednesday",
+          "short": "Wed",
+          "classes": [
+            {
+              "slot": 2,
+              "code": "CSE 1003",
+              "title": "Computer Fundamentals",
+              "teachers": [
+                "Md. Nour Nabi"
+              ],
+              "room": "109 (ICT Cell Lab)",
+              "type": "theory"
+            },
+            {
+              "slot": 3,
+              "code": "NFE 1205",
+              "title": "Post Harvest Technology",
+              "teachers": [
+                "Mohosina Hossain Misha"
+              ],
+              "room": "802",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 1202",
+              "title": "Food Chemistry Practical",
+              "teachers": [
+                "Mrinal Kanti Debnath"
+              ],
+              "room": "118",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Thursday",
+          "short": "Thu",
+          "classes": []
+        },
+        {
+          "name": "Friday",
+          "short": "Fri",
+          "classes": []
+        }
+      ]
+    },
+    {
+      "semesterId": 2,
+      "sectionId": 2,
+      "semester": "2nd Semester",
+      "section": "B",
+      "days": [
+        {
+          "name": "Saturday",
+          "short": "Sat",
+          "classes": [
+            {
+              "slot": 1,
+              "code": "NFE 1204",
+              "title": "Principles of Food Engineering Practical",
+              "teachers": [
+                "Md. Alahi Boxes"
+              ],
+              "room": "107",
+              "type": "theory"
+            },
+            {
+              "slot": 2,
+              "code": "NFE 1205",
+              "title": "Post Harvest Technology",
+              "teachers": [
+                "Mohosina Hossain Misha"
+              ],
+              "room": "1010",
+              "type": "theory"
+            },
+            {
+              "slot": 3,
+              "code": "NFE 1202",
+              "title": "Food Chemistry Practical",
+              "teachers": [
+                "Mrinal Kanti Debnath"
+              ],
+              "room": "118",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 1115",
+              "title": "Oral Assessment I",
+              "teachers": [
+                "Dr. Sultana Rajia"
+              ],
+              "room": "1002",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Sunday",
+          "short": "Sun",
+          "classes": [
+            {
+              "slot": 3,
+              "code": "NFE 1202",
+              "title": "Food Chemistry Practical",
+              "teachers": [
+                "Mrinal Kanti Debnath"
+              ],
+              "room": "117",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 1201",
+              "title": "Food Chemistry",
+              "teachers": [
+                "Mrinal Kanti Debnath"
+              ],
+              "room": "1013",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "NFE 1203",
+              "title": "Principles of Food Engineering",
+              "teachers": [
+                "Md. Istiakh Jahan"
+              ],
+              "room": "1008",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Monday",
+          "short": "Mon",
+          "classes": [
+            {
+              "slot": 3,
+              "code": "NFE 1204",
+              "title": "Principles of Food Engineering Practical",
+              "teachers": [
+                "Md. Alahi Boxes"
+              ],
+              "room": "107",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "NFE 1201",
+              "title": "Food Chemistry",
+              "teachers": [
+                "Mrinal Kanti Debnath"
+              ],
+              "room": "506",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "CSE 1003",
+              "title": "Computer Fundamentals",
+              "teachers": [
+                "Md. Nour Nabi"
+              ],
+              "room": "109 (ICT Cell Lab)",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Tuesday",
+          "short": "Tue",
+          "classes": [
+            {
+              "slot": 1,
+              "code": "NFE 1207",
+              "title": "Applied Human Physiology",
+              "teachers": [
+                "Dr. MD. Khaled Hossain"
+              ],
+              "room": "1008",
+              "type": "theory"
+            },
+            {
+              "slot": 2,
+              "code": "CSE 1003",
+              "title": "Computer Fundamentals",
+              "teachers": [
+                "Md. Nour Nabi"
+              ],
+              "room": "109 (ICT Cell Lab)",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Wednesday",
+          "short": "Wed",
+          "classes": [
+            {
+              "slot": 1,
+              "code": "NFE 1207",
+              "title": "Applied Human Physiology",
+              "teachers": [
+                "Dr. MD. Khaled Hossain"
+              ],
+              "room": "1010",
+              "type": "theory"
+            },
+            {
+              "slot": 2,
+              "code": "NFE 1205",
+              "title": "Post Harvest Technology",
+              "teachers": [
+                "Mohosina Hossain Misha"
+              ],
+              "room": "1010",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "NFE 1203",
+              "title": "Principles of Food Engineering",
+              "teachers": [
+                "Md. Istiakh Jahan"
+              ],
+              "room": "507",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Thursday",
+          "short": "Thu",
+          "classes": []
+        },
+        {
+          "name": "Friday",
+          "short": "Fri",
+          "classes": []
+        }
+      ]
+    },
+    {
+      "semesterId": 3,
+      "sectionId": 1,
+      "semester": "3rd Semester",
+      "section": "A",
+      "days": [
+        {
+          "name": "Saturday",
+          "short": "Sat",
+          "classes": [
+            {
+              "slot": 2,
+              "code": "NFE 2111",
+              "title": "Marketing in Food Business",
+              "teachers": [
+                "Afia Humyra Trisa"
+              ],
+              "room": "1012",
+              "type": "theory"
+            },
+            {
+              "slot": 3,
+              "code": "NFE 2105",
+              "title": "Sports Nutrition",
+              "teachers": [
+                "Kohinur Akter"
+              ],
+              "room": "1010",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 2107",
+              "title": "Unit Operations in Food Industries II",
+              "teachers": [
+                "Mrinal Kanti Debnath"
+              ],
+              "room": "1013",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "NFE 2104",
+              "title": "Dairy Engineering Practical",
+              "teachers": [
+                "Umme Salma Nahida"
+              ],
+              "room": "107",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Sunday",
+          "short": "Sun",
+          "classes": [
+            {
+              "slot": 1,
+              "code": "NFE 2107",
+              "title": "Unit Operations in Food Industries II",
+              "teachers": [
+                "Mrinal Kanti Debnath"
+              ],
+              "room": "1010",
+              "type": "theory"
+            },
+            {
+              "slot": 2,
+              "code": "NFE 2103",
+              "title": "Dairy Engineering",
+              "teachers": [
+                "Umme Salma Nahida"
+              ],
+              "room": "1011",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "NFE 2109",
+              "title": "Food Laws and Regulations",
+              "teachers": [
+                "Md. Alahi Boxes"
+              ],
+              "room": "1012",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 2101",
+              "title": "Food Chemistry",
+              "teachers": [
+                "Fahima Siddikey"
+              ],
+              "room": "1008",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Monday",
+          "short": "Mon",
+          "classes": [
+            {
+              "slot": 5,
+              "code": "NFE 2109",
+              "title": "Food Laws and Regulations",
+              "teachers": [
+                "Md. Alahi Boxes"
+              ],
+              "room": "1009",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "NFE 2101",
+              "title": "Food Chemistry",
+              "teachers": [
+                "Fahima Siddikey"
+              ],
+              "room": "1010",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Tuesday",
+          "short": "Tue",
+          "classes": [
+            {
+              "slot": 3,
+              "code": "NFE 2111",
+              "title": "Marketing in Food Business",
+              "teachers": [
+                "Afia Humyra Trisa"
+              ],
+              "room": "1013",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 2103",
+              "title": "Dairy Engineering",
+              "teachers": [
+                "Umme Salma Nahida"
+              ],
+              "room": "1012",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "NFE 2108",
+              "title": "Unit Operations in Food Industries Practical",
+              "teachers": [
+                "Fahima Siddikey"
+              ],
+              "room": "107",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Wednesday",
+          "short": "Wed",
+          "classes": [
+            {
+              "slot": 1,
+              "code": "NFE 2104",
+              "title": "Dairy Engineering Practical",
+              "teachers": [
+                "Umme Salma Nahida"
+              ],
+              "room": "107",
+              "type": "theory"
+            },
+            {
+              "slot": 2,
+              "code": "NFE 2104",
+              "title": "Dairy Engineering Practical",
+              "teachers": [
+                "Umme Salma Nahida"
+              ],
+              "room": "107",
+              "type": "theory"
+            },
+            {
+              "slot": 3,
+              "code": "NFE 2105",
+              "title": "Sports Nutrition",
+              "teachers": [
+                "Kohinur Akter"
+              ],
+              "room": "1012",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 2108",
+              "title": "Unit Operations in Food Industries Practical",
+              "teachers": [
+                "Fahima Siddikey"
+              ],
+              "room": "107",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Thursday",
+          "short": "Thu",
+          "classes": []
+        },
+        {
+          "name": "Friday",
+          "short": "Fri",
+          "classes": []
+        }
+      ]
+    },
+    {
+      "semesterId": 3,
+      "sectionId": 2,
+      "semester": "3rd Semester",
+      "section": "B",
+      "days": [
+        {
+          "name": "Saturday",
+          "short": "Sat",
+          "classes": [
+            {
+              "slot": 1,
+              "code": "NFE 2101",
+              "title": "Food Chemistry",
+              "teachers": [
+                "Prof. Dr. Md. Jahangir Alam"
+              ],
+              "room": "1011",
+              "type": "theory"
+            },
+            {
+              "slot": 2,
+              "code": "NFE 2108",
+              "title": "Unit Operations in Food Industries Practical",
+              "teachers": [
+                "Md. Ashadujjaman Robin"
+              ],
+              "room": "107",
+              "type": "theory"
+            },
+            {
+              "slot": 3,
+              "code": "NFE 2111",
+              "title": "Marketing in Food Business",
+              "teachers": [
+                "Afia Humyra Trisa"
+              ],
+              "room": "802",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "NFE 2104",
+              "title": "Dairy Engineering Practical",
+              "teachers": [
+                "Kohinur Akter"
+              ],
+              "room": "107",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 2104",
+              "title": "Dairy Engineering Practical",
+              "teachers": [
+                "Kohinur Akter"
+              ],
+              "room": "107",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Sunday",
+          "short": "Sun",
+          "classes": [
+            {
+              "slot": 1,
+              "code": "NFE 2101",
+              "title": "Food Chemistry",
+              "teachers": [
+                "Prof. Dr. Md. Jahangir Alam"
+              ],
+              "room": "1013",
+              "type": "theory"
+            },
+            {
+              "slot": 2,
+              "code": "NFE 2104",
+              "title": "Dairy Engineering Practical",
+              "teachers": [
+                "Kohinur Akter"
+              ],
+              "room": "107",
+              "type": "theory"
+            },
+            {
+              "slot": 3,
+              "code": "NFE 2108",
+              "title": "Unit Operations in Food Industries Practical",
+              "teachers": [
+                "Md. Ashadujjaman Robin"
+              ],
+              "room": "107",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "NFE 2111",
+              "title": "Marketing in Food Business",
+              "teachers": [
+                "Afia Humyra Trisa"
+              ],
+              "room": "1013",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 2103",
+              "title": "Dairy Engineering",
+              "teachers": [
+                "Umme Salma Nahida"
+              ],
+              "room": "1011",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Monday",
+          "short": "Mon",
+          "classes": [
+            {
+              "slot": 5,
+              "code": "NFE 2105",
+              "title": "Sports Nutrition",
+              "teachers": [
+                "Kohinur Akter"
+              ],
+              "room": "1012",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "NFE 2109",
+              "title": "Food Laws and Regulations",
+              "teachers": [
+                "Md. Alahi Boxes"
+              ],
+              "room": "1012",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Tuesday",
+          "short": "Tue",
+          "classes": [
+            {
+              "slot": 1,
+              "code": "NFE 2107",
+              "title": "Unit Operations in Food Industries II",
+              "teachers": [
+                "Md. Ashadujjaman Robin"
+              ],
+              "room": "802",
+              "type": "theory"
+            },
+            {
+              "slot": 2,
+              "code": "NFE 2109",
+              "title": "Food Laws and Regulations",
+              "teachers": [
+                "Md. Alahi Boxes"
+              ],
+              "room": "1013",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Wednesday",
+          "short": "Wed",
+          "classes": [
+            {
+              "slot": 2,
+              "code": "NFE 2107",
+              "title": "Unit Operations in Food Industries II",
+              "teachers": [
+                "Md. Ashadujjaman Robin"
+              ],
+              "room": "1013",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "NFE 2105",
+              "title": "Sports Nutrition",
+              "teachers": [
+                "Kohinur Akter"
+              ],
+              "room": "1010",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 2103",
+              "title": "Dairy Engineering",
+              "teachers": [
+                "Umme Salma Nahida"
+              ],
+              "room": "1013",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "NFE 2104",
+              "title": "Dairy Engineering Practical",
+              "teachers": [
+                "Kohinur Akter"
+              ],
+              "room": "107",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Thursday",
+          "short": "Thu",
+          "classes": []
+        },
+        {
+          "name": "Friday",
+          "short": "Fri",
+          "classes": []
+        }
+      ]
+    },
+    {
+      "semesterId": 3,
+      "sectionId": 3,
+      "semester": "3rd Semester",
+      "section": "C",
+      "days": [
+        {
+          "name": "Saturday",
+          "short": "Sat",
+          "classes": [
+            {
+              "slot": 2,
+              "code": "NFE 2109",
+              "title": "Food Laws and Regulations",
+              "teachers": [
+                "Md. Alahi Boxes"
+              ],
+              "room": "1008",
+              "type": "theory"
+            },
+            {
+              "slot": 3,
+              "code": "NFE 2103",
+              "title": "Dairy Engineering",
+              "teachers": [
+                "Umme Salma Nahida"
+              ],
+              "room": "1013",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "NFE 2107",
+              "title": "Unit Operations in Food Industries II",
+              "teachers": [
+                "Md. Ashadujjaman Robin"
+              ],
+              "room": "1013",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "NFE 2111",
+              "title": "Marketing in Food Business",
+              "teachers": [
+                "Afia Humyra Trisa"
+              ],
+              "room": "802",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Sunday",
+          "short": "Sun",
+          "classes": [
+            {
+              "slot": 2,
+              "code": "NFE 2111",
+              "title": "Marketing in Food Business",
+              "teachers": [
+                "Afia Humyra Trisa"
+              ],
+              "room": "1009",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "NFE 2105",
+              "title": "Sports Nutrition",
+              "teachers": [
+                "Kohinur Akter"
+              ],
+              "room": "1011",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Monday",
+          "short": "Mon",
+          "classes": [
+            {
+              "slot": 1,
+              "code": "NFE 2104",
+              "title": "Dairy Engineering Practical",
+              "teachers": [
+                "Umme Salma Nahida"
+              ],
+              "room": "107",
+              "type": "theory"
+            },
+            {
+              "slot": 2,
+              "code": "NFE 2104",
+              "title": "Dairy Engineering Practical",
+              "teachers": [
+                "Umme Salma Nahida"
+              ],
+              "room": "107",
+              "type": "theory"
+            },
+            {
+              "slot": 3,
+              "code": "NFE 2101",
+              "title": "Food Chemistry",
+              "teachers": [
+                "Fahima Siddikey"
+              ],
+              "room": "1010",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Tuesday",
+          "short": "Tue",
+          "classes": [
+            {
+              "slot": 1,
+              "code": "NFE 2105",
+              "title": "Sports Nutrition",
+              "teachers": [
+                "Kohinur Akter"
+              ],
+              "room": "1013",
+              "type": "theory"
+            },
+            {
+              "slot": 2,
+              "code": "NFE 2103",
+              "title": "Dairy Engineering",
+              "teachers": [
+                "Umme Salma Nahida"
+              ],
+              "room": "1011",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "NFE 2108",
+              "title": "Unit Operations in Food Industries Practical",
+              "teachers": [
+                "Md. Ashadujjaman Robin"
+              ],
+              "room": "107",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 2107",
+              "title": "Unit Operations in Food Industries II",
+              "teachers": [
+                "Md. Ashadujjaman Robin"
+              ],
+              "room": "802",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Wednesday",
+          "short": "Wed",
+          "classes": [
+            {
+              "slot": 5,
+              "code": "NFE 2109",
+              "title": "Food Laws and Regulations",
+              "teachers": [
+                "Md. Alahi Boxes"
+              ],
+              "room": "1012",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "NFE 2101",
+              "title": "Food Chemistry",
+              "teachers": [
+                "Fahima Siddikey"
+              ],
+              "room": "802",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Thursday",
+          "short": "Thu",
+          "classes": []
+        },
+        {
+          "name": "Friday",
+          "short": "Fri",
+          "classes": []
+        }
+      ]
+    },
+    {
+      "semesterId": 4,
+      "sectionId": 1,
+      "semester": "4th Semester",
+      "section": "A",
+      "days": [
+        {
+          "name": "Saturday",
+          "short": "Sat",
+          "classes": [
+            {
+              "slot": 1,
+              "code": "NFE 2211",
+              "title": "Technology of Meat, Fish, and Poultry Products",
+              "teachers": [
+                "Md. Ashadujjaman Robin"
+              ],
+              "room": "802",
+              "type": "theory"
+            },
+            {
+              "slot": 2,
+              "code": "NFE 2203",
+              "title": "Baking and Confectionery Engineering",
+              "teachers": [
+                "Afroza Bashar"
+              ],
+              "room": "1011",
+              "type": "theory"
+            },
+            {
+              "slot": 3,
+              "code": "NFE 2209",
+              "title": "Nutritional Biochemistry",
+              "teachers": [
+                "Fahima Siddikey"
+              ],
+              "room": "1009",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "NFE 2205",
+              "title": "Maternal and Child Nutrition",
+              "teachers": [
+                "Umme Salma Nahida"
+              ],
+              "room": "1012",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Sunday",
+          "short": "Sun",
+          "classes": [
+            {
+              "slot": 2,
+              "code": "NFE 2208",
+              "title": "Food Microbiology Practical",
+              "teachers": [
+                "Md. Alahi Boxes"
+              ],
+              "room": "117",
+              "type": "theory"
+            },
+            {
+              "slot": 3,
+              "code": "NFE 2208",
+              "title": "Food Microbiology Practical",
+              "teachers": [
+                "Md. Alahi Boxes"
+              ],
+              "room": "115",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "NFE 2205",
+              "title": "Maternal and Child Nutrition",
+              "teachers": [
+                "Umme Salma Nahida"
+              ],
+              "room": "1010",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 2204",
+              "title": "Baking and Confectionary Engineering Practical",
+              "teachers": [
+                "Afroza Bashar"
+              ],
+              "room": "107",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "NFE 2204",
+              "title": "Baking and Confectionary Engineering Practical",
+              "teachers": [
+                "Afroza Bashar"
+              ],
+              "room": "107",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Monday",
+          "short": "Mon",
+          "classes": [
+            {
+              "slot": 1,
+              "code": "NFE 2211",
+              "title": "Technology of Meat, Fish, and Poultry Products",
+              "teachers": [
+                "Md. Ashadujjaman Robin"
+              ],
+              "room": "1011",
+              "type": "theory"
+            },
+            {
+              "slot": 3,
+              "code": "NFE 2201",
+              "title": "Engineering Properties and Principles of Food Materials",
+              "teachers": [
+                "Md. Istiakh Jahan"
+              ],
+              "room": "802",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "NFE 2204",
+              "title": "Baking and Confectionary Engineering Practical",
+              "teachers": [
+                "Afroza Bashar"
+              ],
+              "room": "107",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 2204",
+              "title": "Baking and Confectionary Engineering Practical",
+              "teachers": [
+                "Afroza Bashar"
+              ],
+              "room": "107",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Tuesday",
+          "short": "Tue",
+          "classes": [
+            {
+              "slot": 2,
+              "code": "NFE 2210",
+              "title": "Nutritional Biochemistry Practical",
+              "teachers": [
+                "Mohosina Hossain Misha"
+              ],
+              "room": "107",
+              "type": "theory"
+            },
+            {
+              "slot": 3,
+              "code": "NFE 2210",
+              "title": "Nutritional Biochemistry Practical",
+              "teachers": [
+                "Mohosina Hossain Misha"
+              ],
+              "room": "107",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "NFE 2208",
+              "title": "Food Microbiology Practical",
+              "teachers": [
+                "Md. Alahi Boxes"
+              ],
+              "room": "115",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 2208",
+              "title": "Food Microbiology Practical",
+              "teachers": [
+                "Md. Alahi Boxes"
+              ],
+              "room": "115",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "NFE 2207",
+              "title": "Food Microbiology",
+              "teachers": [
+                "Prof. Dr. Imtiaj Hasan"
+              ],
+              "room": "1010",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Wednesday",
+          "short": "Wed",
+          "classes": [
+            {
+              "slot": 2,
+              "code": "NFE 2209",
+              "title": "Nutritional Biochemistry",
+              "teachers": [
+                "Fahima Siddikey"
+              ],
+              "room": "1012",
+              "type": "theory"
+            },
+            {
+              "slot": 3,
+              "code": "NFE 2203",
+              "title": "Baking and Confectionery Engineering",
+              "teachers": [
+                "Afroza Bashar"
+              ],
+              "room": "1011",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 2201",
+              "title": "Engineering Properties and Principles of Food Materials",
+              "teachers": [
+                "Md. Istiakh Jahan"
+              ],
+              "room": "1011",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "NFE 2207",
+              "title": "Food Microbiology",
+              "teachers": [
+                "Prof. Dr. Imtiaj Hasan"
+              ],
+              "room": "1011",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Thursday",
+          "short": "Thu",
+          "classes": []
+        },
+        {
+          "name": "Friday",
+          "short": "Fri",
+          "classes": []
+        }
+      ]
+    },
+    {
+      "semesterId": 5,
+      "sectionId": 1,
+      "semester": "5th Semester",
+      "section": "A",
+      "days": [
+        {
+          "name": "Saturday",
+          "short": "Sat",
+          "classes": [
+            {
+              "slot": 2,
+              "code": "NFE 3112",
+              "title": "Food Preservation and Storage Engineering Practical",
+              "teachers": [
+                "Md. Istiakh Jahan"
+              ],
+              "room": "107",
+              "type": "theory"
+            },
+            {
+              "slot": 3,
+              "code": "NFE 3107",
+              "title": "Biostatistics",
+              "teachers": [
+                "Dr. M. Nurul Haque Mollah"
+              ],
+              "room": "1010",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 3111",
+              "title": "Food Preservation and Storage Engineering",
+              "teachers": [
+                "Md. Istiakh Jahan"
+              ],
+              "room": "1012",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Sunday",
+          "short": "Sun",
+          "classes": [
+            {
+              "slot": 4,
+              "code": "NFE 3109",
+              "title": "Water and Beverage Technology",
+              "teachers": [
+                "Md. Ashadujjaman Robin"
+              ],
+              "room": "802",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 3101",
+              "title": "Food Plant and Machine Design",
+              "teachers": [
+                "Mrinal Kanti Debnath"
+              ],
+              "room": "1010",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Monday",
+          "short": "Mon",
+          "classes": [
+            {
+              "slot": 1,
+              "code": "NFE 3105",
+              "title": "Nutrition Planning",
+              "teachers": [
+                "Kohinur Akter"
+              ],
+              "room": "802",
+              "type": "theory"
+            },
+            {
+              "slot": 3,
+              "code": "NFE 3109",
+              "title": "Water and Beverage Technology",
+              "teachers": [
+                "Md. Ashadujjaman Robin"
+              ],
+              "room": "802",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "NFE 3111",
+              "title": "Food Preservation and Storage Engineering",
+              "teachers": [
+                "Md. Istiakh Jahan"
+              ],
+              "room": "802",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Tuesday",
+          "short": "Tue",
+          "classes": [
+            {
+              "slot": 3,
+              "code": "NFE 3101",
+              "title": "Food Plant and Machine Design",
+              "teachers": [
+                "Mrinal Kanti Debnath"
+              ],
+              "room": "1010",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "NFE 3112",
+              "title": "Food Preservation and Storage Engineering Practical",
+              "teachers": [
+                "Md. Istiakh Jahan"
+              ],
+              "room": "107",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 3103",
+              "title": "Assessment of Nutritional Status",
+              "teachers": [
+                "Afroza Bashar"
+              ],
+              "room": "1011",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Wednesday",
+          "short": "Wed",
+          "classes": [
+            {
+              "slot": 1,
+              "code": "NFE 3103",
+              "title": "Assessment of Nutritional Status",
+              "teachers": [
+                "Afroza Bashar"
+              ],
+              "room": "1011",
+              "type": "theory"
+            },
+            {
+              "slot": 2,
+              "code": "NFE 3110",
+              "title": "Water and Beverage Technology Practical",
+              "teachers": [
+                "Md. Ashadujjaman Robin"
+              ],
+              "room": "107",
+              "type": "theory"
+            },
+            {
+              "slot": 3,
+              "code": "NFE 3110",
+              "title": "Water and Beverage Technology Practical",
+              "teachers": [
+                "Md. Ashadujjaman Robin"
+              ],
+              "room": "107",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "NFE 3105",
+              "title": "Nutrition Planning",
+              "teachers": [
+                "Kohinur Akter"
+              ],
+              "room": "1004",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 3107",
+              "title": "Biostatistics",
+              "teachers": [
+                "Dr. M. Nurul Haque Mollah"
+              ],
+              "room": "1002",
+              "type": "theory"
+            }
+          ]
+        },
+        {
+          "name": "Thursday",
+          "short": "Thu",
+          "classes": []
+        },
+        {
+          "name": "Friday",
+          "short": "Fri",
+          "classes": []
+        }
+      ]
+    }
+  ]
 }
