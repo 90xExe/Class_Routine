@@ -1,7 +1,15 @@
-name: Sync official routine
+name: Sync official routines
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/sync-routine.yml"
+      - "sync_routines.py"
+      - "sync_faculty.py"
+      - "requirements.txt"
   schedule:
     - cron: "17 */6 * * *"
 
@@ -15,10 +23,7 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
-    env:
-      VU_STUDENT_ROLL: ${{ secrets.VU_STUDENT_ROLL }}
-      VU_STUDENT_PASSWORD: ${{ secrets.VU_STUDENT_PASSWORD }}
+    timeout-minutes: 20
 
     steps:
       - name: Check out website
@@ -33,18 +38,50 @@ jobs:
       - name: Install sync dependency
         run: python -m pip install -r requirements.txt
 
-      - name: Read the official routines
+      - name: Read the official CSE faculty directory
+        run: python sync_faculty.py
+
+      - name: Read the official NFE faculty directory
+        env:
+          VU_FACULTY_DEPARTMENT: nfe
+          VU_FACULTY_URL: https://vu.edu.bd/academics/departments/nutrition-and-food-engineering/faculty-members
+          VU_FACULTY_DESTINATION: official-faculty-nfe.json
+          VU_FACULTY_MINIMUM: "3"
+        run: python sync_faculty.py
+
+      - name: Read the official CSE routines
+        env:
+          VU_STUDENT_ROLL: ${{ secrets.CSE_VU_STUDENT_ROLL }}
+          VU_STUDENT_PASSWORD: ${{ secrets.CSE_VU_STUDENT_PASSWORD }}
+          VU_DEPARTMENT: cse
+          VU_ROUTINE_DESTINATION: routine.json
+          VU_EXPECTED_PROGRAM: CSE
+        run: python sync_routines.py
+
+      - name: Read the official NFE routines
+        env:
+          VU_STUDENT_ROLL: ${{ secrets.NFE_VU_STUDENT_ROLL }}
+          VU_STUDENT_PASSWORD: ${{ secrets.NFE_VU_STUDENT_PASSWORD }}
+          VU_DEPARTMENT: nfe
+          VU_ROUTINE_DESTINATION: routine-nfe.json
+          VU_EXPECTED_PROGRAM: Nutrition and Food Engineering
         run: python sync_routines.py
 
       - name: Publish data changes
         shell: bash
         run: |
-          if git diff --quiet -- routine.json; then
-            echo "No published routine changes."
+          tracked_data=(
+            routine.json
+            routine-nfe.json
+            assets/official-faculty.json
+            assets/official-faculty-nfe.json
+          )
+          if git diff --quiet -- "${tracked_data[@]}"; then
+            echo "No published routine or faculty changes."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add routine.json
-          git commit -m "chore: sync official CSE routine"
+          git add "${tracked_data[@]}"
+          git commit -m "chore: sync official CSE and NFE data"
           git push
