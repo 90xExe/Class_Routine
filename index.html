@@ -11,8 +11,8 @@
     <title>VU CSE | Routine Workspace</title>
     <link rel="icon" type="image/png" href="./assets/cse-logo.png" />
     <link rel="apple-touch-icon" href="./assets/cse-logo.png" />
-    <link rel="stylesheet" href="./assets/styles.css?v=20260726-6" />
-    <script src="./assets/app.js?v=20260726-6" defer></script>
+    <link rel="stylesheet" href="./assets/styles.css?v=20260726-7" />
+    <script src="./assets/app.js?v=20260726-7" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#workspace">Skip to routine workspace</a>
@@ -195,7 +195,7 @@
             <button id="previous-day" type="button" aria-label="Previous day">
               &#8592;
             </button>
-            <div>
+            <div class="date-navigation-info">
               <span id="selected-date-label">Today</span>
               <strong id="selected-day-name">Loading...</strong>
               <small id="selected-date-long">-</small>
@@ -203,17 +203,21 @@
             <button id="next-day" type="button" aria-label="Next day">
               &#8594;
             </button>
-            <button class="today-button" id="go-today" type="button">Today</button>
-            <label class="compact-date-picker">
-              <span class="sr-only">Choose date</span>
-              <input id="date-picker" type="date" />
-            </label>
+            <div class="date-navigation-actions">
+              <button class="today-button" id="go-today" type="button">
+                Today
+              </button>
+              <label class="compact-date-picker">
+                <span class="sr-only">Choose today or an upcoming date</span>
+                <input id="date-picker" type="date" />
+              </label>
+            </div>
           </div>
 
           <div
             class="week-strip"
             id="week-strip"
-            aria-label="Current academic week"
+            aria-label="Today and upcoming academic days"
           ></div>
 
           <div class="result-summary" id="result-summary" aria-live="polite"></div>

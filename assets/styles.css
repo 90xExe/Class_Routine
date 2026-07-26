@@ -1481,7 +1481,7 @@ body.dark .hero-tags span {
 
 .week-strip {
   display: grid;
-  grid-template-columns: repeat(7, minmax(76px, 1fr));
+  grid-template-columns: repeat(var(--visible-days, 7), minmax(76px, 1fr));
   gap: 7px;
   margin-bottom: 12px;
 }
@@ -2824,7 +2824,8 @@ body.dark .week-day.selected {
   color: #fff;
 }
 
-.date-navigation > button {
+.date-navigation > button,
+.date-navigation-actions > button {
   min-width: 38px;
   height: 38px;
   border: 1px solid rgba(255, 255, 255, 0.16);
@@ -2835,24 +2836,26 @@ body.dark .week-day.selected {
   font-weight: 800;
 }
 
-.date-navigation > button:hover:not(:disabled) {
+.date-navigation > button:hover:not(:disabled),
+.date-navigation-actions > button:hover:not(:disabled) {
   border-color: var(--mint);
   background: var(--mint);
   color: var(--navy);
 }
 
-.date-navigation > button:disabled {
+.date-navigation > button:disabled,
+.date-navigation-actions > button:disabled {
   opacity: 0.36;
   cursor: default;
 }
 
-.date-navigation > div {
+.date-navigation-info {
   min-width: 0;
   flex: 1;
   display: grid;
 }
 
-.date-navigation > div span {
+.date-navigation-info span {
   color: var(--mint);
   font-size: 0.61rem;
   font-weight: 900;
@@ -2860,20 +2863,32 @@ body.dark .week-day.selected {
   text-transform: uppercase;
 }
 
-.date-navigation > div strong {
+.date-navigation-info strong {
   font-family: var(--font-sans);
   font-size: 1.32rem;
   font-weight: 500;
   line-height: 1.15;
 }
 
-.date-navigation > div small {
+.date-navigation-info small {
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.63rem;
 }
 
 .date-navigation .today-button {
   padding: 0 12px;
+}
+
+.date-navigation-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 0 0 auto;
+}
+
+.compact-date-picker {
+  display: block;
+  min-width: 0;
 }
 
 .compact-date-picker input {
@@ -4264,17 +4279,12 @@ body.dark .full-slot-head {
     text-align: center;
   }
 
-  .date-navigation .today-button,
-  .compact-date-picker {
-    grid-row: 2;
-  }
-
-  .date-navigation .today-button {
-    grid-column: 1 / 2;
-  }
-
-  .compact-date-picker {
-    grid-column: 2 / 4;
+  .date-navigation-actions {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 8px;
+    width: 100%;
   }
 
   .compact-date-picker input {
@@ -4612,9 +4622,14 @@ body.dark .header-clock {
     padding: 12px;
   }
 
-  .date-navigation > button {
+  .date-navigation > button,
+  .date-navigation-actions > button {
     min-width: 46px;
     height: 46px;
+  }
+
+  .date-navigation-actions .today-button {
+    min-width: 82px;
   }
 
   .compact-date-picker input {

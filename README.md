@@ -22,6 +22,7 @@ free-room checks and a complete weekly routine.
   after cross-checking every published routine.
 - Free periods and breaks are shown with their start time, end time and duration.
 - Off days are clearly marked in red.
+- The calendar shows only today and upcoming dates; past dates cannot be selected.
 - Student off days include one useful learning task that stays consistent for
   that date, semester and section.
 - A Student or Teacher setup can be saved as the device's default view.
@@ -52,7 +53,8 @@ Press `Ctrl+C` in the terminal to stop the local website.
 1. Select **For students**.
 2. Select a semester. Only semesters with loaded routines are listed.
 3. Select a section. Only published sections for that semester are listed.
-4. Choose a date from the calendar, or use the left/right arrows.
+4. Choose today or an upcoming date from the calendar, or use the left/right
+   arrows. Past dates are automatically hidden and blocked.
 5. Select **Day view** for one day or **Full routine** for the whole week.
 6. Use **Save as my default** to remember the selection on that device.
 

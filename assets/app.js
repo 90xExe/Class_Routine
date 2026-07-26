@@ -683,6 +683,9 @@ function updateLiveClock() {
 
 function renderDateNavigation() {
   const today = getDhakaParts().iso;
+  if (!state.selectedDate || state.selectedDate < today) {
+    state.selectedDate = today;
+  }
   const selected = isoToDate(state.selectedDate);
   const offset = Math.round(
     (selected - isoToDate(today)) / (24 * 60 * 60 * 1000),
@@ -692,12 +695,12 @@ function renderDateNavigation() {
       ? "Today"
       : offset === 1
         ? "Tomorrow"
-        : offset === -1
-          ? "Yesterday"
-          : "Selected date";
+        : "Upcoming date";
   elements.selectedDayName.textContent = weekdayForISO(state.selectedDate);
   elements.selectedDateLong.textContent = longDate(state.selectedDate);
   elements.datePicker.value = state.selectedDate;
+  elements.datePicker.min = today;
+  elements.previousDay.disabled = offset <= 0;
   elements.goToday.disabled = offset === 0;
 }
 
@@ -726,6 +729,7 @@ function renderWeekStrip() {
 
   for (let index = 0; index < 7; index += 1) {
     const iso = addDays(start, index);
+    if (iso < today) continue;
     const dayName = weekdayForISO(iso);
     const count = countForDay(dayName);
     const scheduledCount = contextInstances(dayName, false).length;
@@ -755,6 +759,11 @@ function renderWeekStrip() {
     });
     elements.weekStrip.appendChild(button);
   }
+
+  elements.weekStrip.style.setProperty(
+    "--visible-days",
+    String(elements.weekStrip.childElementCount || 1),
+  );
 
   window.requestAnimationFrame(() => {
     const selected = elements.weekStrip.querySelector(".week-day.selected");
@@ -1610,7 +1619,9 @@ function bindEvents() {
   elements.print.addEventListener("click", () => window.print());
 
   elements.previousDay.addEventListener("click", () => {
-    state.selectedDate = addDays(state.selectedDate, -1);
+    const today = getDhakaParts().iso;
+    const previous = addDays(state.selectedDate, -1);
+    state.selectedDate = previous < today ? today : previous;
     renderWorkspace();
   });
   elements.nextDay.addEventListener("click", () => {
@@ -1623,7 +1634,9 @@ function bindEvents() {
   });
   elements.datePicker.addEventListener("change", (event) => {
     if (!event.target.value) return;
-    state.selectedDate = event.target.value;
+    const today = getDhakaParts().iso;
+    state.selectedDate =
+      event.target.value < today ? today : event.target.value;
     renderWorkspace();
   });
 
