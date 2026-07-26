@@ -5,33 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Student, teacher, classroom and full-routine explorer for Varendra University CSE."
+      content="Student, teacher, classroom and full-routine explorer for Varendra University CSE and NFE."
     />
     <meta name="theme-color" content="#071a2f" />
-    <title>VU CSE | Routine Workspace</title>
-    <link rel="icon" type="image/png" href="./assets/cse-logo.png" />
-    <link rel="apple-touch-icon" href="./assets/cse-logo.png" />
-    <link rel="stylesheet" href="./assets/styles.css?v=20260726-7" />
-    <script src="./assets/app.js?v=20260726-7" defer></script>
+    <title>VU CSE &amp; NFE | Routine Workspace</title>
+    <link rel="icon" id="site-favicon" href="./assets/cse-logo.png" />
+    <link rel="apple-touch-icon" id="apple-touch-icon" href="./assets/cse-logo.png" />
+    <link rel="stylesheet" href="./assets/styles.css?v=20260726-11" />
+    <script src="./assets/app.js?v=20260726-11" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#workspace">Skip to routine workspace</a>
 
     <div class="site-shell">
       <header class="topbar">
-        <a class="brand brand-with-logo" href="#" aria-label="VU CSE routine home">
+        <a class="brand brand-with-logo" id="brand-link" href="#" aria-label="VU CSE routine home">
           <img
             class="brand-logo"
+            id="brand-logo"
             src="./assets/cse-logo.png"
             alt="Department of CSE, Varendra University"
           />
           <span class="brand-divider" aria-hidden="true"></span>
           <span>
             <span class="brand-name">Routine Workspace</span>
-            <span class="brand-meta">Students, teachers &amp; classrooms</span>
+            <span class="brand-meta" id="brand-department">CSE students, teachers &amp; classrooms</span>
           </span>
         </a>
 
+        <label class="department-selector" for="department-select">
+          <span>Department</span>
+          <select id="department-select" aria-label="Select department">
+            <option value="cse">CSE - Computer Science &amp; Engineering</option>
+            <option value="nfe">NFE - Nutrition &amp; Food Engineering</option>
+          </select>
+        </label>
         <div class="topbar-actions">
           <span class="live-dot"><i aria-hidden="true"></i> Live schedule</span>
           <div class="header-clock" aria-live="polite">
@@ -232,20 +240,26 @@
       </main>
 
       <footer>
-        <p><strong>VU CSE</strong> &middot; One workspace for every routine.</p>
+        <p><strong id="footer-department">VU CSE</strong> &middot; One workspace for every routine.</p>
         <div class="footer-meta">
           <p id="footer-coverage">Checking data coverage...</p>
           <p class="developer-credit">
-            Developed by
+            <span class="credit-prefix">Developed by</span>
             <a
+              class="developer-link"
+              href="https://www.facebook.com/MD.NAZIMUDDINNOYON"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Md. Nazim Uddin Noyon on Facebook"
+            >Md. Nazim Uddin Noyon</a>
+            <span class="developer-batch">33rd Batch &middot;</span>
+            <a
+              class="developer-handle"
               href="https://github.com/90xExe"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Md. Nazim Uddin Noyon on GitHub"
-            >
-              Md. Nazim Uddin Noyon
-              <span>33rd Batch &middot; @90xExe &#8599;</span>
-            </a>
+              aria-label="90xExe on GitHub"
+            >@90xExe &#8599;</a>
           </p>
         </div>
       </footer>

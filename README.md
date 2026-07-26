@@ -1,23 +1,30 @@
-# VU CSE Routine Workspace
+# VU CSE and NFE Routine Workspace
 
-A mobile- and desktop-friendly routine website for Varendra University CSE
-students and teachers. It also provides teacher schedules, classroom occupancy,
-free-room checks and a complete weekly routine.
+A mobile- and desktop-friendly routine website for Varendra University CSE and
+NFE students and teachers. It provides department-specific student schedules,
+teacher profiles, classroom occupancy, free-room checks and complete weekly
+routines from one interface.
 
 ## Features
 
+- **Department dropdown:** choose CSE or NFE from the top header. Every semester,
+  section, teacher, classroom and saved default stays department-aware.
+- **Automatic first sync:** uploading the workflow or sync scripts to `main`
+  starts the official CSE and NFE import automatically. Scheduled refreshes then
+  run every six hours.
 - **Student view:** select a semester and section, then view the selected day or
   the full weekly routine.
 - Click or press Enter on any class card to open its class details. Matched
-  teachers include their designation, email and contact number, with a Copy
-  button beside every available field.
+  teachers use the selected department's official faculty directory for name,
+  designation, email, photo and profile link, with Copy controls where useful.
 - Only semesters and sections with a published routine appear in the selectors.
 - **Live class status:** today's classes automatically show `UPCOMING`,
   `RUNNING` or `ENDED` using Bangladesh time.
 - **Teacher view:** type a teacher's name to see their courses, rooms, sections
   and class times. Selecting an exact teacher also shows a compact profile with
-  designation, email, contact number, official profile photo/link and quick
-  Copy controls.
+  designation, email, official profile photo/link and quick Copy controls. CSE
+  keeps the supplied contact numbers; NFE contact numbers stay hidden until a
+  verified source is available.
 - **Classroom explorer:** type a room number to see occupied and available slots
   after cross-checking every published routine.
 - Free periods and breaks are shown with their start time, end time and duration.
@@ -85,6 +92,7 @@ present:
 ```text
 index.html
 routine.json
+routine-nfe.json
 requirements.txt
 sync_faculty.py
 sync_routines.py
@@ -92,6 +100,9 @@ assets/app.js
 assets/styles.css
 assets/teachers.json
 assets/official-faculty.json
+assets/official-faculty-nfe.json
+assets/cse-logo.png
+assets/nfe-logo.jpg
 .github/workflows/sync-routine.yml
 ```
 
@@ -122,25 +133,26 @@ https://90xexe.github.io/Class_Routine/
 GitHub Pages serves `index.html` directly. `app.py` is only the convenient local
 launcher and is not required by GitHub Pages.
 
-## Enable automatic routine and faculty sync
+## Enable automatic CSE and NFE sync
 
-The included GitHub Action signs in to the official student portal, checks every
-semester/section combination and updates `routine.json` when an official routine
-changes. The same run also reads the public VU CSE faculty directory and updates
-`assets/official-faculty.json` whenever a faculty name, designation, email,
-official profile link or photo changes. It runs automatically every six hours.
+The included GitHub Action signs in with one CSE student account and one NFE
+student account. It verifies the returned program name before publishing, scans
+every semester/section combination and updates `routine.json` plus
+`routine-nfe.json`. The same run updates both public faculty directories. It runs
+automatically every six hours.
 
-### 1. Add login secrets
+### 1. Add the four login secrets
 
-In the GitHub repository:
+Open **Settings -> Secrets and variables -> Actions** and create these repository
+secrets exactly as written:
 
-1. Open **Settings -> Secrets and variables -> Actions**.
-2. Click **New repository secret**.
-3. Add `VU_STUDENT_ROLL` and use the student ID/roll as its value.
-4. Add another secret named `VU_STUDENT_PASSWORD` and use the portal password as
-   its value.
+- `CSE_VU_STUDENT_ROLL`
+- `CSE_VU_STUDENT_PASSWORD`
+- `NFE_VU_STUDENT_ROLL`
+- `NFE_VU_STUDENT_PASSWORD`
 
-Never write these values directly inside a source file or workflow file.
+Use a CSE student account for the first pair and an NFE student account for the
+second pair. Never write credentials inside a source file or workflow file.
 
 ### 2. Allow the workflow to update data
 
@@ -151,20 +163,20 @@ Never write these values directly inside a source file or workflow file.
 
 ### 3. Run the first sync
 
-1. Open the repository's **Actions** tab.
-2. Select **Sync official routine** on the left.
-3. Click **Run workflow**.
-4. Keep branch **main** selected and click the green **Run workflow** button.
+1. Upload every changed file, including `routine-nfe.json`, the NFE logo and the
+   two NFE faculty/routine files.
+2. Open the repository's **Actions** tab.
+3. Select **Sync official routines** on the left.
+4. Click **Run workflow**, keep branch **main**, then confirm the green button.
 
-The scan checks the faculty directory and 240 official routine combinations, so
-it normally takes about 3-5 minutes. A green check means the sync completed.
-When either source changes, the workflow commits `routine.json` and/or
-`assets/official-faculty.json`, after which GitHub Pages deploys the updated
-site.
+The first run checks both departments and can take roughly 6-10 minutes. A green
+check means both account/program validations and both complete scans succeeded.
+The Action commits changed JSON files and GitHub Pages deploys them automatically.
 
 ## Sync manually
 
-To update the data from your own computer instead of storing GitHub Secrets:
+Install the dependency, then run each department separately. The script prompts
+for the matching student ID and password without storing or printing them.
 
 ```bash
 python -m pip install -r requirements.txt
@@ -172,10 +184,9 @@ python sync_faculty.py
 python sync_routines.py
 ```
 
-The faculty script uses the public directory and needs no login. The routine
-script asks for the student ID and password without saving or printing them.
-After a successful sync, upload the changed JSON files to GitHub.
-
+For NFE, set `VU_DEPARTMENT=nfe`, `VU_ROUTINE_DESTINATION=routine-nfe.json` and
+`VU_EXPECTED_PROGRAM=Nutrition and Food Engineering` before running
+`sync_routines.py`. The GitHub Action already configures these values correctly.
 ## Updating the website later
 
 1. Edit the project files locally.
@@ -187,11 +198,10 @@ After a successful sync, upload the changed JSON files to GitHub.
 
 ## Data coverage
 
-The current data was created by checking 12 semesters and sections A through T:
-240 possible combinations in total. The interface keeps only the 38 published
-routines visible, representing 8 semesters, 75 teachers, 40 rooms and 545 class
-entries. Empty semester/section combinations are not shown to users.
-
+Coverage is reported separately for the selected department. Only semesters and
+sections with a published routine appear. Classroom availability is calculated
+only after the selected department's full scan succeeds, so CSE and NFE data are
+never mixed or presented as each other.
 ## Security note
 
 The official VU portal currently uses plain HTTP rather than HTTPS. GitHub

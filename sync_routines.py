@@ -26,7 +26,12 @@ from lxml import html
 
 
 ROOT = Path(__file__).resolve().parent
-DESTINATION = ROOT / "routine.json"
+DEPARTMENT = os.getenv("VU_DEPARTMENT", "cse").strip().lower() or "cse"
+DESTINATION_NAME = os.getenv("VU_ROUTINE_DESTINATION", "routine.json").strip()
+DESTINATION = (ROOT / DESTINATION_NAME).resolve()
+EXPECTED_PROGRAM = os.getenv("VU_EXPECTED_PROGRAM", "").strip()
+if DESTINATION.parent != ROOT or DESTINATION.suffix.lower() != ".json":
+    raise RuntimeError("VU_ROUTINE_DESTINATION must be a JSON file in the project root.")
 BASE_URL = os.getenv("VU_BASE_URL", "http://160.187.25.3:8083").rstrip("/")
 LOGIN_URL = f"{BASE_URL}/front/student/login"
 ROUTINE_URL = f"{BASE_URL}/front/student/routine"
@@ -74,7 +79,7 @@ def request_text(
 ) -> tuple[str, str]:
     headers = {
         "Accept": "*/*" if ajax else "text/html,application/xhtml+xml",
-        "User-Agent": "VU-CSE-Routine-Sync/1.0",
+        "User-Agent": f"VU-{DEPARTMENT.upper()}-Routine-Sync/2.0",
     }
     if referer:
         headers["Referer"] = referer
@@ -149,6 +154,17 @@ def option_catalog(page_text: str) -> tuple[list[dict[str, object]], list[dict[s
     if not semesters or not sections:
         raise RuntimeError("The official semester/section catalog was not found.")
     return semesters, sections
+
+
+def program_from_fragment(page_text: str) -> str:
+    tree = html.fromstring(page_text)
+    info_nodes = tree.xpath(
+        '//*[contains(concat(" ", normalize-space(@class), " "), " alert-info ")]'
+    )
+    if not info_nodes:
+        return ""
+    info_text = clean_text(info_nodes[0])
+    return info_text.split("|", 1)[0].strip()
 
 
 def parse_routine_fragment(
@@ -270,6 +286,8 @@ def build_payload(
     semesters: list[dict[str, object]],
     sections: list[dict[str, object]],
     schedules: list[dict[str, object]],
+    program: str,
+    department: str,
 ) -> dict[str, object]:
     now = datetime.now(ZoneInfo("Asia/Dhaka"))
     total_classes = sum(
@@ -280,7 +298,8 @@ def build_payload(
     scanned = len(semesters) * len(sections)
     return {
         "meta": {
-            "program": "B. Sc. in CSE",
+            "department": department,
+            "program": program,
             "timezone": "Asia/Dhaka",
             "source": "Varendra University official student routine portal",
             "updated": now.date().isoformat(),
@@ -305,9 +324,15 @@ def build_payload(
 def same_routine_data(
     current: dict[str, object], incoming: dict[str, object]
 ) -> bool:
-    return all(
-        current.get(key) == incoming.get(key)
-        for key in ("catalog", "slots", "schedules")
+    current_meta = current.get("meta", {})
+    incoming_meta = incoming.get("meta", {})
+    return (
+        current_meta.get("department") == incoming_meta.get("department")
+        and current_meta.get("program") == incoming_meta.get("program")
+        and all(
+            current.get(key) == incoming.get(key)
+            for key in ("catalog", "slots", "schedules")
+        )
     )
 
 
@@ -316,6 +341,7 @@ def synchronize(roll: str, password: str) -> bool:
     routine_page, _ = request_text(opener, ROUTINE_URL)
     semesters, sections = option_catalog(routine_page)
     schedules: list[dict[str, object]] = []
+    program = ""
 
     for semester in semesters:
         for section in sections:
@@ -334,6 +360,8 @@ def synchronize(roll: str, password: str) -> bool:
             schedule = parse_routine_fragment(fragment, semester, section)
             if schedule is not None:
                 schedules.append(schedule)
+                if not program:
+                    program = program_from_fragment(fragment)
             if REQUEST_DELAY:
                 time.sleep(REQUEST_DELAY)
 
@@ -343,12 +371,28 @@ def synchronize(roll: str, password: str) -> bool:
             "The complete scan returned no published routines; existing data was kept."
         )
 
-    payload = build_payload(semesters, sections, schedules)
+    program = program or EXPECTED_PROGRAM or DEPARTMENT.upper()
+    if EXPECTED_PROGRAM:
+        compact_expected = re.sub(r"[^a-z0-9]+", "", EXPECTED_PROGRAM.casefold())
+        compact_program = re.sub(r"[^a-z0-9]+", "", program.casefold())
+        if compact_expected not in compact_program:
+            raise RuntimeError(
+                f"The {DEPARTMENT.upper()} account returned program '{program}', "
+                f"not the expected '{EXPECTED_PROGRAM}'. Existing data was kept."
+            )
+
+    payload = build_payload(
+        semesters,
+        sections,
+        schedules,
+        program,
+        DEPARTMENT,
+    )
     if DESTINATION.exists():
         current = json.loads(DESTINATION.read_text(encoding="utf-8"))
         if same_routine_data(current, payload):
             print(
-                f"No routine changes detected after scanning "
+                f"No {DEPARTMENT.upper()} routine changes detected after scanning "
                 f"{len(semesters) * len(sections)} combinations."
             )
             return False
@@ -361,11 +405,10 @@ def synchronize(roll: str, password: str) -> bool:
     temporary.replace(DESTINATION)
     total_classes = payload["meta"]["coverage"]["totalClasses"]
     print(
-        f"Updated routine.json: {len(schedules)} routines, "
-        f"{total_classes} class entries."
+        f"Updated {DESTINATION.name}: {len(schedules)} routines, "
+        f"{total_classes} class entries for {program}."
     )
     return True
-
 
 def main() -> None:
     roll = os.getenv("VU_STUDENT_ROLL", "").strip()

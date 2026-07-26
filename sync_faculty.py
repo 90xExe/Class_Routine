@@ -1,8 +1,9 @@
-"""Synchronize the static faculty directory with the official VU CSE page."""
+"""Synchronize a department faculty directory with its official VU page."""
 
 from __future__ import annotations
 
 import json
+import os
 import sys
 import time
 import urllib.error
@@ -16,13 +17,21 @@ from lxml import html
 
 
 ROOT = Path(__file__).resolve().parent
-DESTINATION = ROOT / "assets" / "official-faculty.json"
-FACULTY_URL = (
+DEPARTMENT = os.getenv("VU_FACULTY_DEPARTMENT", "cse").strip().lower() or "cse"
+FACULTY_URL = os.getenv(
+    "VU_FACULTY_URL",
     "https://vu.edu.bd/academics/departments/"
-    "computer-science-and-engineering/faculty-members"
-)
+    "computer-science-and-engineering/faculty-members",
+).strip()
+DESTINATION_NAME = os.getenv(
+    "VU_FACULTY_DESTINATION",
+    "official-faculty.json",
+).strip()
+DESTINATION = (ROOT / "assets" / DESTINATION_NAME).resolve()
 TIMEOUT_SECONDS = 30
-MINIMUM_EXPECTED_RECORDS = 20
+MINIMUM_EXPECTED_RECORDS = int(os.getenv("VU_FACULTY_MINIMUM", "20"))
+if DESTINATION.parent != (ROOT / "assets").resolve() or DESTINATION.suffix != ".json":
+    raise RuntimeError("VU_FACULTY_DESTINATION must be a JSON file in assets/.")
 
 
 def clean_text(node: object) -> str:
@@ -53,7 +62,7 @@ def request_page() -> str:
         FACULTY_URL,
         headers={
             "Accept": "text/html,application/xhtml+xml",
-            "User-Agent": "VU-CSE-Faculty-Sync/1.0",
+            "User-Agent": f"VU-{DEPARTMENT.upper()}-Faculty-Sync/2.0",
         },
     )
     last_error: Exception | None = None
@@ -123,13 +132,17 @@ def synchronize() -> bool:
     faculty = parse_faculty(request_page())
     payload = {
         "updated": datetime.now(ZoneInfo("Asia/Dhaka")).date().isoformat(),
+        "department": DEPARTMENT,
         "source": FACULTY_URL,
         "faculty": faculty,
     }
 
     if DESTINATION.exists():
         current = json.loads(DESTINATION.read_text(encoding="utf-8"))
-        if current.get("faculty") == faculty:
+        if (
+            current.get("department") == DEPARTMENT
+            and current.get("faculty") == faculty
+        ):
             print(
                 "No faculty changes detected: "
                 f"{len(faculty)} profiles, "

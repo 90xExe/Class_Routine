@@ -755,18 +755,22 @@ footer strong {
   text-align: right;
 }
 
-.developer-credit a {
-  display: inline-flex;
+.developer-credit {
+  display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: 4px 7px;
+  gap: 4px 5px;
+}
+
+.developer-credit a {
   color: var(--ink);
   font-weight: 750;
   text-decoration: none;
   text-underline-offset: 3px;
 }
 
-.developer-credit a span {
+.developer-credit .developer-batch,
+.developer-credit .developer-handle {
   color: var(--mint-strong);
   font-weight: 850;
 }
@@ -1092,7 +1096,7 @@ body.dark .hero-tags span {
     text-align: left;
   }
 
-  .developer-credit a {
+  .developer-credit {
     justify-content: flex-start;
   }
 
@@ -4678,6 +4682,104 @@ body.dark .header-clock {
   }
 }
 
+/* Department selector and department-aware branding */
+.department-selector {
+  flex: 0 1 470px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 10px;
+  padding: 7px 8px 7px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(235, 241, 243, 0.82);
+}
+
+.department-selector > span {
+  color: var(--ink-soft);
+  font-size: 0.58rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.department-selector select {
+  width: 100%;
+  min-width: 0;
+  height: 48px;
+  padding: 0 38px 0 13px;
+  border: 1px solid rgba(7, 26, 47, 0.14);
+  border-radius: 7px;
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.74rem;
+  font-weight: 750;
+}
+
+.department-selector select:hover {
+  border-color: rgba(49, 174, 123, 0.55);
+}
+
+.department-selector select:focus-visible {
+  border-color: var(--mint-strong);
+  outline: 3px solid rgba(49, 174, 123, 0.22);
+  outline-offset: 1px;
+}
+
+body.dark .department-selector {
+  background: rgba(255, 255, 255, 0.035);
+}
+
+body.dark .department-selector select {
+  border-color: rgba(255, 255, 255, 0.14);
+  background: #030e18;
+  color: #fff;
+}
+
+.brand-logo {
+  transition: opacity 150ms ease;
+}
+
+@media (max-width: 1100px) {
+  .topbar {
+    flex-wrap: wrap;
+    padding: 10px 0 12px;
+  }
+
+  .department-selector {
+    order: 3;
+    flex: 1 0 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  .topbar {
+    gap: 10px;
+  }
+
+  .brand-with-logo {
+    min-width: 0;
+    flex: 1;
+  }
+
+  .department-selector {
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 5px;
+    padding: 8px;
+  }
+
+  .department-selector > span {
+    padding: 0 4px;
+  }
+
+  .department-selector select {
+    height: 50px;
+    font-size: 0.76rem;
+  }
+}
 @media print {
   #workspace {
     padding: 0;
@@ -4691,6 +4793,7 @@ body.dark .header-clock {
   }
 
   .workspace-header,
+  .department-selector,
   .role-switch,
   .control-panel,
   .coverage-banner,

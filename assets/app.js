@@ -1,6 +1,26 @@
 "use strict";
 
 const PREFERENCE_KEY = "vu-cse-routine-workspace-v3";
+const DEPARTMENTS = {
+  cse: {
+    short: "CSE",
+    name: "Computer Science and Engineering",
+    program: "B. Sc. in CSE",
+    routineUrl: "./routine.json",
+    logoUrl: "./assets/cse-logo.png",
+    suppliedFacultyUrl: "./assets/teachers.json?v=20260726-3",
+    officialFacultyUrl: "./assets/official-faculty.json?v=20260726-2",
+  },
+  nfe: {
+    short: "NFE",
+    name: "Nutrition and Food Engineering",
+    program: "B.Sc. in Nutrition and Food Engineering",
+    routineUrl: "./routine-nfe.json",
+    logoUrl: "./assets/nfe-logo.jpg",
+    suppliedFacultyUrl: "",
+    officialFacultyUrl: "./assets/official-faculty-nfe.json?v=20260726-1",
+  },
+};
 const DAY_ORDER = [
   "Saturday",
   "Sunday",
@@ -46,12 +66,15 @@ const OFF_DAY_TASKS = [
   },
 ];
 
+const routines = {};
+const teacherDirectories = {};
 let routine = null;
 let teacherDirectory = [];
 let toastTimer = null;
 let lastClassTrigger = null;
 
 const state = {
+  department: "cse",
   role: "student",
   view: "day",
   semesterId: 7,
@@ -63,6 +86,13 @@ const state = {
 };
 
 const elements = {
+  departmentSelect: document.getElementById("department-select"),
+  brandLink: document.getElementById("brand-link"),
+  brandLogo: document.getElementById("brand-logo"),
+  brandDepartment: document.getElementById("brand-department"),
+  favicon: document.getElementById("site-favicon"),
+  appleTouchIcon: document.getElementById("apple-touch-icon"),
+  footerDepartment: document.getElementById("footer-department"),
   theme: document.getElementById("theme-toggle"),
   print: document.getElementById("print-routine"),
   studentRole: document.getElementById("student-role"),
@@ -102,6 +132,79 @@ const elements = {
   classDialogClose: document.getElementById("class-detail-close"),
   toast: document.getElementById("toast"),
 };
+
+function departmentConfig() {
+  return DEPARTMENTS[state.department] || DEPARTMENTS.cse;
+}
+
+function activateDepartmentData() {
+  routine = routines[state.department] || routines.cse;
+  teacherDirectory = teacherDirectories[state.department] || [];
+}
+
+function renderDepartment() {
+  const config = departmentConfig();
+  document.body.dataset.department = state.department;
+  elements.departmentSelect.value = state.department;
+  elements.brandLogo.src = config.logoUrl;
+  elements.brandLogo.alt = `${config.name}, Varendra University`;
+  elements.brandLink.setAttribute(
+    "aria-label",
+    `VU ${config.short} routine home`,
+  );
+  elements.brandDepartment.textContent =
+    `${config.short} students, teachers & classrooms`;
+  elements.footerDepartment.textContent = `VU ${config.short}`;
+  elements.favicon.href = config.logoUrl;
+  elements.appleTouchIcon.href = config.logoUrl;
+  document.title = `VU ${config.short} | Routine Workspace`;
+}
+
+function unavailableRoutine(department) {
+  const config = DEPARTMENTS[department];
+  return {
+    meta: {
+      department,
+      program: config.program,
+      timezone: "Asia/Dhaka",
+      updated: "Pending",
+      lastSyncedAt: "",
+      coverage: {
+        loadedSchedules: 0,
+        isComplete: false,
+        scannedCombinations: 0,
+        totalClasses: 0,
+        note: `${config.short} routine data is waiting for its first official sync.`,
+      },
+    },
+    catalog: { semesters: [], sections: [] },
+    slots: routines.cse?.slots || [],
+    schedules: [],
+  };
+}
+
+async function loadJSON(url, required = false) {
+  try {
+    const response = await fetch(url, { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error(`${url} request failed: ${response.status}`);
+    }
+    return await response.json();
+  } catch (error) {
+    if (required) throw error;
+    console.warn(error);
+    return null;
+  }
+}
+
+async function loadFaculty(url) {
+  if (!url) return [];
+  const directory = await loadJSON(url);
+  if (!directory) return [];
+  if (Array.isArray(directory.teachers)) return directory.teachers;
+  if (Array.isArray(directory.faculty)) return directory.faculty;
+  return [];
+}
 
 function escapeHTML(value) {
   return String(value ?? "")
@@ -283,11 +386,12 @@ function allInstances() {
 
 function allTeachers() {
   return [
-    ...new Set(
-      allInstances().flatMap((course) =>
+    ...new Set([
+      ...allInstances().flatMap((course) =>
         Array.isArray(course.teachers) ? course.teachers : [],
       ),
-    ),
+      ...teacherDirectory.map((teacher) => teacher.name).filter(Boolean),
+    ]),
   ].sort((a, b) => a.localeCompare(b));
 }
 
@@ -375,6 +479,9 @@ function loadPreferences() {
   try {
     const saved = JSON.parse(localStorage.getItem(PREFERENCE_KEY) || "null");
     if (!saved || typeof saved !== "object") return;
+    if (Object.hasOwn(DEPARTMENTS, saved.department)) {
+      state.department = saved.department;
+    }
     if (["student", "teacher"].includes(saved.role)) state.role = saved.role;
     if (["day", "full"].includes(saved.view)) state.view = saved.view;
     if (Number.isInteger(saved.semesterId)) state.semesterId = saved.semesterId;
@@ -390,6 +497,7 @@ function saveAsDefault() {
   localStorage.setItem(
     PREFERENCE_KEY,
     JSON.stringify({
+      department: state.department,
       role: state.role,
       view: state.view,
       semesterId: state.semesterId,
@@ -404,7 +512,7 @@ function saveAsDefault() {
       : state.role === "teacher" && state.teacher
       ? `Teacher view for ${state.teacher}`
       : `Student view for ${semesterLabel(state.semesterId)}, Section ${sectionLabel(state.sectionId)}`;
-  showToast(`${label} saved as your default.`);
+  showToast(`${DEPARTMENTS[state.department].short}: ${label} saved as your default.`);
 }
 
 function showToast(message) {
@@ -444,6 +552,7 @@ function populateControls() {
     )
     .join("");
   elements.semester.value = String(state.semesterId);
+  elements.semester.disabled = semesters.length === 0;
 
   renderSectionOptions();
 
@@ -620,6 +729,7 @@ function renderSectionOptions() {
     )
     .join("");
   elements.section.value = String(state.sectionId);
+  elements.section.disabled = sections.length === 0;
 }
 
 function renderRole() {
@@ -641,6 +751,7 @@ function renderView() {
 }
 
 function renderCoverage() {
+  const config = departmentConfig();
   const coverage = routine.meta.coverage;
   const loaded = routine.schedules.length;
   const rooms = allRooms().length;
@@ -657,19 +768,19 @@ function renderCoverage() {
       }).format(new Date(routine.meta.lastSyncedAt))
     : routine.meta.updated;
 
-  elements.footerCoverage.textContent = `${loaded} published routines / ${teachers} teachers / ${rooms} rooms`;
+  elements.footerCoverage.textContent = `${config.short}: ${loaded} published routines / ${teachers} teachers / ${rooms} rooms`;
 
   if (coverage.isComplete) {
     elements.coverage.className = "coverage-banner complete";
     elements.coverage.innerHTML = `
       <span aria-hidden="true">OK</span>
-      <p><strong>Official routines synced: ${loaded} published schedules</strong><small>All ${scanned} combinations checked; room availability is fully cross-checked. Last data update: ${escapeHTML(lastSynced)}.</small></p>
+      <p><strong>Official ${config.short} routines synced: ${loaded} published schedules</strong><small>All ${scanned} combinations checked; room availability is fully cross-checked. Last data update: ${escapeHTML(lastSynced)}.</small></p>
     `;
   } else {
     elements.coverage.className = "coverage-banner warning";
     elements.coverage.innerHTML = `
       <span aria-hidden="true">Info</span>
-      <p><strong>Partial official data: ${loaded} section loaded</strong><small>${escapeHTML(coverage.note)} Room availability is labelled carefully until the full import is complete.</small></p>
+      <p><strong>${config.short} data pending: ${loaded} published schedules</strong><small>${escapeHTML(coverage.note)} Room availability is labelled carefully until the full import is complete.</small></p>
     `;
   }
 }
@@ -842,7 +953,7 @@ function compactTeacherProfileMarkup(teacherName) {
       </div>
       <div class="teacher-search-contacts">
         ${compactTeacherContact("Email", directory?.email, displayedName, true)}
-        ${compactTeacherContact("Contact", directory?.contact, displayedName)}
+        ${state.department === "cse" ? compactTeacherContact("Contact", directory?.contact, displayedName) : ""}
       </div>
       <div class="teacher-search-stats">
         <span><strong>${details.sessions}</strong> weekly ${details.sessions === 1 ? "session" : "sessions"}</span>
@@ -853,6 +964,23 @@ function compactTeacherProfileMarkup(teacherName) {
 }
 
 function renderResultSummary() {
+  if (!routine.schedules.length) {
+    const config = departmentConfig();
+    elements.resultSummary.classList.remove("has-teacher-profile");
+    elements.resultSummary.innerHTML = `
+      <div>
+        <span class="summary-kicker">${escapeHTML(config.short)} workspace</span>
+        <h2>${escapeHTML(config.name)}</h2>
+        <p>Waiting for the first official routine sync</p>
+      </div>
+      <div class="summary-metrics">
+        <span><strong>0</strong><small>classes</small></span>
+        <span><strong>0</strong><small>sections checked</small></span>
+      </div>
+    `;
+    return;
+  }
+
   const isRoom = Boolean(state.room);
   const selectedTeacher =
     state.role === "teacher" && !isRoom ? exactSelectedTeacher() : "";
@@ -996,7 +1124,7 @@ function teacherAvatarMarkup(name, directory, className) {
 }
 
 function closeClassDetails() {
-  if (!elements.classDialog) return;
+  if (!elements.classDialog || !elements.classDialog.hasAttribute("open")) return;
   if (typeof elements.classDialog.close === "function") {
     elements.classDialog.close();
   } else {
@@ -1112,7 +1240,7 @@ function openClassDetails(course) {
                   displayedName,
                   directory?.email ? `mailto:${directory.email}` : "",
                 )}
-                ${copyableTeacherFact("Contact", directory?.contact, displayedName)}
+                ${state.department === "cse" ? copyableTeacherFact("Contact", directory?.contact, displayedName) : ""}
               </div>
               <dl class="teacher-routine-facts">
                 <div><dt>Courses</dt><dd>${escapeHTML(details.courses.join(", ") || "Not listed")}</dd></div>
@@ -1544,8 +1672,24 @@ function renderFullRoutine() {
   elements.content.replaceChildren(grid);
 }
 
+function renderDepartmentPending() {
+  const config = departmentConfig();
+  elements.content.innerHTML = `
+    <section class="workspace-empty unavailable">
+      <span aria-hidden="true">${escapeHTML(config.short)}</span>
+      <div>
+        <p>Official data is not loaded yet</p>
+        <h3>${escapeHTML(config.short)} routine sync pending</h3>
+        <small>Run <strong>Sync official routine</strong> once from GitHub Actions. This department will then update automatically every six hours.</small>
+      </div>
+    </section>
+  `;
+}
+
 function renderContent() {
-  if (state.view === "full") {
+  if (!routine.schedules.length) {
+    renderDepartmentPending();
+  } else if (state.view === "full") {
     renderFullRoutine();
   } else if (state.room) {
     renderRoomDay();
@@ -1555,12 +1699,31 @@ function renderContent() {
 }
 
 function renderWorkspace() {
+  renderDepartment();
   renderRole();
   renderView();
   renderDateNavigation();
   renderWeekStrip();
   renderResultSummary();
   renderContent();
+}
+
+function setDepartment(department) {
+  if (!Object.hasOwn(DEPARTMENTS, department) || department === state.department) {
+    return;
+  }
+  closeAllComboboxes();
+  closeClassDetails();
+  state.department = department;
+  state.teacher = "";
+  state.room = "";
+  state.keyword = "";
+  activateDepartmentData();
+  elements.keyword.value = "";
+  populateControls();
+  renderCoverage();
+  renderWorkspace();
+  showToast(`${departmentConfig().short} department selected.`);
 }
 
 function setRole(role) {
@@ -1587,6 +1750,9 @@ function setTheme(dark) {
 }
 
 function bindEvents() {
+  elements.departmentSelect.addEventListener("change", (event) => {
+    setDepartment(event.target.value);
+  });
   elements.studentRole.addEventListener("click", () => setRole("student"));
   elements.teacherRole.addEventListener("click", () => setRole("teacher"));
 
@@ -1665,42 +1831,26 @@ function bindEvents() {
 
 async function init() {
   try {
-    const response = await fetch("./routine.json", { cache: "no-store" });
-    if (!response.ok) throw new Error(`Routine request failed: ${response.status}`);
-    routine = await response.json();
-    let suppliedDirectory = [];
-    let officialDirectory = [];
-    try {
-      const teacherResponse = await fetch(
-        "./assets/teachers.json?v=20260726-3",
-        { cache: "no-store" },
-      );
-      if (teacherResponse.ok) {
-        const directory = await teacherResponse.json();
-        suppliedDirectory = Array.isArray(directory.teachers)
-          ? directory.teachers
-          : [];
-      }
-    } catch {}
-    try {
-      const officialResponse = await fetch(
-        "./assets/official-faculty.json?v=20260726-1",
-        { cache: "no-store" },
-      );
-      if (officialResponse.ok) {
-        const official = await officialResponse.json();
-        officialDirectory = Array.isArray(official.faculty)
-          ? official.faculty
-          : [];
-      }
-    } catch {}
-    teacherDirectory = mergeTeacherDirectories(
-      suppliedDirectory,
-      officialDirectory,
-    );
+    const [cseRoutine, nfeRoutine, cseSupplied, cseOfficial, nfeOfficial] =
+      await Promise.all([
+        loadJSON(DEPARTMENTS.cse.routineUrl, true),
+        loadJSON(DEPARTMENTS.nfe.routineUrl),
+        loadFaculty(DEPARTMENTS.cse.suppliedFacultyUrl),
+        loadFaculty(DEPARTMENTS.cse.officialFacultyUrl),
+        loadFaculty(DEPARTMENTS.nfe.officialFacultyUrl),
+      ]);
 
-    state.selectedDate = getDhakaParts().iso;
+    routines.cse = cseRoutine;
+    routines.nfe = nfeRoutine || unavailableRoutine("nfe");
+    teacherDirectories.cse = mergeTeacherDirectories(cseSupplied, cseOfficial);
+    teacherDirectories.nfe = mergeTeacherDirectories([], nfeOfficial);
+
     loadPreferences();
+    if (!Object.hasOwn(DEPARTMENTS, state.department)) {
+      state.department = "cse";
+    }
+    activateDepartmentData();
+    state.selectedDate = getDhakaParts().iso;
     populateControls();
     bindEvents();
     setTheme(localStorage.getItem("routine-theme") === "dark");
@@ -1722,5 +1872,4 @@ async function init() {
     `;
   }
 }
-
 init();

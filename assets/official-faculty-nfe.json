@@ -1,0 +1,84 @@
+{
+  "updated": "2026-07-26",
+  "department": "nfe",
+  "source": "https://vu.edu.bd/academics/departments/nutrition-and-food-engineering/faculty-members",
+  "faculty": [
+    {
+      "name": "Dr. Sultana Rajia",
+      "designation": "Associate Professor & Coordinator",
+      "email": "coordinator.nfe@vu.edu.bd",
+      "image": "https://portfolio.vu.edu.bd/uploads/02129.jpg",
+      "profile": "https://vu.edu.bd/profile/02129/dr-sultana-rajia"
+    },
+    {
+      "name": "Md. Ashadujjaman Robin",
+      "designation": "Senior Lecturer",
+      "email": "robin@vu.edu.bd",
+      "image": "https://portfolio.vu.edu.bd/uploads/02579.jpg",
+      "profile": "https://vu.edu.bd/profile/02579/md-ashadujjaman-robin"
+    },
+    {
+      "name": "Afroza Bashar",
+      "designation": "Lecturer",
+      "email": "afroza@vu.edu.bd",
+      "image": "https://portfolio.vu.edu.bd/uploads/02627.jpg",
+      "profile": "https://vu.edu.bd/profile/02627/afroza-bashar"
+    },
+    {
+      "name": "Umme Salma Nahida",
+      "designation": "Lecturer",
+      "email": "nahida@vu.edu.bd",
+      "image": "https://portfolio.vu.edu.bd/uploads/02628.jpg",
+      "profile": "https://vu.edu.bd/profile/02628/umme-salma-nahida"
+    },
+    {
+      "name": "Md. Istiakh Jahan",
+      "designation": "Lecturer",
+      "email": "istiakh@vu.edu.bd",
+      "image": "https://portfolio.vu.edu.bd/uploads/02683.jpg",
+      "profile": "https://vu.edu.bd/profile/02683/md-istiakh-jahan"
+    },
+    {
+      "name": "Mrinal Kanti Debnath",
+      "designation": "Lecturer",
+      "email": "mrinal@vu.edu.bd",
+      "image": "https://portfolio.vu.edu.bd/uploads/02724.jpg",
+      "profile": "https://vu.edu.bd/profile/02724/mrinal-kanti-debnath"
+    },
+    {
+      "name": "Mohosina Hossain Misha",
+      "designation": "Lecturer",
+      "email": "misha@vu.edu.bd",
+      "image": "https://portfolio.vu.edu.bd/uploads/02704.jpg",
+      "profile": "https://vu.edu.bd/profile/02704/mohosina-hossain-misha"
+    },
+    {
+      "name": "FAHIMA SIDDIKEY",
+      "designation": "Lecturer",
+      "email": "fahima@vu.edu.bd",
+      "image": "https://portfolio.vu.edu.bd/uploads/02723.jpg",
+      "profile": "https://vu.edu.bd/profile/02723/fahima-siddikey"
+    },
+    {
+      "name": "Kohinur Akter",
+      "designation": "Lecturer",
+      "email": "kohinur@vu.edu.bd",
+      "image": "",
+      "profile": "https://vu.edu.bd/profile/02742/kohinur-akter"
+    },
+    {
+      "name": "Md. Alahi Boxes",
+      "designation": "Lecturer",
+      "email": "alahi@vu.edu.bd",
+      "image": "",
+      "profile": "https://vu.edu.bd/profile/02743/md-alahi-boxes"
+    },
+    {
+      "name": "Afia Humyra Trisa",
+      "designation": "Lecturer",
+      "email": "trisa@vu.edu.bd",
+      "image": "",
+      "profile": "https://vu.edu.bd/profile/02744/afia-humyra-trisa"
+    }
+  ]
+}
