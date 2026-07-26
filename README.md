@@ -8,11 +8,16 @@ free-room checks and a complete weekly routine.
 
 - **Student view:** select a semester and section, then view the selected day or
   the full weekly routine.
+- Click or press Enter on any class card to open its class details. Matched
+  teachers include their designation, email and contact number, with a Copy
+  button beside every available field.
 - Only semesters and sections with a published routine appear in the selectors.
 - **Live class status:** today's classes automatically show `UPCOMING`,
   `RUNNING` or `ENDED` using Bangladesh time.
 - **Teacher view:** type a teacher's name to see their courses, rooms, sections
-  and class times.
+  and class times. Selecting an exact teacher also shows a compact profile with
+  designation, email, contact number, official profile photo/link and quick
+  Copy controls.
 - **Classroom explorer:** type a room number to see occupied and available slots
   after cross-checking every published routine.
 - Free periods and breaks are shown with their start time, end time and duration.
@@ -82,6 +87,8 @@ requirements.txt
 sync_routines.py
 assets/app.js
 assets/styles.css
+assets/teachers.json
+assets/official-faculty.json
 .github/workflows/sync-routine.yml
 ```
 

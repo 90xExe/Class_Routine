@@ -9,8 +9,10 @@
     />
     <meta name="theme-color" content="#071a2f" />
     <title>VU CSE | Routine Workspace</title>
-    <link rel="stylesheet" href="./assets/styles.css?v=20260725-6" />
-    <script src="./assets/app.js?v=20260725-6" defer></script>
+    <link rel="icon" type="image/png" href="./assets/cse-logo.png" />
+    <link rel="apple-touch-icon" href="./assets/cse-logo.png" />
+    <link rel="stylesheet" href="./assets/styles.css?v=20260726-6" />
+    <script src="./assets/app.js?v=20260726-6" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#workspace">Skip to routine workspace</a>
@@ -43,7 +45,7 @@
             type="button"
             aria-label="Use dark theme"
           >
-            <span aria-hidden="true">&#9790;</span>
+            Dark
           </button>
         </div>
       </header>
@@ -59,7 +61,6 @@
               aria-selected="true"
               data-role="student"
             >
-              <span class="role-icon student-icon" aria-hidden="true"></span>
               <strong>For students</strong>
               <small>Semester &amp; section routine</small>
             </button>
@@ -71,7 +72,6 @@
               aria-selected="false"
               data-role="teacher"
             >
-              <span class="role-icon teacher-icon" aria-hidden="true"></span>
               <strong>For teachers</strong>
               <small>Personal teaching schedule</small>
             </button>
@@ -181,7 +181,6 @@
                 </button>
               </div>
               <button class="default-button" id="save-default" type="button">
-                <span aria-hidden="true">&#9734;</span>
                 Save as my default
               </button>
               <button class="print-button" id="print-routine" type="button">
@@ -247,6 +246,19 @@
         </div>
       </footer>
     </div>
+
+    <dialog class="class-detail-dialog" id="class-detail-dialog">
+      <section class="class-detail-panel" aria-labelledby="class-detail-title">
+        <header class="class-detail-header">
+          <div>
+            <span>Class information</span>
+            <h2 id="class-detail-title">Class details</h2>
+          </div>
+          <button id="class-detail-close" type="button">Close</button>
+        </header>
+        <div class="class-detail-content" id="class-detail-content"></div>
+      </section>
+    </dialog>
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
   </body>

@@ -47,7 +47,9 @@ const OFF_DAY_TASKS = [
 ];
 
 let routine = null;
+let teacherDirectory = [];
 let toastTimer = null;
+let lastClassTrigger = null;
 
 const state = {
   role: "student",
@@ -94,6 +96,10 @@ const elements = {
   liveDay: document.getElementById("live-day"),
   liveTime: document.getElementById("live-time"),
   footerCoverage: document.getElementById("footer-coverage"),
+  classDialog: document.getElementById("class-detail-dialog"),
+  classDialogTitle: document.getElementById("class-detail-title"),
+  classDialogContent: document.getElementById("class-detail-content"),
+  classDialogClose: document.getElementById("class-detail-close"),
   toast: document.getElementById("toast"),
 };
 
@@ -656,13 +662,13 @@ function renderCoverage() {
   if (coverage.isComplete) {
     elements.coverage.className = "coverage-banner complete";
     elements.coverage.innerHTML = `
-      <span aria-hidden="true">&#10003;</span>
+      <span aria-hidden="true">OK</span>
       <p><strong>Official routines synced: ${loaded} published schedules</strong><small>All ${scanned} combinations checked; room availability is fully cross-checked. Last data update: ${escapeHTML(lastSynced)}.</small></p>
     `;
   } else {
     elements.coverage.className = "coverage-banner warning";
     elements.coverage.innerHTML = `
-      <span aria-hidden="true">!</span>
+      <span aria-hidden="true">Info</span>
       <p><strong>Partial official data: ${loaded} section loaded</strong><small>${escapeHTML(coverage.note)} Room availability is labelled carefully until the full import is complete.</small></p>
     `;
   }
@@ -771,8 +777,76 @@ function contextTitle() {
   return `${semesterLabel(state.semesterId)} / Section ${sectionLabel(state.sectionId)}`;
 }
 
+function exactSelectedTeacher() {
+  const query = normalize(state.teacher);
+  if (!query) return "";
+  return allTeachers().find((teacher) => normalize(teacher) === query) || "";
+}
+
+function compactTeacherContact(label, value, teacherName, email = false) {
+  const cleanValue = String(value || "").trim();
+  if (!cleanValue) {
+    return `
+      <div class="compact-teacher-contact unavailable">
+        <span>${escapeHTML(label)}</span>
+        <strong>Not available</strong>
+      </div>
+    `;
+  }
+
+  const renderedValue = email
+    ? `<a href="mailto:${escapeHTML(cleanValue)}">${escapeHTML(cleanValue)}</a>`
+    : `<strong>${escapeHTML(cleanValue)}</strong>`;
+  return `
+    <div class="compact-teacher-contact">
+      <span>${escapeHTML(label)}</span>
+      <div>
+        ${renderedValue}
+        <button
+          class="copy-detail-button compact"
+          type="button"
+          data-copy-value="${escapeHTML(cleanValue)}"
+          data-copy-label="${escapeHTML(`${teacherName}'s ${label.toLowerCase()}`)}"
+          aria-label="${escapeHTML(`Copy ${teacherName}'s ${label.toLowerCase()}`)}"
+        >Copy</button>
+      </div>
+    </div>
+  `;
+}
+
+function compactTeacherProfileMarkup(teacherName) {
+  const directory = directoryTeacherByName(teacherName);
+  const details = teacherRoutineDetails(teacherName);
+  const displayedName = directory?.name || teacherName;
+  return `
+    <article class="teacher-search-profile" aria-label="${escapeHTML(`Profile for ${displayedName}`)}">
+      ${teacherAvatarMarkup(displayedName, directory, "teacher-search-avatar")}
+      <div class="teacher-search-identity">
+        <span>Selected teacher</span>
+        <h3>${escapeHTML(displayedName)}</h3>
+        <p>${escapeHTML(directory?.designation || "Designation not available")}</p>
+        ${
+          directory?.profile
+            ? `<a class="official-profile-link" href="${escapeHTML(directory.profile)}" target="_blank" rel="noopener noreferrer">Official profile</a>`
+            : ""
+        }
+      </div>
+      <div class="teacher-search-contacts">
+        ${compactTeacherContact("Email", directory?.email, displayedName, true)}
+        ${compactTeacherContact("Contact", directory?.contact, displayedName)}
+      </div>
+      <div class="teacher-search-stats">
+        <span><strong>${details.sessions}</strong> weekly ${details.sessions === 1 ? "session" : "sessions"}</span>
+        <span><strong>${details.courses.length}</strong> ${details.courses.length === 1 ? "course" : "courses"}</span>
+      </div>
+    </article>
+  `;
+}
+
 function renderResultSummary() {
   const isRoom = Boolean(state.room);
+  const selectedTeacher =
+    state.role === "teacher" && !isRoom ? exactSelectedTeacher() : "";
   const subtitle =
     state.view === "full"
       ? "Complete weekly routine"
@@ -787,6 +861,10 @@ function renderResultSummary() {
       ? "Teacher schedule"
       : "Student schedule";
 
+  elements.resultSummary.classList.toggle(
+    "has-teacher-profile",
+    Boolean(selectedTeacher),
+  );
   elements.resultSummary.innerHTML = `
     <div>
       <span class="summary-kicker">${escapeHTML(context)}</span>
@@ -797,7 +875,304 @@ function renderResultSummary() {
       <span><strong>${count}</strong><small>${count === 1 ? "class" : "classes"}</small></span>
       <span><strong>${routine.schedules.length}</strong><small>sections checked</small></span>
     </div>
+    ${selectedTeacher ? compactTeacherProfileMarkup(selectedTeacher) : ""}
   `;
+}
+
+function teacherRoutineDetails(teacherName) {
+  const classes = allInstances().filter((course) =>
+    (course.teachers || []).some(
+      (teacher) => normalize(teacher) === normalize(teacherName),
+    ),
+  );
+  const sessions = new Set(
+    classes.map(
+      (course) =>
+        `${course.day}-${course.slot}-${course.semesterId}-${course.sectionId}-${course.code}`,
+    ),
+  );
+  return {
+    sessions: sessions.size,
+    courses: [...new Set(classes.map((course) => course.code))].sort(),
+    cohorts: [
+      ...new Set(
+        classes.map((course) => `${course.semester} / ${course.section}`),
+      ),
+    ].sort(),
+    rooms: [...new Set(classes.map((course) => course.room).filter(Boolean))].sort(
+      (a, b) => a.localeCompare(b, undefined, { numeric: true }),
+    ),
+  };
+}
+
+function normalizeTeacherName(value) {
+  return normalize(value)
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function directoryTeacherByName(teacherName) {
+  const query = normalizeTeacherName(teacherName);
+  if (!query) return null;
+  return (
+    teacherDirectory.find((teacher) =>
+      [teacher.name, ...(teacher.aliases || [])].some(
+        (name) => normalizeTeacherName(name) === query,
+      ),
+    ) || null
+  );
+}
+
+function mergeTeacherDirectories(directory, officialFaculty) {
+  const usedOfficial = new Set();
+  const merged = directory.map((teacher) => {
+    const teacherNames = [teacher.name, ...(teacher.aliases || [])].map(
+      normalizeTeacherName,
+    );
+    const teacherEmail = normalize(teacher.email);
+    const officialIndex = officialFaculty.findIndex((official, index) => {
+      if (usedOfficial.has(index)) return false;
+      if (teacherEmail && normalize(official.email) === teacherEmail) return true;
+      return teacherNames.includes(normalizeTeacherName(official.name));
+    });
+    if (officialIndex < 0) return teacher;
+
+    usedOfficial.add(officialIndex);
+    const official = officialFaculty[officialIndex];
+    return {
+      ...teacher,
+      designation: official.designation || teacher.designation,
+      email: official.email || teacher.email,
+      image: official.image || "",
+      profile: official.profile || "",
+      officialName: official.name || teacher.name,
+    };
+  });
+
+  officialFaculty.forEach((official, index) => {
+    if (usedOfficial.has(index)) return;
+    merged.push({
+      name: official.name,
+      designation: official.designation || "",
+      email: official.email || "",
+      contact: "",
+      image: official.image || "",
+      profile: official.profile || "",
+      aliases: [],
+    });
+  });
+  return merged;
+}
+
+function teacherInitials(name) {
+  const parts = String(name || "")
+    .replaceAll(".", "")
+    .split(/\s+/)
+    .filter(Boolean);
+  return (parts.slice(0, 2).map((part) => part[0]).join("") || "T").toUpperCase();
+}
+
+function teacherAvatarMarkup(name, directory, className) {
+  return `
+    <span class="${escapeHTML(className)}" aria-hidden="true">
+      <span>${escapeHTML(teacherInitials(name))}</span>
+      ${
+        directory?.image
+          ? `<img src="${escapeHTML(directory.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" />`
+          : ""
+      }
+    </span>
+  `;
+}
+
+function closeClassDetails() {
+  if (!elements.classDialog) return;
+  if (typeof elements.classDialog.close === "function") {
+    elements.classDialog.close();
+  } else {
+    elements.classDialog.removeAttribute("open");
+  }
+}
+
+function copyableTeacherFact(label, value, teacherName, href = "") {
+  const cleanValue = String(value || "").trim();
+  if (!cleanValue) {
+    return `
+      <div class="teacher-contact-item unavailable">
+        <span>${escapeHTML(label)}</span>
+        <div><strong>Not available</strong></div>
+      </div>
+    `;
+  }
+
+  const renderedValue = href
+    ? `<a href="${escapeHTML(href)}">${escapeHTML(cleanValue)}</a>`
+    : `<strong>${escapeHTML(cleanValue)}</strong>`;
+  return `
+    <div class="teacher-contact-item">
+      <span>${escapeHTML(label)}</span>
+      <div>
+        ${renderedValue}
+        <button
+          class="copy-detail-button"
+          type="button"
+          data-copy-value="${escapeHTML(cleanValue)}"
+          data-copy-label="${escapeHTML(`${teacherName}'s ${label.toLowerCase()}`)}"
+          aria-label="${escapeHTML(`Copy ${teacherName}'s ${label.toLowerCase()}`)}"
+        >Copy</button>
+      </div>
+    </div>
+  `;
+}
+
+async function copyText(value) {
+  if (navigator.clipboard?.writeText) {
+    await navigator.clipboard.writeText(value);
+    return;
+  }
+
+  const textarea = document.createElement("textarea");
+  textarea.value = value;
+  textarea.setAttribute("readonly", "");
+  textarea.style.position = "fixed";
+  textarea.style.opacity = "0";
+  document.body.appendChild(textarea);
+  textarea.select();
+  const copied = document.execCommand("copy");
+  textarea.remove();
+  if (!copied) throw new Error("Copy command was not available.");
+}
+
+async function handleCopyDetailClick(event) {
+  const target = event.target;
+  if (!(target instanceof Element)) return;
+  const button = target.closest(".copy-detail-button");
+  if (!button) return;
+  try {
+    await copyText(button.dataset.copyValue || "");
+    const originalLabel = button.textContent;
+    button.textContent = "Copied";
+    showToast(`${button.dataset.copyLabel || "Teacher detail"} copied.`);
+    window.setTimeout(() => {
+      button.textContent = originalLabel;
+    }, 1600);
+  } catch (error) {
+    console.error(error);
+    showToast("Could not copy this detail.");
+  }
+}
+
+function openClassDetails(course) {
+  if (
+    !elements.classDialog ||
+    !elements.classDialogTitle ||
+    !elements.classDialogContent
+  ) {
+    return;
+  }
+
+  const slot = slotById(course.slot);
+  const teachers = Array.isArray(course.teachers) ? course.teachers : [];
+  const teacherMarkup = teachers.length
+    ? teachers
+        .map((teacher) => {
+          const details = teacherRoutineDetails(teacher);
+          const directory = directoryTeacherByName(teacher);
+          const displayedName = directory?.name || teacher;
+          const sessionLabel = details.sessions === 1 ? "session" : "sessions";
+          return `
+            <article class="teacher-profile">
+              ${teacherAvatarMarkup(displayedName, directory, "teacher-initial")}
+              <div class="teacher-profile-main">
+                <span>${directory ? "Teacher directory" : "Routine profile"}</span>
+                <h3>${escapeHTML(displayedName)}</h3>
+                <p>${escapeHTML(directory?.designation || "Designation not available")} &middot; ${details.sessions} weekly ${sessionLabel}</p>
+                ${
+                  directory?.profile
+                    ? `<a class="official-profile-link" href="${escapeHTML(directory.profile)}" target="_blank" rel="noopener noreferrer">Official profile</a>`
+                    : ""
+                }
+              </div>
+              <div class="teacher-contact-grid">
+                ${copyableTeacherFact("Name", displayedName, displayedName)}
+                ${copyableTeacherFact("Designation", directory?.designation, displayedName)}
+                ${copyableTeacherFact(
+                  "Email",
+                  directory?.email,
+                  displayedName,
+                  directory?.email ? `mailto:${directory.email}` : "",
+                )}
+                ${copyableTeacherFact("Contact", directory?.contact, displayedName)}
+              </div>
+              <dl class="teacher-routine-facts">
+                <div><dt>Courses</dt><dd>${escapeHTML(details.courses.join(", ") || "Not listed")}</dd></div>
+                <div><dt>Sections</dt><dd>${escapeHTML(details.cohorts.join(", ") || "Not listed")}</dd></div>
+                <div><dt>Rooms</dt><dd>${escapeHTML(details.rooms.join(", ") || "Not listed")}</dd></div>
+              </dl>
+            </article>
+          `;
+        })
+        .join("")
+    : `
+      <article class="teacher-profile empty">
+        <div class="teacher-profile-main">
+          <span>Routine profile</span>
+          <h3>Teacher not listed</h3>
+          <p>The official routine does not include a teacher name for this class.</p>
+        </div>
+      </article>
+    `;
+
+  elements.classDialogTitle.textContent = `${course.code} details`;
+  elements.classDialogContent.innerHTML = `
+    <div class="class-detail-course">
+      <div>
+        <span>${escapeHTML(course.code)}</span>
+        <strong>${escapeHTML(course.type === "lab" ? "Lab class" : "Theory class")}</strong>
+      </div>
+      <h3>${escapeHTML(course.title)}</h3>
+    </div>
+    <div class="class-detail-facts">
+      <div><span>Schedule</span><strong>${escapeHTML(course.day)}, ${escapeHTML(formatTime(slot.start))} – ${escapeHTML(formatTime(slot.end))}</strong></div>
+      <div><span>Semester and section</span><strong>${escapeHTML(course.semester)} / ${escapeHTML(course.section)}</strong></div>
+      <div><span>Classroom</span><strong>${escapeHTML(course.room || "Not listed")}</strong></div>
+      <div><span>Slot</span><strong>Slot ${escapeHTML(slot.id)}</strong></div>
+    </div>
+    <section class="class-teachers" aria-label="Teacher details">
+      <header>
+        <span>Teaching team</span>
+        <h3>${teachers.length} ${teachers.length === 1 ? "teacher" : "teachers"} assigned</h3>
+      </header>
+      <div class="teacher-profile-list">${teacherMarkup}</div>
+    </section>
+  `;
+
+  lastClassTrigger =
+    document.activeElement instanceof HTMLElement ? document.activeElement : null;
+  if (typeof elements.classDialog.showModal === "function") {
+    elements.classDialog.showModal();
+  } else {
+    elements.classDialog.setAttribute("open", "");
+  }
+  elements.classDialogClose?.focus();
+}
+
+function makeClassInteractive(element, course) {
+  element.classList.add("class-card-actionable");
+  element.tabIndex = 0;
+  element.setAttribute("role", "button");
+  element.setAttribute("aria-haspopup", "dialog");
+  element.setAttribute(
+    "aria-label",
+    `View class and teacher details for ${course.code}, ${course.title}`,
+  );
+  element.addEventListener("click", () => openClassDetails(course));
+  element.addEventListener("keydown", (event) => {
+    if (event.key !== "Enter" && event.key !== " ") return;
+    event.preventDefault();
+    openClassDetails(course);
+  });
 }
 
 function classCard(course, options = {}) {
@@ -827,12 +1202,14 @@ function classCard(course, options = {}) {
       </div>
       <h3>${escapeHTML(course.title)}</h3>
       <p>${escapeHTML((course.teachers || []).join(", "))}</p>
+      <span class="class-detail-action" aria-hidden="true">View details</span>
     </div>
     <div class="class-room">
       <span>Room</span>
       <strong>${escapeHTML(course.room)}</strong>
     </div>
   `;
+  makeClassInteractive(article, course);
   return article;
 }
 
@@ -935,7 +1312,7 @@ function renderOffDay(kind = "student") {
 function renderNoMatch() {
   elements.content.innerHTML = `
     <section class="workspace-empty">
-      <span aria-hidden="true">&#9906;</span>
+      <span aria-hidden="true">NO</span>
       <div>
         <p>Search filter</p>
         <h3>No matching class</h3>
@@ -1053,6 +1430,7 @@ function renderRoomDay() {
           <p><strong>${escapeHTML(course.semester)} / ${escapeHTML(course.section)}</strong>${escapeHTML(course.title)}</p>
           <small>${escapeHTML(course.teachers.join(", "))}</small>
         `;
+        makeClassInteractive(item, course);
         details.appendChild(item);
       });
       row.appendChild(details);
@@ -1069,14 +1447,17 @@ function fullGridClasses(dayName, slotId) {
 }
 
 function fullCellCard(course) {
-  return `
-    <article class="grid-course ${escapeHTML(course.type || "theory")}">
+  const article = document.createElement("article");
+  article.className = `grid-course ${course.type || "theory"}`;
+  article.innerHTML = `
       <div><strong>${escapeHTML(course.code)}</strong><span>${escapeHTML(course.room)}</span></div>
       <p>${escapeHTML(course.title)}</p>
       <small>${escapeHTML(course.semester)} / ${escapeHTML(course.section)}</small>
       <small>${escapeHTML(course.teachers.join(", "))}</small>
-    </article>
+      <span class="grid-detail-action" aria-hidden="true">Details</span>
   `;
+  makeClassInteractive(article, course);
+  return article;
 }
 
 function renderFullRoutine() {
@@ -1125,7 +1506,7 @@ function renderFullRoutine() {
       const cell = document.createElement("div");
       cell.className = `full-cell${classes.length ? "" : " empty"}`;
       if (classes.length) {
-        cell.innerHTML = classes.map(fullCellCard).join("");
+        cell.replaceChildren(...classes.map(fullCellCard));
       } else if (state.room) {
         cell.innerHTML = `<span class="free-cell">${routine.meta.coverage.isComplete ? "Free" : "Free*"}</span>`;
       } else {
@@ -1188,7 +1569,7 @@ function setView(view) {
 
 function setTheme(dark) {
   document.body.classList.toggle("dark", dark);
-  elements.theme.innerHTML = `<span aria-hidden="true">${dark ? "&#9728;" : "&#9790;"}</span>`;
+  elements.theme.textContent = dark ? "Light" : "Dark";
   elements.theme.setAttribute(
     "aria-label",
     dark ? "Use light theme" : "Use dark theme",
@@ -1250,6 +1631,16 @@ function bindEvents() {
     setTheme(!document.body.classList.contains("dark")),
   );
 
+  elements.classDialogClose?.addEventListener("click", closeClassDetails);
+  elements.classDialog?.addEventListener("click", (event) => {
+    if (event.target === elements.classDialog) closeClassDetails();
+  });
+  elements.classDialog?.addEventListener("close", () => {
+    lastClassTrigger?.focus();
+    lastClassTrigger = null;
+  });
+  document.addEventListener("click", handleCopyDetailClick);
+
   bindCombobox("teacher");
   bindCombobox("room");
   document.addEventListener("click", (event) => {
@@ -1264,6 +1655,36 @@ async function init() {
     const response = await fetch("./routine.json", { cache: "no-store" });
     if (!response.ok) throw new Error(`Routine request failed: ${response.status}`);
     routine = await response.json();
+    let suppliedDirectory = [];
+    let officialDirectory = [];
+    try {
+      const teacherResponse = await fetch(
+        "./assets/teachers.json?v=20260726-3",
+        { cache: "no-store" },
+      );
+      if (teacherResponse.ok) {
+        const directory = await teacherResponse.json();
+        suppliedDirectory = Array.isArray(directory.teachers)
+          ? directory.teachers
+          : [];
+      }
+    } catch {}
+    try {
+      const officialResponse = await fetch(
+        "./assets/official-faculty.json?v=20260726-1",
+        { cache: "no-store" },
+      );
+      if (officialResponse.ok) {
+        const official = await officialResponse.json();
+        officialDirectory = Array.isArray(official.faculty)
+          ? official.faculty
+          : [];
+      }
+    } catch {}
+    teacherDirectory = mergeTeacherDirectories(
+      suppliedDirectory,
+      officialDirectory,
+    );
 
     state.selectedDate = getDhakaParts().iso;
     loadPreferences();
