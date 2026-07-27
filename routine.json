@@ -5,12 +5,12 @@
     "timezone": "Asia/Dhaka",
     "source": "Varendra University official student routine portal",
     "updated": "2026-07-27",
-    "lastSyncedAt": "2026-07-27T10:10:04+06:00",
+    "lastSyncedAt": "2026-07-27T16:14:53+06:00",
     "coverage": {
       "loadedSchedules": 38,
       "isComplete": true,
       "scannedCombinations": 240,
-      "totalClasses": 545,
+      "totalClasses": 547,
       "note": "All 240 official semester/section combinations were checked; 38 published routines were found."
     }
   },
@@ -396,6 +396,17 @@
               ],
               "room": "913",
               "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "CSE 1100",
+              "title": "Computer Fundamentals Lab",
+              "teachers": [
+                "Toufikul Islam",
+                "Md. Muktar Hossain"
+              ],
+              "room": "104 CNL",
+              "type": "lab"
             }
           ]
         },
@@ -486,17 +497,6 @@
           "name": "Wednesday",
           "short": "Wed",
           "classes": [
-            {
-              "slot": 5,
-              "code": "CSE 1100",
-              "title": "Computer Fundamentals Lab",
-              "teachers": [
-                "Toufikul Islam",
-                "Md. Muktar Hossain"
-              ],
-              "room": "106 DSAL",
-              "type": "lab"
-            },
             {
               "slot": 6,
               "code": "ENG 0002",
@@ -5725,13 +5725,13 @@
               "type": "theory"
             },
             {
-              "slot": 5,
+              "slot": 6,
               "code": "CSE 3209",
               "title": "E-commerce and Web Programming",
               "teachers": [
                 "Toufikul Islam"
               ],
-              "room": "514",
+              "room": "513",
               "type": "theory"
             }
           ]
@@ -5939,6 +5939,16 @@
               "type": "lab"
             },
             {
+              "slot": 5,
+              "code": "CSE 3205",
+              "title": "Microprocessor and Assembly Language",
+              "teachers": [
+                "Md. Adnan Sami"
+              ],
+              "room": "414",
+              "type": "theory"
+            },
+            {
               "slot": 6,
               "code": "CSE 3201",
               "title": "Theory of Computation and Compiler Design",
@@ -6037,25 +6047,46 @@
           "short": "Wed",
           "classes": [
             {
-              "slot": 5,
-              "code": "CSE 3204",
-              "title": "Operating System and System Programming Lab",
+              "slot": 3,
+              "code": "CSE 3203",
+              "title": "Operating System and System Programming",
               "teachers": [
-                "MD. FAYZUL ISLAM",
-                "Sajeeb Kumar Ray"
+                "MD. FAYZUL ISLAM"
+              ],
+              "room": "410",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "CSE 3207",
+              "title": "Digital Signal Processing",
+              "teachers": [
+                "Shamim Reza"
+              ],
+              "room": "413",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "CSE 3210",
+              "title": "E-commerce and Web Programming Project Lab",
+              "teachers": [
+                "Toufikul Islam",
+                "Barisha Chowdhury"
               ],
               "room": "129 SEL",
               "type": "lab"
             },
             {
               "slot": 6,
-              "code": "CSE 3209",
-              "title": "E-commerce and Web Programming",
+              "code": "CSE 3210",
+              "title": "E-commerce and Web Programming Project Lab",
               "teachers": [
+                "Toufikul Islam",
                 "Barisha Chowdhury"
               ],
-              "room": "411",
-              "type": "theory"
+              "room": "129 SEL",
+              "type": "lab"
             }
           ]
         },
@@ -6064,33 +6095,13 @@
           "short": "Thu",
           "classes": [
             {
-              "slot": 1,
-              "code": "CSE 3205",
-              "title": "Microprocessor and Assembly Language",
-              "teachers": [
-                "Md. Adnan Sami"
-              ],
-              "room": "414",
-              "type": "theory"
-            },
-            {
-              "slot": 2,
-              "code": "CSE 3203",
-              "title": "Operating System and System Programming",
-              "teachers": [
-                "MD. FAYZUL ISLAM"
-              ],
-              "room": "1003",
-              "type": "theory"
-            },
-            {
               "slot": 3,
-              "code": "CSE 3207",
-              "title": "Digital Signal Processing",
+              "code": "CSE 3209",
+              "title": "E-commerce and Web Programming",
               "teachers": [
-                "Shamim Reza"
+                "Barisha Chowdhury"
               ],
-              "room": "1013",
+              "room": "1008",
               "type": "theory"
             },
             {
@@ -6102,6 +6113,17 @@
                 "Akib Ikbal"
               ],
               "room": "128 BCL",
+              "type": "lab"
+            },
+            {
+              "slot": 6,
+              "code": "CSE 3204",
+              "title": "Operating System and System Programming Lab",
+              "teachers": [
+                "MD. FAYZUL ISLAM",
+                "Sajeeb Kumar Ray"
+              ],
+              "room": "129 SEL",
               "type": "lab"
             }
           ]
@@ -7586,7 +7608,7 @@
               "teachers": [
                 "Md. Muktar Hossain"
               ],
-              "room": "910",
+              "room": "408",
               "type": "theory"
             },
             {
