@@ -4,13 +4,13 @@
     "program": "B. Sc. in CSE",
     "timezone": "Asia/Dhaka",
     "source": "Varendra University official student routine portal",
-    "updated": "2026-07-27",
-    "lastSyncedAt": "2026-07-27T16:14:53+06:00",
+    "updated": "2026-08-01",
+    "lastSyncedAt": "2026-08-01T01:59:42+06:00",
     "coverage": {
       "loadedSchedules": 38,
       "isComplete": true,
       "scannedCombinations": 240,
-      "totalClasses": 547,
+      "totalClasses": 550,
       "note": "All 240 official semester/section combinations were checked; 38 published routines were found."
     }
   },
@@ -3450,12 +3450,23 @@
             },
             {
               "slot": 4,
+              "code": "CSE 2202",
+              "title": "Object Oriented Design and Design Patterns Lab",
+              "teachers": [
+                "Md. Nour Nabi",
+                "Mohammad Faisal Al-Naser"
+              ],
+              "room": "104 CNL",
+              "type": "lab"
+            },
+            {
+              "slot": 5,
               "code": "MAT 2241",
               "title": "Linear Algebra and Complex Variables",
               "teachers": [
                 "Anupoma Barman Shetu"
               ],
-              "room": "1012",
+              "room": "1010",
               "type": "theory"
             }
           ]
@@ -3557,10 +3568,10 @@
           "classes": [
             {
               "slot": 1,
-              "code": "CSE 2207",
-              "title": "Computer Networks",
+              "code": "CSE 2201",
+              "title": "Object Oriented Design and Design Patterns",
               "teachers": [
-                "Akib Ikbal"
+                "Mohammad Faisal Al-Naser"
               ],
               "room": "1013",
               "type": "theory"
@@ -3573,6 +3584,16 @@
                 "Anupoma Barman Shetu"
               ],
               "room": "1013",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "CSE 2207",
+              "title": "Computer Networks",
+              "teachers": [
+                "Akib Ikbal"
+              ],
+              "room": "1010",
               "type": "theory"
             }
           ]
@@ -3669,13 +3690,14 @@
             },
             {
               "slot": 3,
-              "code": "CSE 2201",
-              "title": "Object Oriented Design and Design Patterns",
+              "code": "CSE 2202",
+              "title": "Object Oriented Design and Design Patterns Lab",
               "teachers": [
-                "Mohammad Faisal Al-Naser"
+                "Mohammad Faisal Al-Naser",
+                "Md. Shahid Ahammed Shakil"
               ],
-              "room": "414",
-              "type": "theory"
+              "room": "128 BCL",
+              "type": "lab"
             },
             {
               "slot": 4,
@@ -3749,16 +3771,6 @@
               "type": "lab"
             },
             {
-              "slot": 2,
-              "code": "MAT 2241",
-              "title": "Linear Algebra and Complex Variables",
-              "teachers": [
-                "Anupoma Barman Shetu"
-              ],
-              "room": "814",
-              "type": "theory"
-            },
-            {
               "slot": 3,
               "code": "CSE 2201",
               "title": "Object Oriented Design and Design Patterns",
@@ -3770,6 +3782,17 @@
             },
             {
               "slot": 4,
+              "code": "CSE 2202",
+              "title": "Object Oriented Design and Design Patterns Lab",
+              "teachers": [
+                "Mohammad Faisal Al-Naser",
+                "Md. Shahid Ahammed Shakil"
+              ],
+              "room": "104 CNL",
+              "type": "lab"
+            },
+            {
+              "slot": 5,
               "code": "CSE 2202",
               "title": "Object Oriented Design and Design Patterns Lab",
               "teachers": [
@@ -3796,6 +3819,16 @@
               "type": "theory"
             },
             {
+              "slot": 2,
+              "code": "MAT 2241",
+              "title": "Linear Algebra and Complex Variables",
+              "teachers": [
+                "Anupoma Barman Shetu"
+              ],
+              "room": "413",
+              "type": "theory"
+            },
+            {
               "slot": 3,
               "code": "CSE 2207",
               "title": "Computer Networks",
@@ -3813,13 +3846,14 @@
           "classes": [
             {
               "slot": 1,
-              "code": "CSE 2207",
-              "title": "Computer Networks",
+              "code": "CSE 2208",
+              "title": "Computer Networks Lab",
               "teachers": [
-                "Akib Ikbal"
+                "Akib Ikbal",
+                "Ahmed Al Azmain"
               ],
-              "room": "413",
-              "type": "theory"
+              "room": "104 CNL",
+              "type": "lab"
             },
             {
               "slot": 2,
@@ -3833,14 +3867,13 @@
             },
             {
               "slot": 4,
-              "code": "CSE 2208",
-              "title": "Computer Networks Lab",
+              "code": "CSE 2207",
+              "title": "Computer Networks",
               "teachers": [
-                "Akib Ikbal",
-                "Ahmed Al Azmain"
+                "Akib Ikbal"
               ],
-              "room": "104 CNL",
-              "type": "lab"
+              "room": "303",
+              "type": "theory"
             }
           ]
         },
@@ -3953,6 +3986,16 @@
           "short": "Mon",
           "classes": [
             {
+              "slot": 3,
+              "code": "MAT 3141",
+              "title": "Applied Statistics and Probability",
+              "teachers": [
+                "Ahammad Hossain"
+              ],
+              "room": "907",
+              "type": "theory"
+            },
+            {
               "slot": 4,
               "code": "CSE 3107",
               "title": "Communication Engineering",
@@ -3961,17 +4004,6 @@
               ],
               "room": "1011",
               "type": "theory"
-            },
-            {
-              "slot": 5,
-              "code": "CSE 3102",
-              "title": "Computer Graphics Lab",
-              "teachers": [
-                "Ayesha Akter Lima",
-                "S.M. Mahadi Hasan"
-              ],
-              "room": "104 CNL",
-              "type": "lab"
             },
             {
               "slot": 6,
@@ -4027,13 +4059,14 @@
             },
             {
               "slot": 5,
-              "code": "MAT 3141",
-              "title": "Applied Statistics and Probability",
+              "code": "CSE 3102",
+              "title": "Computer Graphics Lab",
               "teachers": [
-                "Ahammad Hossain"
+                "Ayesha Akter Lima",
+                "S.M. Mahadi Hasan"
               ],
-              "room": "404",
-              "type": "theory"
+              "room": "106 DSAL",
+              "type": "lab"
             },
             {
               "slot": 6,
@@ -5094,16 +5127,6 @@
           "short": "Mon",
           "classes": [
             {
-              "slot": 1,
-              "code": "MAT 3141",
-              "title": "Applied Statistics and Probability",
-              "teachers": [
-                "Ahammad Hossain"
-              ],
-              "room": "408",
-              "type": "theory"
-            },
-            {
               "slot": 3,
               "code": "CSE 3107",
               "title": "Communication Engineering",
@@ -5121,6 +5144,16 @@
                 "Protik Chakroborty"
               ],
               "room": "411",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "CSE 3101",
+              "title": "Computer Graphics",
+              "teachers": [
+                "Ayesha Akter Lima"
+              ],
+              "room": "1003",
               "type": "theory"
             }
           ]
@@ -5189,12 +5222,12 @@
             },
             {
               "slot": 3,
-              "code": "CSE 3101",
-              "title": "Computer Graphics",
+              "code": "MAT 3141",
+              "title": "Applied Statistics and Probability",
               "teachers": [
-                "Ayesha Akter Lima"
+                "Ahammad Hossain"
               ],
-              "room": "513",
+              "room": "414",
               "type": "theory"
             },
             {
