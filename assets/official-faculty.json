@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-30",
+  "updated": "2026-08-03",
   "department": "cse",
   "source": "https://vu.edu.bd/academics/departments/computer-science-and-engineering/faculty-members",
   "faculty": [
@@ -326,13 +326,6 @@
       "profile": "https://vu.edu.bd/profile/02667/zuairia-raisa-bintay-makin"
     },
     {
-      "name": "Anupoma Barmon Shetu",
-      "designation": "Lecturer",
-      "email": "anupoma@vu.edu.bd",
-      "image": "https://portfolio.vu.edu.bd/uploads/02694.jpg",
-      "profile": "https://vu.edu.bd/profile/02694/anupoma-barman-shetu"
-    },
-    {
       "name": "Sajeeb Kumar Ray",
       "designation": "Lecturer",
       "email": "sajeeb@vu.edu.bd",
@@ -387,13 +380,6 @@
       "email": "khalid@vu.edu.bd",
       "image": "https://portfolio.vu.edu.bd/uploads/02733.jpg",
       "profile": "https://vu.edu.bd/profile/02733/md-khalid-sakib"
-    },
-    {
-      "name": "Fahmida Akter Jesis Shithi",
-      "designation": "Lecturer",
-      "email": "fahmida@vu.edu.bd",
-      "image": "",
-      "profile": "https://vu.edu.bd/profile/02736/fahmida-akter-jesis-shithi"
     },
     {
       "name": "Mohd Ruhul Ameen",

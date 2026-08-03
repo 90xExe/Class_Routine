@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-26",
+  "updated": "2026-08-03",
   "department": "nfe",
   "source": "https://vu.edu.bd/academics/departments/nutrition-and-food-engineering/faculty-members",
   "faculty": [
@@ -44,6 +44,13 @@
       "email": "mrinal@vu.edu.bd",
       "image": "https://portfolio.vu.edu.bd/uploads/02724.jpg",
       "profile": "https://vu.edu.bd/profile/02724/mrinal-kanti-debnath"
+    },
+    {
+      "name": "Sudipto Das Shuvo",
+      "designation": "Lecturer",
+      "email": "sudipto@vu.edu.bd",
+      "image": "",
+      "profile": "https://vu.edu.bd/profile/02762/sudipto-das-shuvo"
     },
     {
       "name": "Mohosina Hossain Misha",
