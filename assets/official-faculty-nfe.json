@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-03",
+  "updated": "2026-08-04",
   "department": "nfe",
   "source": "https://vu.edu.bd/academics/departments/nutrition-and-food-engineering/faculty-members",
   "faculty": [
@@ -74,10 +74,10 @@
       "profile": "https://vu.edu.bd/profile/02742/kohinur-akter"
     },
     {
-      "name": "Md. Alahi Boxes",
+      "name": "Md Alahi Boxes",
       "designation": "Lecturer",
       "email": "alahi@vu.edu.bd",
-      "image": "",
+      "image": "https://portfolio.vu.edu.bd/uploads/02743.jpg",
       "profile": "https://vu.edu.bd/profile/02743/md-alahi-boxes"
     },
     {
