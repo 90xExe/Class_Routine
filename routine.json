@@ -4,8 +4,8 @@
     "program": "B. Sc. in CSE",
     "timezone": "Asia/Dhaka",
     "source": "Varendra University official student routine portal",
-    "updated": "2026-08-02",
-    "lastSyncedAt": "2026-08-02T20:04:49+06:00",
+    "updated": "2026-08-06",
+    "lastSyncedAt": "2026-08-06T20:41:55+06:00",
     "coverage": {
       "loadedSchedules": 38,
       "isComplete": true,
@@ -1684,6 +1684,16 @@
           "short": "Sun",
           "classes": [
             {
+              "slot": 2,
+              "code": "CSE 1203",
+              "title": "Discrete Mathematics",
+              "teachers": [
+                "Mst. Jannatul Ferdous"
+              ],
+              "room": "311",
+              "type": "theory"
+            },
+            {
               "slot": 3,
               "code": "BAN 0001",
               "title": "History of the Emergence of Bangladesh",
@@ -1765,16 +1775,6 @@
                 "Adrita Alam"
               ],
               "room": "313",
-              "type": "theory"
-            },
-            {
-              "slot": 5,
-              "code": "CSE 1203",
-              "title": "Discrete Mathematics",
-              "teachers": [
-                "Mst. Jannatul Ferdous"
-              ],
-              "room": "314",
               "type": "theory"
             }
           ]
@@ -2733,6 +2733,16 @@
           "short": "Mon",
           "classes": [
             {
+              "slot": 2,
+              "code": "CSE 2103",
+              "title": "Data Structures",
+              "teachers": [
+                "Afroza Islam"
+              ],
+              "room": "1008",
+              "type": "theory"
+            },
+            {
               "slot": 3,
               "code": "ECO 2171",
               "title": "Engineering Economics",
@@ -2750,16 +2760,6 @@
                 "A.S.M Delwar Hossain"
               ],
               "room": "812",
-              "type": "theory"
-            },
-            {
-              "slot": 6,
-              "code": "CSE 2103",
-              "title": "Data Structures",
-              "teachers": [
-                "Afroza Islam"
-              ],
-              "room": "1008",
               "type": "theory"
             }
           ]
@@ -2846,6 +2846,16 @@
           "short": "Thu",
           "classes": [
             {
+              "slot": 2,
+              "code": "CSE 2103",
+              "title": "Data Structures",
+              "teachers": [
+                "Afroza Islam"
+              ],
+              "room": "913",
+              "type": "theory"
+            },
+            {
               "slot": 4,
               "code": "ECO 2171",
               "title": "Engineering Economics",
@@ -2863,16 +2873,6 @@
                 "Sraboni Mostofa"
               ],
               "room": "509",
-              "type": "theory"
-            },
-            {
-              "slot": 6,
-              "code": "CSE 2103",
-              "title": "Data Structures",
-              "teachers": [
-                "Afroza Islam"
-              ],
-              "room": "913",
               "type": "theory"
             }
           ]
@@ -5598,6 +5598,16 @@
           "short": "Tue",
           "classes": [
             {
+              "slot": 2,
+              "code": "CSE 3209",
+              "title": "E-commerce and Web Programming",
+              "teachers": [
+                "Toufikul Islam"
+              ],
+              "room": "311",
+              "type": "theory"
+            },
+            {
               "slot": 3,
               "code": "CSE 3203",
               "title": "Operating System and System Programming",
@@ -5615,16 +5625,6 @@
                 "MST. Bellyful"
               ],
               "room": "1012",
-              "type": "theory"
-            },
-            {
-              "slot": 6,
-              "code": "CSE 3209",
-              "title": "E-commerce and Web Programming",
-              "teachers": [
-                "Toufikul Islam"
-              ],
-              "room": "1008",
               "type": "theory"
             }
           ]
