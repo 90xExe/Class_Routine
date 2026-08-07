@@ -4,8 +4,8 @@
     "program": "B. Sc. in CSE",
     "timezone": "Asia/Dhaka",
     "source": "Varendra University official student routine portal",
-    "updated": "2026-08-06",
-    "lastSyncedAt": "2026-08-06T20:41:55+06:00",
+    "updated": "2026-08-08",
+    "lastSyncedAt": "2026-08-08T01:22:49+06:00",
     "coverage": {
       "loadedSchedules": 38,
       "isComplete": true,
@@ -3415,7 +3415,7 @@
               "code": "CSE 2208",
               "title": "Computer Networks Lab",
               "teachers": [
-                "Umme Rumman",
+                "D. M. Asadujjaman",
                 "Akib Ikbal"
               ],
               "room": "104 CNL",
@@ -3655,7 +3655,7 @@
               "code": "CSE 2208",
               "title": "Computer Networks Lab",
               "teachers": [
-                "Umme Rumman",
+                "D. M. Asadujjaman",
                 "Akib Ikbal"
               ],
               "room": "104 CNL",
