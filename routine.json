@@ -4,8 +4,8 @@
     "program": "B. Sc. in CSE",
     "timezone": "Asia/Dhaka",
     "source": "Varendra University official student routine portal",
-    "updated": "2026-08-08",
-    "lastSyncedAt": "2026-08-08T01:22:49+06:00",
+    "updated": "2026-08-11",
+    "lastSyncedAt": "2026-08-11T19:50:04+06:00",
     "coverage": {
       "loadedSchedules": 38,
       "isComplete": true,
@@ -621,7 +621,7 @@
               "title": "Computer Fundamentals Lab",
               "teachers": [
                 "Md. Muktar Hossain",
-                "Sushmit Jahan Rose"
+                "Shah Rafatur Rahman"
               ],
               "room": "103 DMSL",
               "type": "lab"
@@ -891,7 +891,7 @@
               "title": "Computer Fundamentals Lab",
               "teachers": [
                 "Md. Muktar Hossain",
-                "Sushmit Jahan Rose"
+                "Shah Rafatur Rahman"
               ],
               "room": "129 SEL",
               "type": "lab"
@@ -997,7 +997,7 @@
               "code": "CSE 1100",
               "title": "Computer Fundamentals Lab",
               "teachers": [
-                "Sushmit Jahan Rose",
+                "Shah Rafatur Rahman",
                 "Md. Khalid Sakib"
               ],
               "room": "106 DSAL",
@@ -1137,7 +1137,7 @@
               "title": "Computer Fundamentals Lab",
               "teachers": [
                 "Md. Shahid Ahammed Shakil",
-                "Sushmit Jahan Rose"
+                "Shah Rafatur Rahman"
               ],
               "room": "104 CNL",
               "type": "lab"
@@ -6188,7 +6188,7 @@
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
-                "BA New Teacher 1"
+                "Saiful Islam"
               ],
               "room": "408",
               "type": "theory"
@@ -6274,7 +6274,7 @@
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
-                "BA New Teacher 1"
+                "Saiful Islam"
               ],
               "room": "1013",
               "type": "theory"
@@ -6438,7 +6438,7 @@
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
-                "BA New Teacher 1"
+                "Saiful Islam"
               ],
               "room": "1008",
               "type": "theory"
@@ -6484,7 +6484,7 @@
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
-                "BA New Teacher 1"
+                "Saiful Islam"
               ],
               "room": "1011",
               "type": "theory"
@@ -6591,7 +6591,7 @@
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
-                "BA New Teacher 4"
+                "Afsara Mahazabin"
               ],
               "room": "509",
               "type": "theory"
@@ -6664,7 +6664,7 @@
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
-                "BA New Teacher 4"
+                "Afsara Mahazabin"
               ],
               "room": "311",
               "type": "theory"
@@ -6825,7 +6825,7 @@
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
-                "BA New Teacher 4"
+                "Afsara Mahazabin"
               ],
               "room": "414",
               "type": "theory"
@@ -6852,7 +6852,7 @@
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
-                "BA New Teacher 4"
+                "Afsara Mahazabin"
               ],
               "room": "314",
               "type": "theory"
@@ -7003,7 +7003,7 @@
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
-                "BA New Teacher 2"
+                "Md. Rafiqul Islam"
               ],
               "room": "414",
               "type": "theory"
@@ -7086,7 +7086,7 @@
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
-                "BA New Teacher 2"
+                "Md. Rafiqul Islam"
               ],
               "room": "314",
               "type": "theory"
@@ -7158,7 +7158,7 @@
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
-                "BA New Teacher 2"
+                "Md. Rafiqul Islam"
               ],
               "room": "1012",
               "type": "theory"
@@ -7258,7 +7258,7 @@
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
-                "BA New Teacher 2"
+                "Md. Rafiqul Islam"
               ],
               "room": "311",
               "type": "theory"
@@ -7375,7 +7375,7 @@
               "code": "CSE 4203",
               "title": "Cryptography and Network Security",
               "teachers": [
-                "Sushmit Jahan Rose"
+                "Shah Rafatur Rahman"
               ],
               "room": "311",
               "type": "theory"
@@ -7402,7 +7402,7 @@
               "code": "CSE 4203",
               "title": "Cryptography and Network Security",
               "teachers": [
-                "Sushmit Jahan Rose"
+                "Shah Rafatur Rahman"
               ],
               "room": "509",
               "type": "theory"
@@ -7438,7 +7438,7 @@
               "code": "CSE 4204",
               "title": "Cryptography and Network Security Lab",
               "teachers": [
-                "Sushmit Jahan Rose",
+                "Shah Rafatur Rahman",
                 "Md. Arshad Wasif"
               ],
               "room": "106 DSAL",
@@ -7533,7 +7533,7 @@
               "code": "CSE 4204",
               "title": "Cryptography and Network Security Lab",
               "teachers": [
-                "Sushmit Jahan Rose",
+                "Shah Rafatur Rahman",
                 "Syeda Tamanna Alam Monisha"
               ],
               "room": "128 BCL",
@@ -7550,7 +7550,7 @@
               "code": "CSE 4203",
               "title": "Cryptography and Network Security",
               "teachers": [
-                "Sushmit Jahan Rose"
+                "Shah Rafatur Rahman"
               ],
               "room": "311",
               "type": "theory"
@@ -7649,7 +7649,7 @@
               "code": "CSE 4203",
               "title": "Cryptography and Network Security",
               "teachers": [
-                "Sushmit Jahan Rose"
+                "Shah Rafatur Rahman"
               ],
               "room": "910",
               "type": "theory"
