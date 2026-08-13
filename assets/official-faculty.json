@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-12",
+  "updated": "2026-08-13",
   "department": "cse",
   "source": "https://vu.edu.bd/academics/departments/computer-science-and-engineering/faculty-members",
   "faculty": [
@@ -427,7 +427,7 @@
       "name": "Sraboni Mostofa",
       "designation": "Lecturer",
       "email": "sraboni@vu.edu.bd",
-      "image": "",
+      "image": "https://portfolio.vu.edu.bd/uploads/02760.jpg",
       "profile": "https://vu.edu.bd/profile/02760/sraboni-mostofa"
     },
     {
