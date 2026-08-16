@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-13",
+  "updated": "2026-08-16",
   "department": "cse",
   "source": "https://vu.edu.bd/academics/departments/computer-science-and-engineering/faculty-members",
   "faculty": [
@@ -9,13 +9,6 @@
       "email": "head.cse@vu.edu.bd",
       "image": "",
       "profile": "https://vu.edu.bd/profile/02662/shamim-ahmad"
-    },
-    {
-      "name": "Sabina Yasmin",
-      "designation": "Coordinator",
-      "email": "sabina@vu.edu.bd",
-      "image": "https://portfolio.vu.edu.bd/uploads/02182.jpg",
-      "profile": "https://vu.edu.bd/profile/02182/sabina-yasmin"
     },
     {
       "name": "Prof. A.H.M. Rahmatullah Imon, Ph.D.",
@@ -30,6 +23,13 @@
       "email": "ahammad@vu.edu.bd",
       "image": "https://portfolio.vu.edu.bd/uploads/02193.JPG",
       "profile": "https://vu.edu.bd/profile/02193/dr-ahammad-hossain"
+    },
+    {
+      "name": "Sabina Yasmin",
+      "designation": "Coordinator",
+      "email": "sabina@vu.edu.bd",
+      "image": "https://portfolio.vu.edu.bd/uploads/02182.jpg",
+      "profile": "https://vu.edu.bd/profile/02182/sabina-yasmin"
     },
     {
       "name": "Md. Mizanur Rahman",
@@ -79,6 +79,27 @@
       "email": "toufikul@vu.edu.bd",
       "image": "https://portfolio.vu.edu.bd/uploads/02358.jpg",
       "profile": "https://vu.edu.bd/profile/02358/md-toufikul-islam"
+    },
+    {
+      "name": "Md. Muktar Hossain",
+      "designation": "Senior Lecturer",
+      "email": "muktar@vu.edu.bd",
+      "image": "https://portfolio.vu.edu.bd/uploads/02462.jpg",
+      "profile": "https://vu.edu.bd/profile/02462/md-muktar-hossain"
+    },
+    {
+      "name": "Md. Mahfujur Rahman",
+      "designation": "Senior Lecturer",
+      "email": "mahfujur@vu.edu.bd",
+      "image": "https://portfolio.vu.edu.bd/uploads/02529.jpg",
+      "profile": "https://vu.edu.bd/profile/02529/md-mahfujur-rahman"
+    },
+    {
+      "name": "Protik Chakroborty",
+      "designation": "Senior Lecturer",
+      "email": "protik@vu.edu.bd",
+      "image": "https://portfolio.vu.edu.bd/uploads/02547.jpg",
+      "profile": "https://vu.edu.bd/profile/02547/protik-chakroborty"
     },
     {
       "name": "Md. Nour Noby",
@@ -151,13 +172,6 @@
       "profile": "https://vu.edu.bd/profile/02443/mohammad-faisal-al-naser"
     },
     {
-      "name": "Md. Muktar Hossain",
-      "designation": "Senior Lecturer",
-      "email": "muktar@vu.edu.bd",
-      "image": "https://portfolio.vu.edu.bd/uploads/02462.jpg",
-      "profile": "https://vu.edu.bd/profile/02462/md-muktar-hossain"
-    },
-    {
       "name": "Ahmed-Al-Azmain",
       "designation": "Lecturer",
       "email": "azmain@vu.edu.bd",
@@ -214,13 +228,6 @@
       "profile": "https://vu.edu.bd/profile/02528/md-ruhul-amin"
     },
     {
-      "name": "Md. Mahfujur Rahman",
-      "designation": "Senior Lecturer",
-      "email": "mahfujur@vu.edu.bd",
-      "image": "https://portfolio.vu.edu.bd/uploads/02529.jpg",
-      "profile": "https://vu.edu.bd/profile/02529/md-mahfujur-rahman"
-    },
-    {
       "name": "D.M. Asadujjaman",
       "designation": "Lecturer",
       "email": "asadujjaman@vu.edu.bd",
@@ -233,13 +240,6 @@
       "email": "rinky@vu.edu.bd",
       "image": "https://portfolio.vu.edu.bd/uploads/02541.jpg",
       "profile": "https://vu.edu.bd/profile/02541/israt-jahan-rinky"
-    },
-    {
-      "name": "Protik Chakroborty",
-      "designation": "Senior Lecturer",
-      "email": "protik@vu.edu.bd",
-      "image": "https://portfolio.vu.edu.bd/uploads/02547.jpg",
-      "profile": "https://vu.edu.bd/profile/02547/protik-chakroborty"
     },
     {
       "name": "Tanzim Nawshin Reza",
@@ -324,6 +324,13 @@
       "email": "makin@vu.edu.bd",
       "image": "",
       "profile": "https://vu.edu.bd/profile/02667/zuairia-raisa-bintay-makin"
+    },
+    {
+      "name": "Anupoma Barmon Shetu",
+      "designation": "Lecturer",
+      "email": "anupoma@vu.edu.bd",
+      "image": "https://portfolio.vu.edu.bd/uploads/02694.jpg",
+      "profile": "https://vu.edu.bd/profile/02694/anupoma-barman-shetu"
     },
     {
       "name": "Sajeeb Kumar Ray",
@@ -413,7 +420,7 @@
       "name": "Shah Rafatur Rahman",
       "designation": "Lecturer",
       "email": "rafatur@vu.edu.bd",
-      "image": "",
+      "image": "https://portfolio.vu.edu.bd/uploads/02755.jpg",
       "profile": "https://vu.edu.bd/profile/02755/shah-rafatur-rahman"
     },
     {

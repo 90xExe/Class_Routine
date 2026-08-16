@@ -4,8 +4,8 @@
     "program": "B.Sc. in Nutrition and Food Engineering",
     "timezone": "Asia/Dhaka",
     "source": "Varendra University official student routine portal",
-    "updated": "2026-08-03",
-    "lastSyncedAt": "2026-08-03T16:15:24+06:00",
+    "updated": "2026-08-16",
+    "lastSyncedAt": "2026-08-16T19:09:02+06:00",
     "coverage": {
       "loadedSchedules": 11,
       "isComplete": true,
@@ -314,7 +314,7 @@
               "code": "ENG 1002",
               "title": "English Fundamentals",
               "teachers": [
-                "Eng New Teacher 9"
+                "Mysha Binte Mahmood"
               ],
               "room": "802",
               "type": "theory"
@@ -360,7 +360,7 @@
               "code": "ENG 1002",
               "title": "English Fundamentals",
               "teachers": [
-                "Eng New Teacher 9"
+                "Mysha Binte Mahmood"
               ],
               "room": "805",
               "type": "theory"
@@ -866,7 +866,7 @@
               "code": "ENG 1002",
               "title": "English Fundamentals",
               "teachers": [
-                "Eng New Teacher 9"
+                "Mysha Binte Mahmood"
               ],
               "room": "1010",
               "type": "theory"
@@ -892,7 +892,7 @@
               "code": "ENG 1002",
               "title": "English Fundamentals",
               "teachers": [
-                "Eng New Teacher 9"
+                "Mysha Binte Mahmood"
               ],
               "room": "1010",
               "type": "theory"
