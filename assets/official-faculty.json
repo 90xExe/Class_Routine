@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-16",
+  "updated": "2026-08-17",
   "department": "cse",
   "source": "https://vu.edu.bd/academics/departments/computer-science-and-engineering/faculty-members",
   "faculty": [
@@ -9,6 +9,13 @@
       "email": "head.cse@vu.edu.bd",
       "image": "",
       "profile": "https://vu.edu.bd/profile/02662/shamim-ahmad"
+    },
+    {
+      "name": "Sabina Yasmin",
+      "designation": "Coordinator",
+      "email": "sabina@vu.edu.bd",
+      "image": "https://portfolio.vu.edu.bd/uploads/02182.jpg",
+      "profile": "https://vu.edu.bd/profile/02182/sabina-yasmin"
     },
     {
       "name": "Prof. A.H.M. Rahmatullah Imon, Ph.D.",
@@ -23,13 +30,6 @@
       "email": "ahammad@vu.edu.bd",
       "image": "https://portfolio.vu.edu.bd/uploads/02193.JPG",
       "profile": "https://vu.edu.bd/profile/02193/dr-ahammad-hossain"
-    },
-    {
-      "name": "Sabina Yasmin",
-      "designation": "Coordinator",
-      "email": "sabina@vu.edu.bd",
-      "image": "https://portfolio.vu.edu.bd/uploads/02182.jpg",
-      "profile": "https://vu.edu.bd/profile/02182/sabina-yasmin"
     },
     {
       "name": "Md. Mizanur Rahman",
