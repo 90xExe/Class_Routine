@@ -4,13 +4,13 @@
     "program": "B. Sc. in CSE",
     "timezone": "Asia/Dhaka",
     "source": "Varendra University official student routine portal",
-    "updated": "2026-08-16",
-    "lastSyncedAt": "2026-08-16T19:06:30+06:00",
+    "updated": "2026-07-26",
+    "lastSyncedAt": "2026-07-26T22:41:27+06:00",
     "coverage": {
       "loadedSchedules": 38,
       "isComplete": true,
       "scannedCombinations": 240,
-      "totalClasses": 550,
+      "totalClasses": 545,
       "note": "All 240 official semester/section combinations were checked; 38 published routines were found."
     }
   },
@@ -201,7 +201,7 @@
               "code": "ENG 0002",
               "title": "English Fundamentals",
               "teachers": [
-                "Farhana Islam"
+                "Eng New Teacher 6"
               ],
               "room": "311",
               "type": "theory"
@@ -305,7 +305,7 @@
               "code": "ENG 0002",
               "title": "English Fundamentals",
               "teachers": [
-                "Farhana Islam"
+                "Eng New Teacher 6"
               ],
               "room": "508",
               "type": "theory"
@@ -396,17 +396,6 @@
               ],
               "room": "913",
               "type": "theory"
-            },
-            {
-              "slot": 5,
-              "code": "CSE 1100",
-              "title": "Computer Fundamentals Lab",
-              "teachers": [
-                "Toufikul Islam",
-                "Md. Muktar Hossain"
-              ],
-              "room": "104 CNL",
-              "type": "lab"
             }
           ]
         },
@@ -476,7 +465,7 @@
               "code": "ENG 0002",
               "title": "English Fundamentals",
               "teachers": [
-                "Farhana Islam"
+                "Eng New Teacher 6"
               ],
               "room": "311",
               "type": "theory"
@@ -498,11 +487,22 @@
           "short": "Wed",
           "classes": [
             {
+              "slot": 5,
+              "code": "CSE 1100",
+              "title": "Computer Fundamentals Lab",
+              "teachers": [
+                "Toufikul Islam",
+                "Md. Muktar Hossain"
+              ],
+              "room": "106 DSAL",
+              "type": "lab"
+            },
+            {
               "slot": 6,
               "code": "ENG 0002",
               "title": "English Fundamentals",
               "teachers": [
-                "Farhana Islam"
+                "Eng New Teacher 6"
               ],
               "room": "311",
               "type": "theory"
@@ -563,7 +563,7 @@
               "code": "ENG 0002",
               "title": "English Fundamentals",
               "teachers": [
-                "Farhana Islam"
+                "Eng New Teacher 6"
               ],
               "room": "413",
               "type": "theory"
@@ -621,7 +621,7 @@
               "title": "Computer Fundamentals Lab",
               "teachers": [
                 "Md. Muktar Hossain",
-                "Shah Rafatur Rahman"
+                "Sushmit Jahan Rose"
               ],
               "room": "103 DMSL",
               "type": "lab"
@@ -710,7 +710,7 @@
               "code": "ENG 0002",
               "title": "English Fundamentals",
               "teachers": [
-                "Farhana Islam"
+                "Eng New Teacher 6"
               ],
               "room": "1001",
               "type": "theory"
@@ -802,7 +802,7 @@
               "code": "ENG 0002",
               "title": "English Fundamentals",
               "teachers": [
-                "Farhana Islam"
+                "Eng New Teacher 6"
               ],
               "room": "311",
               "type": "theory"
@@ -818,7 +818,7 @@
               "code": "ENG 0002",
               "title": "English Fundamentals",
               "teachers": [
-                "Farhana Islam"
+                "Eng New Teacher 6"
               ],
               "room": "313",
               "type": "theory"
@@ -891,7 +891,7 @@
               "title": "Computer Fundamentals Lab",
               "teachers": [
                 "Md. Muktar Hossain",
-                "Shah Rafatur Rahman"
+                "Sushmit Jahan Rose"
               ],
               "room": "129 SEL",
               "type": "lab"
@@ -971,7 +971,7 @@
               "code": "ENG 0002",
               "title": "English Fundamentals",
               "teachers": [
-                "Farhana Islam"
+                "Eng New Teacher 6"
               ],
               "room": "814",
               "type": "theory"
@@ -997,7 +997,7 @@
               "code": "CSE 1100",
               "title": "Computer Fundamentals Lab",
               "teachers": [
-                "Shah Rafatur Rahman",
+                "Sushmit Jahan Rose",
                 "Md. Khalid Sakib"
               ],
               "room": "106 DSAL",
@@ -1052,7 +1052,7 @@
               "code": "ENG 0002",
               "title": "English Fundamentals",
               "teachers": [
-                "Farhana Islam"
+                "Eng New Teacher 6"
               ],
               "room": "411",
               "type": "theory"
@@ -1126,7 +1126,7 @@
               "code": "ENG 0002",
               "title": "English Fundamentals",
               "teachers": [
-                "Farhana Islam"
+                "Eng New Teacher 6"
               ],
               "room": "508",
               "type": "theory"
@@ -1137,7 +1137,7 @@
               "title": "Computer Fundamentals Lab",
               "teachers": [
                 "Md. Shahid Ahammed Shakil",
-                "Shah Rafatur Rahman"
+                "Sushmit Jahan Rose"
               ],
               "room": "104 CNL",
               "type": "lab"
@@ -1217,7 +1217,7 @@
               "code": "ENG 0002",
               "title": "English Fundamentals",
               "teachers": [
-                "Farhana Islam"
+                "Eng New Teacher 6"
               ],
               "room": "313",
               "type": "theory"
@@ -1684,16 +1684,6 @@
           "short": "Sun",
           "classes": [
             {
-              "slot": 2,
-              "code": "CSE 1203",
-              "title": "Discrete Mathematics",
-              "teachers": [
-                "Mst. Jannatul Ferdous"
-              ],
-              "room": "311",
-              "type": "theory"
-            },
-            {
               "slot": 3,
               "code": "BAN 0001",
               "title": "History of the Emergence of Bangladesh",
@@ -1775,6 +1765,16 @@
                 "Adrita Alam"
               ],
               "room": "313",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "CSE 1203",
+              "title": "Discrete Mathematics",
+              "teachers": [
+                "Mst. Jannatul Ferdous"
+              ],
+              "room": "314",
               "type": "theory"
             }
           ]
@@ -2733,16 +2733,6 @@
           "short": "Mon",
           "classes": [
             {
-              "slot": 2,
-              "code": "CSE 2103",
-              "title": "Data Structures",
-              "teachers": [
-                "Afroza Islam"
-              ],
-              "room": "1008",
-              "type": "theory"
-            },
-            {
               "slot": 3,
               "code": "ECO 2171",
               "title": "Engineering Economics",
@@ -2760,6 +2750,16 @@
                 "A.S.M Delwar Hossain"
               ],
               "room": "812",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "CSE 2103",
+              "title": "Data Structures",
+              "teachers": [
+                "Afroza Islam"
+              ],
+              "room": "1008",
               "type": "theory"
             }
           ]
@@ -2807,17 +2807,6 @@
           "short": "Wed",
           "classes": [
             {
-              "slot": 3,
-              "code": "CSE 2106",
-              "title": "Digital System Design Lab",
-              "teachers": [
-                "Mst. Jannatul Ferdous",
-                "Zannatul Mifta"
-              ],
-              "room": "130 DSCAL",
-              "type": "lab"
-            },
-            {
               "slot": 4,
               "code": "CSE 2104",
               "title": "Data Structures Lab",
@@ -2838,6 +2827,17 @@
               ],
               "room": "103 DMSL",
               "type": "lab"
+            },
+            {
+              "slot": 6,
+              "code": "CSE 2106",
+              "title": "Digital System Design Lab",
+              "teachers": [
+                "Mst. Jannatul Ferdous",
+                "Zannatul Mifta"
+              ],
+              "room": "127 EEL",
+              "type": "lab"
             }
           ]
         },
@@ -2845,16 +2845,6 @@
           "name": "Thursday",
           "short": "Thu",
           "classes": [
-            {
-              "slot": 2,
-              "code": "CSE 2103",
-              "title": "Data Structures",
-              "teachers": [
-                "Afroza Islam"
-              ],
-              "room": "913",
-              "type": "theory"
-            },
             {
               "slot": 4,
               "code": "ECO 2171",
@@ -2873,6 +2863,16 @@
                 "Sraboni Mostofa"
               ],
               "room": "509",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "CSE 2103",
+              "title": "Data Structures",
+              "teachers": [
+                "Afroza Islam"
+              ],
+              "room": "913",
               "type": "theory"
             }
           ]
@@ -3415,7 +3415,7 @@
               "code": "CSE 2208",
               "title": "Computer Networks Lab",
               "teachers": [
-                "D. M. Asadujjaman",
+                "Umme Rumman",
                 "Akib Ikbal"
               ],
               "room": "104 CNL",
@@ -3450,23 +3450,12 @@
             },
             {
               "slot": 4,
-              "code": "CSE 2202",
-              "title": "Object Oriented Design and Design Patterns Lab",
-              "teachers": [
-                "Md. Nour Nabi",
-                "Mohammad Faisal Al-Naser"
-              ],
-              "room": "104 CNL",
-              "type": "lab"
-            },
-            {
-              "slot": 5,
               "code": "MAT 2241",
               "title": "Linear Algebra and Complex Variables",
               "teachers": [
                 "Anupoma Barman Shetu"
               ],
-              "room": "1010",
+              "room": "1012",
               "type": "theory"
             }
           ]
@@ -3568,10 +3557,10 @@
           "classes": [
             {
               "slot": 1,
-              "code": "CSE 2201",
-              "title": "Object Oriented Design and Design Patterns",
+              "code": "CSE 2207",
+              "title": "Computer Networks",
               "teachers": [
-                "Mohammad Faisal Al-Naser"
+                "Akib Ikbal"
               ],
               "room": "1013",
               "type": "theory"
@@ -3584,16 +3573,6 @@
                 "Anupoma Barman Shetu"
               ],
               "room": "1013",
-              "type": "theory"
-            },
-            {
-              "slot": 4,
-              "code": "CSE 2207",
-              "title": "Computer Networks",
-              "teachers": [
-                "Akib Ikbal"
-              ],
-              "room": "1010",
               "type": "theory"
             }
           ]
@@ -3655,7 +3634,7 @@
               "code": "CSE 2208",
               "title": "Computer Networks Lab",
               "teachers": [
-                "D. M. Asadujjaman",
+                "Umme Rumman",
                 "Akib Ikbal"
               ],
               "room": "104 CNL",
@@ -3690,14 +3669,13 @@
             },
             {
               "slot": 3,
-              "code": "CSE 2202",
-              "title": "Object Oriented Design and Design Patterns Lab",
+              "code": "CSE 2201",
+              "title": "Object Oriented Design and Design Patterns",
               "teachers": [
-                "Mohammad Faisal Al-Naser",
-                "Md. Shahid Ahammed Shakil"
+                "Mohammad Faisal Al-Naser"
               ],
-              "room": "128 BCL",
-              "type": "lab"
+              "room": "414",
+              "type": "theory"
             },
             {
               "slot": 4,
@@ -3771,6 +3749,16 @@
               "type": "lab"
             },
             {
+              "slot": 2,
+              "code": "MAT 2241",
+              "title": "Linear Algebra and Complex Variables",
+              "teachers": [
+                "Anupoma Barman Shetu"
+              ],
+              "room": "814",
+              "type": "theory"
+            },
+            {
               "slot": 3,
               "code": "CSE 2201",
               "title": "Object Oriented Design and Design Patterns",
@@ -3782,17 +3770,6 @@
             },
             {
               "slot": 4,
-              "code": "CSE 2202",
-              "title": "Object Oriented Design and Design Patterns Lab",
-              "teachers": [
-                "Mohammad Faisal Al-Naser",
-                "Md. Shahid Ahammed Shakil"
-              ],
-              "room": "104 CNL",
-              "type": "lab"
-            },
-            {
-              "slot": 5,
               "code": "CSE 2202",
               "title": "Object Oriented Design and Design Patterns Lab",
               "teachers": [
@@ -3819,16 +3796,6 @@
               "type": "theory"
             },
             {
-              "slot": 2,
-              "code": "MAT 2241",
-              "title": "Linear Algebra and Complex Variables",
-              "teachers": [
-                "Anupoma Barman Shetu"
-              ],
-              "room": "413",
-              "type": "theory"
-            },
-            {
               "slot": 3,
               "code": "CSE 2207",
               "title": "Computer Networks",
@@ -3846,14 +3813,13 @@
           "classes": [
             {
               "slot": 1,
-              "code": "CSE 2208",
-              "title": "Computer Networks Lab",
+              "code": "CSE 2207",
+              "title": "Computer Networks",
               "teachers": [
-                "Akib Ikbal",
-                "Ahmed Al Azmain"
+                "Akib Ikbal"
               ],
-              "room": "104 CNL",
-              "type": "lab"
+              "room": "413",
+              "type": "theory"
             },
             {
               "slot": 2,
@@ -3867,13 +3833,14 @@
             },
             {
               "slot": 4,
-              "code": "CSE 2207",
-              "title": "Computer Networks",
+              "code": "CSE 2208",
+              "title": "Computer Networks Lab",
               "teachers": [
-                "Akib Ikbal"
+                "Akib Ikbal",
+                "Ahmed Al Azmain"
               ],
-              "room": "303",
-              "type": "theory"
+              "room": "104 CNL",
+              "type": "lab"
             }
           ]
         },
@@ -3996,6 +3963,17 @@
               "type": "theory"
             },
             {
+              "slot": 5,
+              "code": "CSE 3102",
+              "title": "Computer Graphics Lab",
+              "teachers": [
+                "Ayesha Akter Lima",
+                "S.M. Mahadi Hasan"
+              ],
+              "room": "104 CNL",
+              "type": "lab"
+            },
+            {
               "slot": 6,
               "code": "CSE 3105",
               "title": "Computer Architecture",
@@ -4028,17 +4006,7 @@
               "teachers": [
                 "S.M. Mahadi Hasan"
               ],
-              "room": "408",
-              "type": "theory"
-            },
-            {
-              "slot": 6,
-              "code": "MAT 3141",
-              "title": "Applied Statistics and Probability",
-              "teachers": [
-                "Sraboni Mostofa"
-              ],
-              "room": "512",
+              "room": "1009",
               "type": "theory"
             }
           ]
@@ -4059,14 +4027,13 @@
             },
             {
               "slot": 5,
-              "code": "CSE 3102",
-              "title": "Computer Graphics Lab",
+              "code": "MAT 3141",
+              "title": "Applied Statistics and Probability",
               "teachers": [
-                "Ayesha Akter Lima",
-                "S.M. Mahadi Hasan"
+                "Ahammad Hossain"
               ],
-              "room": "106 DSAL",
-              "type": "lab"
+              "room": "404",
+              "type": "theory"
             },
             {
               "slot": 6,
@@ -4099,7 +4066,7 @@
               "code": "MAT 3141",
               "title": "Applied Statistics and Probability",
               "teachers": [
-                "Sraboni Mostofa"
+                "Ahammad Hossain"
               ],
               "room": "1008",
               "type": "theory"
@@ -4150,16 +4117,6 @@
               "type": "theory"
             },
             {
-              "slot": 5,
-              "code": "CSE 3105",
-              "title": "Computer Architecture",
-              "teachers": [
-                "Mehedi Hasan Shakil"
-              ],
-              "room": "313",
-              "type": "theory"
-            },
-            {
               "slot": 6,
               "code": "CSE 3101",
               "title": "Computer Graphics",
@@ -4195,6 +4152,16 @@
               ],
               "room": "127 EEL",
               "type": "lab"
+            },
+            {
+              "slot": 4,
+              "code": "CSE 3105",
+              "title": "Computer Architecture",
+              "teachers": [
+                "Mehedi Hasan Shakil"
+              ],
+              "room": "1013",
+              "type": "theory"
             }
           ]
         },
@@ -4524,13 +4491,13 @@
           "short": "Sun",
           "classes": [
             {
-              "slot": 1,
+              "slot": 2,
               "code": "MAT 3141",
               "title": "Applied Statistics and Probability",
               "teachers": [
                 "Ahammad Hossain"
               ],
-              "room": "1011",
+              "room": "1013",
               "type": "theory"
             },
             {
@@ -4731,7 +4698,7 @@
               "code": "MAT 3141",
               "title": "Applied Statistics and Probability",
               "teachers": [
-                "Ahammad Hossain"
+                "Sraboni Mostofa"
               ],
               "room": "514",
               "type": "theory"
@@ -4858,7 +4825,7 @@
               "code": "MAT 3141",
               "title": "Applied Statistics and Probability",
               "teachers": [
-                "Ahammad Hossain"
+                "Sraboni Mostofa"
               ],
               "room": "413",
               "type": "theory"
@@ -5040,7 +5007,7 @@
               "type": "theory"
             },
             {
-              "slot": 2,
+              "slot": 3,
               "code": "MAT 3141",
               "title": "Applied Statistics and Probability",
               "teachers": [
@@ -5127,6 +5094,16 @@
           "short": "Mon",
           "classes": [
             {
+              "slot": 1,
+              "code": "MAT 3141",
+              "title": "Applied Statistics and Probability",
+              "teachers": [
+                "Ahammad Hossain"
+              ],
+              "room": "408",
+              "type": "theory"
+            },
+            {
               "slot": 3,
               "code": "CSE 3107",
               "title": "Communication Engineering",
@@ -5144,16 +5121,6 @@
                 "Protik Chakroborty"
               ],
               "room": "411",
-              "type": "theory"
-            },
-            {
-              "slot": 6,
-              "code": "CSE 3101",
-              "title": "Computer Graphics",
-              "teachers": [
-                "Ayesha Akter Lima"
-              ],
-              "room": "1003",
               "type": "theory"
             }
           ]
@@ -5222,12 +5189,12 @@
             },
             {
               "slot": 3,
-              "code": "MAT 3141",
-              "title": "Applied Statistics and Probability",
+              "code": "CSE 3101",
+              "title": "Computer Graphics",
               "teachers": [
-                "Ahammad Hossain"
+                "Ayesha Akter Lima"
               ],
-              "room": "414",
+              "room": "513",
               "type": "theory"
             },
             {
@@ -5598,16 +5565,6 @@
           "short": "Tue",
           "classes": [
             {
-              "slot": 2,
-              "code": "CSE 3209",
-              "title": "E-commerce and Web Programming",
-              "teachers": [
-                "Toufikul Islam"
-              ],
-              "room": "311",
-              "type": "theory"
-            },
-            {
               "slot": 3,
               "code": "CSE 3203",
               "title": "Operating System and System Programming",
@@ -5625,6 +5582,16 @@
                 "MST. Bellyful"
               ],
               "room": "1012",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "CSE 3209",
+              "title": "E-commerce and Web Programming",
+              "teachers": [
+                "Toufikul Islam"
+              ],
+              "room": "1008",
               "type": "theory"
             }
           ]
@@ -5758,13 +5725,13 @@
               "type": "theory"
             },
             {
-              "slot": 6,
+              "slot": 5,
               "code": "CSE 3209",
               "title": "E-commerce and Web Programming",
               "teachers": [
                 "Toufikul Islam"
               ],
-              "room": "513",
+              "room": "514",
               "type": "theory"
             }
           ]
@@ -5972,16 +5939,6 @@
               "type": "lab"
             },
             {
-              "slot": 5,
-              "code": "CSE 3205",
-              "title": "Microprocessor and Assembly Language",
-              "teachers": [
-                "Md. Adnan Sami"
-              ],
-              "room": "414",
-              "type": "theory"
-            },
-            {
               "slot": 6,
               "code": "CSE 3201",
               "title": "Theory of Computation and Compiler Design",
@@ -6080,46 +6037,25 @@
           "short": "Wed",
           "classes": [
             {
-              "slot": 3,
-              "code": "CSE 3203",
-              "title": "Operating System and System Programming",
-              "teachers": [
-                "MD. FAYZUL ISLAM"
-              ],
-              "room": "410",
-              "type": "theory"
-            },
-            {
-              "slot": 4,
-              "code": "CSE 3207",
-              "title": "Digital Signal Processing",
-              "teachers": [
-                "Shamim Reza"
-              ],
-              "room": "413",
-              "type": "theory"
-            },
-            {
               "slot": 5,
-              "code": "CSE 3210",
-              "title": "E-commerce and Web Programming Project Lab",
+              "code": "CSE 3204",
+              "title": "Operating System and System Programming Lab",
               "teachers": [
-                "Toufikul Islam",
-                "Barisha Chowdhury"
+                "MD. FAYZUL ISLAM",
+                "Sajeeb Kumar Ray"
               ],
               "room": "129 SEL",
               "type": "lab"
             },
             {
               "slot": 6,
-              "code": "CSE 3210",
-              "title": "E-commerce and Web Programming Project Lab",
+              "code": "CSE 3209",
+              "title": "E-commerce and Web Programming",
               "teachers": [
-                "Toufikul Islam",
                 "Barisha Chowdhury"
               ],
-              "room": "129 SEL",
-              "type": "lab"
+              "room": "411",
+              "type": "theory"
             }
           ]
         },
@@ -6128,13 +6064,33 @@
           "short": "Thu",
           "classes": [
             {
-              "slot": 3,
-              "code": "CSE 3209",
-              "title": "E-commerce and Web Programming",
+              "slot": 1,
+              "code": "CSE 3205",
+              "title": "Microprocessor and Assembly Language",
               "teachers": [
-                "Barisha Chowdhury"
+                "Md. Adnan Sami"
               ],
-              "room": "1008",
+              "room": "414",
+              "type": "theory"
+            },
+            {
+              "slot": 2,
+              "code": "CSE 3203",
+              "title": "Operating System and System Programming",
+              "teachers": [
+                "MD. FAYZUL ISLAM"
+              ],
+              "room": "1003",
+              "type": "theory"
+            },
+            {
+              "slot": 3,
+              "code": "CSE 3207",
+              "title": "Digital Signal Processing",
+              "teachers": [
+                "Shamim Reza"
+              ],
+              "room": "1013",
               "type": "theory"
             },
             {
@@ -6146,17 +6102,6 @@
                 "Akib Ikbal"
               ],
               "room": "128 BCL",
-              "type": "lab"
-            },
-            {
-              "slot": 6,
-              "code": "CSE 3204",
-              "title": "Operating System and System Programming Lab",
-              "teachers": [
-                "MD. FAYZUL ISLAM",
-                "Sajeeb Kumar Ray"
-              ],
-              "room": "129 SEL",
               "type": "lab"
             }
           ]
@@ -6188,7 +6133,7 @@
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
-                "Saiful Islam"
+                "BA New Teacher 1"
               ],
               "room": "408",
               "type": "theory"
@@ -6274,7 +6219,7 @@
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
-                "Saiful Islam"
+                "BA New Teacher 1"
               ],
               "room": "1013",
               "type": "theory"
@@ -6438,7 +6383,7 @@
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
-                "Saiful Islam"
+                "BA New Teacher 1"
               ],
               "room": "1008",
               "type": "theory"
@@ -6484,7 +6429,7 @@
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
-                "Saiful Islam"
+                "BA New Teacher 1"
               ],
               "room": "1011",
               "type": "theory"
@@ -6591,7 +6536,7 @@
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
-                "Afsara Mahazabin"
+                "BA New Teacher 4"
               ],
               "room": "509",
               "type": "theory"
@@ -6664,7 +6609,7 @@
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
-                "Afsara Mahazabin"
+                "BA New Teacher 4"
               ],
               "room": "311",
               "type": "theory"
@@ -6825,7 +6770,7 @@
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
-                "Afsara Mahazabin"
+                "BA New Teacher 4"
               ],
               "room": "414",
               "type": "theory"
@@ -6852,7 +6797,7 @@
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
-                "Afsara Mahazabin"
+                "BA New Teacher 4"
               ],
               "room": "314",
               "type": "theory"
@@ -7003,7 +6948,7 @@
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
-                "Md. Rafiqul Islam"
+                "BA New Teacher 2"
               ],
               "room": "414",
               "type": "theory"
@@ -7086,7 +7031,7 @@
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
-                "Md. Rafiqul Islam"
+                "BA New Teacher 2"
               ],
               "room": "314",
               "type": "theory"
@@ -7158,7 +7103,7 @@
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
-                "Md. Rafiqul Islam"
+                "BA New Teacher 2"
               ],
               "room": "1012",
               "type": "theory"
@@ -7258,7 +7203,7 @@
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
-                "Md. Rafiqul Islam"
+                "BA New Teacher 2"
               ],
               "room": "311",
               "type": "theory"
@@ -7375,7 +7320,7 @@
               "code": "CSE 4203",
               "title": "Cryptography and Network Security",
               "teachers": [
-                "Shah Rafatur Rahman"
+                "Sushmit Jahan Rose"
               ],
               "room": "311",
               "type": "theory"
@@ -7402,7 +7347,7 @@
               "code": "CSE 4203",
               "title": "Cryptography and Network Security",
               "teachers": [
-                "Shah Rafatur Rahman"
+                "Sushmit Jahan Rose"
               ],
               "room": "509",
               "type": "theory"
@@ -7438,7 +7383,7 @@
               "code": "CSE 4204",
               "title": "Cryptography and Network Security Lab",
               "teachers": [
-                "Shah Rafatur Rahman",
+                "Sushmit Jahan Rose",
                 "Md. Arshad Wasif"
               ],
               "room": "106 DSAL",
@@ -7533,7 +7478,7 @@
               "code": "CSE 4204",
               "title": "Cryptography and Network Security Lab",
               "teachers": [
-                "Shah Rafatur Rahman",
+                "Sushmit Jahan Rose",
                 "Syeda Tamanna Alam Monisha"
               ],
               "room": "128 BCL",
@@ -7550,7 +7495,7 @@
               "code": "CSE 4203",
               "title": "Cryptography and Network Security",
               "teachers": [
-                "Shah Rafatur Rahman"
+                "Sushmit Jahan Rose"
               ],
               "room": "311",
               "type": "theory"
@@ -7641,7 +7586,7 @@
               "teachers": [
                 "Md. Muktar Hossain"
               ],
-              "room": "408",
+              "room": "910",
               "type": "theory"
             },
             {
@@ -7649,7 +7594,7 @@
               "code": "CSE 4203",
               "title": "Cryptography and Network Security",
               "teachers": [
-                "Shah Rafatur Rahman"
+                "Sushmit Jahan Rose"
               ],
               "room": "910",
               "type": "theory"

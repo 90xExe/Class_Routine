@@ -4,8 +4,8 @@
     "program": "B.Sc. in Nutrition and Food Engineering",
     "timezone": "Asia/Dhaka",
     "source": "Varendra University official student routine portal",
-    "updated": "2026-08-16",
-    "lastSyncedAt": "2026-08-16T19:09:02+06:00",
+    "updated": "2026-07-26",
+    "lastSyncedAt": "2026-07-26T22:44:07+06:00",
     "coverage": {
       "loadedSchedules": 11,
       "isComplete": true,
@@ -192,13 +192,33 @@
           "short": "Sat",
           "classes": [
             {
-              "slot": 4,
+              "slot": 2,
               "code": "NFE 1107",
               "title": "Basic Human Physiology",
               "teachers": [
                 "Dr. Sultana Rajia"
               ],
-              "room": "910",
+              "room": "1009",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "NFE 1108",
+              "title": "Basic Human Physiology Practical",
+              "teachers": [
+                "Dr. Sultana Rajia"
+              ],
+              "room": "116",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "NFE 1104",
+              "title": "Inorganic and Physical Chemistry Practical",
+              "teachers": [
+                "Fahima Siddikey"
+              ],
+              "room": "118",
               "type": "theory"
             },
             {
@@ -218,33 +238,13 @@
           "short": "Sun",
           "classes": [
             {
-              "slot": 1,
-              "code": "NFE 1108",
-              "title": "Basic Human Physiology Practical",
-              "teachers": [
-                "Dr. Sultana Rajia"
-              ],
-              "room": "116",
-              "type": "theory"
-            },
-            {
-              "slot": 2,
+              "slot": 3,
               "code": "AOL 101",
               "title": "Art of Living",
               "teachers": [
-                "Sudipto Das Shuvo"
+                "NFE New Teacher 4"
               ],
-              "room": "414",
-              "type": "theory"
-            },
-            {
-              "slot": 3,
-              "code": "NFE 1104",
-              "title": "Inorganic and Physical Chemistry Practical",
-              "teachers": [
-                "Fahima Siddikey"
-              ],
-              "room": "118",
+              "room": "407",
               "type": "theory"
             },
             {
@@ -264,16 +264,6 @@
           "short": "Mon",
           "classes": [
             {
-              "slot": 3,
-              "code": "NFE 1107",
-              "title": "Basic Human Physiology",
-              "teachers": [
-                "Dr. Sultana Rajia"
-              ],
-              "room": "914",
-              "type": "theory"
-            },
-            {
               "slot": 5,
               "code": "NFE 1101",
               "title": "Introductory Food Science",
@@ -288,7 +278,7 @@
               "code": "AOL 101",
               "title": "Art of Living",
               "teachers": [
-                "Sudipto Das Shuvo"
+                "NFE New Teacher 4"
               ],
               "room": "1009",
               "type": "theory"
@@ -314,7 +304,7 @@
               "code": "ENG 1002",
               "title": "English Fundamentals",
               "teachers": [
-                "Mysha Binte Mahmood"
+                "Eng New Teacher 9"
               ],
               "room": "802",
               "type": "theory"
@@ -335,6 +325,16 @@
           "name": "Wednesday",
           "short": "Wed",
           "classes": [
+            {
+              "slot": 1,
+              "code": "ENG 1002",
+              "title": "English Fundamentals",
+              "teachers": [
+                "Eng New Teacher 9"
+              ],
+              "room": "1009",
+              "type": "theory"
+            },
             {
               "slot": 2,
               "code": "NFE 1105",
@@ -357,12 +357,12 @@
             },
             {
               "slot": 4,
-              "code": "ENG 1002",
-              "title": "English Fundamentals",
+              "code": "NFE 1107",
+              "title": "Basic Human Physiology",
               "teachers": [
-                "Mysha Binte Mahmood"
+                "Dr. Sultana Rajia"
               ],
-              "room": "805",
+              "room": "802",
               "type": "theory"
             },
             {
@@ -694,7 +694,7 @@
               "code": "NFE 1104",
               "title": "Inorganic and Physical Chemistry Practical",
               "teachers": [
-                "Sudipto Das Shuvo"
+                "NFE New Teacher 4"
               ],
               "room": "117",
               "type": "theory"
@@ -766,7 +766,7 @@
               "code": "NFE 1104",
               "title": "Inorganic and Physical Chemistry Practical",
               "teachers": [
-                "Sudipto Das Shuvo"
+                "NFE New Teacher 4"
               ],
               "room": "118",
               "type": "theory"
@@ -816,13 +816,23 @@
           "short": "Sat",
           "classes": [
             {
-              "slot": 4,
-              "code": "NFE 1101",
-              "title": "Introductory Food Science",
+              "slot": 3,
+              "code": "NFE 1108",
+              "title": "Basic Human Physiology Practical",
               "teachers": [
-                "Fahima Siddikey"
+                "NFE New Teacher 4"
               ],
-              "room": "909",
+              "room": "117",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "NFE 1104",
+              "title": "Inorganic and Physical Chemistry Practical",
+              "teachers": [
+                "NFE New Teacher 4"
+              ],
+              "room": "117",
               "type": "theory"
             },
             {
@@ -830,7 +840,7 @@
               "code": "NFE 1107",
               "title": "Basic Human Physiology",
               "teachers": [
-                "Sudipto Das Shuvo"
+                "NFE New Teacher 4"
               ],
               "room": "1009",
               "type": "theory"
@@ -856,7 +866,7 @@
               "code": "NFE 1104",
               "title": "Inorganic and Physical Chemistry Practical",
               "teachers": [
-                "Sudipto Das Shuvo"
+                "NFE New Teacher 4"
               ],
               "room": "117",
               "type": "theory"
@@ -866,7 +876,7 @@
               "code": "ENG 1002",
               "title": "English Fundamentals",
               "teachers": [
-                "Mysha Binte Mahmood"
+                "Eng New Teacher 9"
               ],
               "room": "1010",
               "type": "theory"
@@ -876,7 +886,7 @@
               "code": "NFE 1107",
               "title": "Basic Human Physiology",
               "teachers": [
-                "Sudipto Das Shuvo"
+                "NFE New Teacher 4"
               ],
               "room": "1011",
               "type": "theory"
@@ -892,7 +902,7 @@
               "code": "ENG 1002",
               "title": "English Fundamentals",
               "teachers": [
-                "Mysha Binte Mahmood"
+                "Eng New Teacher 9"
               ],
               "room": "1010",
               "type": "theory"
@@ -909,12 +919,12 @@
             },
             {
               "slot": 4,
-              "code": "NFE 1104",
-              "title": "Inorganic and Physical Chemistry Practical",
+              "code": "NFE 1101",
+              "title": "Introductory Food Science",
               "teachers": [
-                "Sudipto Das Shuvo"
+                "Fahima Siddikey"
               ],
-              "room": "117",
+              "room": "1010",
               "type": "theory"
             },
             {
@@ -922,7 +932,7 @@
               "code": "NFE 1108",
               "title": "Basic Human Physiology Practical",
               "teachers": [
-                "Sudipto Das Shuvo"
+                "NFE New Teacher 4"
               ],
               "room": "116",
               "type": "theory"
@@ -938,23 +948,13 @@
               "code": "AOL 101",
               "title": "Art of Living",
               "teachers": [
-                "Sudipto Das Shuvo"
+                "NFE New Teacher 4"
               ],
               "room": "1010",
               "type": "theory"
             },
             {
               "slot": 3,
-              "code": "NFE 1105",
-              "title": "Basic Human Nutrition",
-              "teachers": [
-                "Afroza Bashar"
-              ],
-              "room": "1009",
-              "type": "theory"
-            },
-            {
-              "slot": 5,
               "code": "NFE 1101",
               "title": "Introductory Food Science",
               "teachers": [
@@ -974,19 +974,19 @@
               "code": "AOL 101",
               "title": "Art of Living",
               "teachers": [
-                "Sudipto Das Shuvo"
+                "NFE New Teacher 4"
               ],
               "room": "1010",
               "type": "theory"
             },
             {
               "slot": 5,
-              "code": "NFE 1108",
-              "title": "Basic Human Physiology Practical",
+              "code": "NFE 1105",
+              "title": "Basic Human Nutrition",
               "teachers": [
-                "Sudipto Das Shuvo"
+                "Afroza Bashar"
               ],
-              "room": "117",
+              "room": "802",
               "type": "theory"
             },
             {
@@ -1133,7 +1133,7 @@
           "classes": [
             {
               "slot": 1,
-              "code": "NFE 1215",
+              "code": "NFE 1115",
               "title": "Oral Assessment I",
               "teachers": [
                 "Dr. Sultana Rajia"
@@ -1242,8 +1242,18 @@
               "type": "theory"
             },
             {
+              "slot": 3,
+              "code": "NFE 1202",
+              "title": "Food Chemistry Practical",
+              "teachers": [
+                "Mrinal Kanti Debnath"
+              ],
+              "room": "118",
+              "type": "theory"
+            },
+            {
               "slot": 5,
-              "code": "NFE 1215",
+              "code": "NFE 1115",
               "title": "Oral Assessment I",
               "teachers": [
                 "Dr. Sultana Rajia"
@@ -1294,16 +1304,6 @@
           "short": "Mon",
           "classes": [
             {
-              "slot": 2,
-              "code": "NFE 1202",
-              "title": "Food Chemistry Practical",
-              "teachers": [
-                "Mrinal Kanti Debnath"
-              ],
-              "room": "118",
-              "type": "theory"
-            },
-            {
               "slot": 3,
               "code": "NFE 1204",
               "title": "Principles of Food Engineering Practical",
@@ -1311,6 +1311,16 @@
                 "Md. Alahi Boxes"
               ],
               "room": "107",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "NFE 1201",
+              "title": "Food Chemistry",
+              "teachers": [
+                "Mrinal Kanti Debnath"
+              ],
+              "room": "506",
               "type": "theory"
             },
             {
@@ -1348,16 +1358,6 @@
               ],
               "room": "109 (ICT Cell Lab)",
               "type": "theory"
-            },
-            {
-              "slot": 3,
-              "code": "NFE 1203",
-              "title": "Principles of Food Engineering",
-              "teachers": [
-                "Md. Istiakh Jahan"
-              ],
-              "room": "809",
-              "type": "theory"
             }
           ]
         },
@@ -1387,10 +1387,10 @@
             },
             {
               "slot": 4,
-              "code": "NFE 1201",
-              "title": "Food Chemistry",
+              "code": "NFE 1203",
+              "title": "Principles of Food Engineering",
               "teachers": [
-                "Mrinal Kanti Debnath"
+                "Md. Istiakh Jahan"
               ],
               "room": "507",
               "type": "theory"

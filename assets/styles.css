@@ -4818,3 +4818,47 @@ body.dark .department-selector select {
     box-shadow: none;
   }
 }
+
+/* Live class + break countdown */
+.class-countdown {
+  display: inline-flex;
+  align-items: center;
+  min-width: 68px;
+  padding: 3px 7px;
+  border-radius: 5px;
+  background: rgba(49, 174, 123, 0.12);
+  color: #13835a;
+  font-family: var(--font-sans);
+  font-size: 0.62rem;
+  font-weight: 900;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.025em;
+  white-space: nowrap;
+}
+
+.class-countdown[hidden] {
+  display: none;
+}
+
+.schedule-break.status-running {
+  border-style: solid;
+  border-color: rgba(49, 174, 123, 0.68);
+  box-shadow: 0 6px 18px rgba(49, 174, 123, 0.12);
+}
+
+.schedule-break .break-countdown {
+  min-width: 70px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.schedule-break .break-countdown.running {
+  background: rgba(49, 174, 123, 0.14);
+  color: #13835a;
+}
+
+body.dark .class-countdown,
+body.dark .schedule-break .break-countdown.running {
+  background: rgba(157, 229, 194, 0.13);
+  color: var(--mint);
+}

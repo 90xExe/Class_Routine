@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-17",
+  "updated": "2026-07-26",
   "department": "cse",
   "source": "https://vu.edu.bd/academics/departments/computer-science-and-engineering/faculty-members",
   "faculty": [
@@ -81,27 +81,6 @@
       "profile": "https://vu.edu.bd/profile/02358/md-toufikul-islam"
     },
     {
-      "name": "Md. Muktar Hossain",
-      "designation": "Senior Lecturer",
-      "email": "muktar@vu.edu.bd",
-      "image": "https://portfolio.vu.edu.bd/uploads/02462.jpg",
-      "profile": "https://vu.edu.bd/profile/02462/md-muktar-hossain"
-    },
-    {
-      "name": "Md. Mahfujur Rahman",
-      "designation": "Senior Lecturer",
-      "email": "mahfujur@vu.edu.bd",
-      "image": "https://portfolio.vu.edu.bd/uploads/02529.jpg",
-      "profile": "https://vu.edu.bd/profile/02529/md-mahfujur-rahman"
-    },
-    {
-      "name": "Protik Chakroborty",
-      "designation": "Senior Lecturer",
-      "email": "protik@vu.edu.bd",
-      "image": "https://portfolio.vu.edu.bd/uploads/02547.jpg",
-      "profile": "https://vu.edu.bd/profile/02547/protik-chakroborty"
-    },
-    {
       "name": "Md. Nour Noby",
       "designation": "Lecturer",
       "email": "nournoby@vu.edu.bd",
@@ -172,6 +151,13 @@
       "profile": "https://vu.edu.bd/profile/02443/mohammad-faisal-al-naser"
     },
     {
+      "name": "Md. Muktar Hossain",
+      "designation": "Senior Lecturer",
+      "email": "muktar@vu.edu.bd",
+      "image": "https://portfolio.vu.edu.bd/uploads/02462.jpg",
+      "profile": "https://vu.edu.bd/profile/02462/md-muktar-hossain"
+    },
+    {
       "name": "Ahmed-Al-Azmain",
       "designation": "Lecturer",
       "email": "azmain@vu.edu.bd",
@@ -228,6 +214,13 @@
       "profile": "https://vu.edu.bd/profile/02528/md-ruhul-amin"
     },
     {
+      "name": "Md. Mahfujur Rahman",
+      "designation": "Senior Lecturer",
+      "email": "mahfujur@vu.edu.bd",
+      "image": "https://portfolio.vu.edu.bd/uploads/02529.jpg",
+      "profile": "https://vu.edu.bd/profile/02529/md-mahfujur-rahman"
+    },
+    {
       "name": "D.M. Asadujjaman",
       "designation": "Lecturer",
       "email": "asadujjaman@vu.edu.bd",
@@ -240,6 +233,13 @@
       "email": "rinky@vu.edu.bd",
       "image": "https://portfolio.vu.edu.bd/uploads/02541.jpg",
       "profile": "https://vu.edu.bd/profile/02541/israt-jahan-rinky"
+    },
+    {
+      "name": "Protik Chakroborty",
+      "designation": "Senior Lecturer",
+      "email": "protik@vu.edu.bd",
+      "image": "https://portfolio.vu.edu.bd/uploads/02547.jpg",
+      "profile": "https://vu.edu.bd/profile/02547/protik-chakroborty"
     },
     {
       "name": "Tanzim Nawshin Reza",
@@ -263,7 +263,7 @@
       "profile": "https://vu.edu.bd/profile/02567/md-arshad-wasif"
     },
     {
-      "name": "Shourav Paul",
+      "name": "Shorav Paul",
       "designation": "Lecturer",
       "email": "shorav@vu.edu.bd",
       "image": "https://portfolio.vu.edu.bd/uploads/02568.jpg",
@@ -294,7 +294,7 @@
       "name": "Adrita Alam",
       "designation": "Lecturer",
       "email": "adrita@vu.edu.bd",
-      "image": "https://portfolio.vu.edu.bd/uploads/02646.jpg",
+      "image": "https://portfolio.vu.edu.bd/uploads/02646.jpeg",
       "profile": "https://vu.edu.bd/profile/02646/adrita-alam"
     },
     {
@@ -324,6 +324,13 @@
       "email": "makin@vu.edu.bd",
       "image": "",
       "profile": "https://vu.edu.bd/profile/02667/zuairia-raisa-bintay-makin"
+    },
+    {
+      "name": "Afifa Tasneem Quanita",
+      "designation": "Lecturer",
+      "email": "quanita@vu.edu.bd",
+      "image": "https://portfolio.vu.edu.bd/uploads/02686.jpg",
+      "profile": "https://vu.edu.bd/profile/02686/afifa-tasneem-quanita"
     },
     {
       "name": "Anupoma Barmon Shetu",
@@ -389,6 +396,13 @@
       "profile": "https://vu.edu.bd/profile/02733/md-khalid-sakib"
     },
     {
+      "name": "Fahmida Akter Jesis Shithi",
+      "designation": "Lecturer",
+      "email": "fahmida@vu.edu.bd",
+      "image": "",
+      "profile": "https://vu.edu.bd/profile/02736/fahmida-akter-jesis-shithi"
+    },
+    {
       "name": "Mohd Ruhul Ameen",
       "designation": "Lecturer",
       "email": "ruhul.cse@vu.edu.bd",
@@ -413,14 +427,14 @@
       "name": "Md. Zaheer Raihan",
       "designation": "Lecturer",
       "email": "zaheer@vu.edu.bd",
-      "image": "https://portfolio.vu.edu.bd/uploads/02754.jpg",
+      "image": "",
       "profile": "https://vu.edu.bd/profile/02754/md-zaheer-raihan"
     },
     {
       "name": "Shah Rafatur Rahman",
       "designation": "Lecturer",
       "email": "rafatur@vu.edu.bd",
-      "image": "https://portfolio.vu.edu.bd/uploads/02755.jpg",
+      "image": "",
       "profile": "https://vu.edu.bd/profile/02755/shah-rafatur-rahman"
     },
     {
@@ -434,7 +448,7 @@
       "name": "Sraboni Mostofa",
       "designation": "Lecturer",
       "email": "sraboni@vu.edu.bd",
-      "image": "https://portfolio.vu.edu.bd/uploads/02760.jpg",
+      "image": "",
       "profile": "https://vu.edu.bd/profile/02760/sraboni-mostofa"
     },
     {

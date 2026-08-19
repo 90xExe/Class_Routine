@@ -290,29 +290,65 @@ function timeToMinutes(time) {
   return hours * 60 + minutes;
 }
 
-function dhakaMinutes(date = new Date()) {
+function dhakaSeconds(date = new Date()) {
   const parts = Object.fromEntries(
     new Intl.DateTimeFormat("en-GB", {
       timeZone: routine?.meta?.timezone || "Asia/Dhaka",
       hour: "2-digit",
       minute: "2-digit",
+      second: "2-digit",
       hourCycle: "h23",
     })
       .formatToParts(date)
       .map((part) => [part.type, part.value]),
   );
-  return Number(parts.hour) * 60 + Number(parts.minute);
+  return (
+    Number(parts.hour) * 60 * 60 +
+    Number(parts.minute) * 60 +
+    Number(parts.second)
+  );
+}
+
+function timeToSeconds(time) {
+  const [hours, minutes] = time.split(":").map(Number);
+  return hours * 60 * 60 + minutes * 60;
+}
+
+function formatCountdown(totalSeconds) {
+  const total = Math.max(0, Math.floor(totalSeconds));
+  const hours = Math.floor(total / 3600);
+  const minutes = Math.floor((total % 3600) / 60);
+  const seconds = total % 60;
+  if (hours) {
+    return `${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+  }
+  return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+}
+
+function intervalTimeStatus(start, end, scheduleDate = state.selectedDate) {
+  const today = getDhakaParts().iso;
+  if (scheduleDate < today) return { key: "ended", remaining: 0 };
+  if (scheduleDate > today) return { key: "upcoming", remaining: 0 };
+
+  const now = dhakaSeconds();
+  const startSeconds = timeToSeconds(start);
+  const endSeconds = timeToSeconds(end);
+  if (now < startSeconds) return { key: "upcoming", remaining: startSeconds - now };
+  if (now >= endSeconds) return { key: "ended", remaining: 0 };
+  return { key: "running", remaining: endSeconds - now };
 }
 
 function classTimeStatus(start, end, scheduleDate = state.selectedDate) {
-  const today = getDhakaParts().iso;
-  if (scheduleDate < today) return { key: "ended", label: "Ended" };
-  if (scheduleDate > today) return { key: "upcoming", label: "Upcoming" };
-
-  const now = dhakaMinutes();
-  if (now < timeToMinutes(start)) return { key: "upcoming", label: "Upcoming" };
-  if (now >= timeToMinutes(end)) return { key: "ended", label: "Ended" };
-  return { key: "running", label: "Running" };
+  const status = intervalTimeStatus(start, end, scheduleDate);
+  return {
+    ...status,
+    label:
+      status.key === "running"
+        ? "Running"
+        : status.key === "ended"
+          ? "Ended"
+          : "Upcoming",
+  };
 }
 
 function formatDuration(start, end) {
@@ -1334,8 +1370,9 @@ function classCard(course, options = {}) {
         <span class="course-code">${escapeHTML(course.code)}</span>
         <span class="class-cohort">${escapeHTML(course.semester)} / ${escapeHTML(course.section)}</span>
         <span class="class-status ${status.key}" aria-label="Class status: ${status.label}">
-          <i aria-hidden="true"></i>${status.label}
+          <i aria-hidden="true"></i><span class="class-status-label">${status.label}</span>
         </span>
+        <span class="class-countdown" aria-live="off"${status.key === "running" ? "" : " hidden"}>${status.key === "running" ? `${formatCountdown(status.remaining)} left` : ""}</span>
       </div>
       <h3>${escapeHTML(course.title)}</h3>
       <p>${escapeHTML((course.teachers || []).join(", "))}</p>
@@ -1368,25 +1405,67 @@ function updateVisibleClassStatuses() {
       card.classList.add(`status-${status.key}`);
 
       const badge = card.querySelector(".class-status");
-      if (!badge) return;
-      badge.className = `class-status ${status.key}`;
-      badge.setAttribute("aria-label", `Class status: ${status.label}`);
-      badge.innerHTML = `<i aria-hidden="true"></i>${status.label}`;
+      if (badge) {
+        badge.className = `class-status ${status.key}`;
+        badge.setAttribute("aria-label", `Class status: ${status.label}`);
+        const label = badge.querySelector(".class-status-label");
+        if (label) label.textContent = status.label;
+      }
+
+      const countdown = card.querySelector(".class-countdown");
+      if (countdown) {
+        const isRunning = status.key === "running";
+        countdown.hidden = !isRunning;
+        countdown.textContent = isRunning
+          ? `${formatCountdown(status.remaining)} left`
+          : "";
+      }
+    });
+
+  document
+    .querySelectorAll(".schedule-break[data-schedule-date]")
+    .forEach((card) => {
+      const status = intervalTimeStatus(
+        card.dataset.slotStart,
+        card.dataset.slotEnd,
+        card.dataset.scheduleDate,
+      );
+      card.classList.toggle("status-running", status.key === "running");
+      card.classList.toggle("status-ended", status.key === "ended");
+      card.classList.toggle("status-upcoming", status.key === "upcoming");
+
+      const timer = card.querySelector(".break-countdown");
+      if (!timer) return;
+      if (status.key === "running") {
+        timer.classList.add("running");
+        timer.textContent = `${formatCountdown(status.remaining)} left`;
+        timer.setAttribute("aria-label", `${formatCountdown(status.remaining)} remaining`);
+      } else {
+        timer.classList.remove("running");
+        timer.textContent = card.dataset.duration || "";
+        timer.removeAttribute("aria-label");
+      }
     });
 }
 
-function breakCard(start, end, kind = "break") {
+function breakCard(start, end, kind = "break", scheduleDate = state.selectedDate) {
   const card = document.createElement("div");
   const title = kind === "edge" ? "Free period" : "Break time";
-  card.className = `schedule-break ${kind}`;
+  const status = intervalTimeStatus(start, end, scheduleDate);
+  const duration = formatDuration(start, end);
+  card.className = `schedule-break ${kind} status-${status.key}`;
+  card.dataset.slotStart = start;
+  card.dataset.slotEnd = end;
+  card.dataset.scheduleDate = scheduleDate;
+  card.dataset.duration = duration;
   card.setAttribute(
     "aria-label",
-    `${title}, ${formatTime(start)} to ${formatTime(end)}, ${formatDuration(start, end)}`,
+    `${title}, ${formatTime(start)} to ${formatTime(end)}, ${duration}`,
   );
   card.innerHTML = `
     <span>${title}</span>
     <strong>${formatTime(start)} &ndash; ${formatTime(end)}</strong>
-    <small>${formatDuration(start, end)}</small>
+    <small class="break-countdown${status.key === "running" ? " running" : ""}">${status.key === "running" ? `${formatCountdown(status.remaining)} left` : duration}</small>
   `;
   return card;
 }
@@ -1857,7 +1936,7 @@ async function init() {
     renderCoverage();
     renderWorkspace();
     updateLiveClock();
-    window.setInterval(updateLiveClock, 30_000);
+    window.setInterval(updateLiveClock, 1_000);
   } catch (error) {
     console.error(error);
     elements.content.innerHTML = `

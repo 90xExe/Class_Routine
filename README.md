@@ -213,3 +213,8 @@ account if one is available, or run the sync manually.
 
 Developed by [Md. Nazim Uddin Noyon](https://github.com/90xExe)  
 33rd Batch · [@90xExe](https://github.com/90xExe)
+
+## Live class and break countdown
+
+The day view now updates every second. While a class is running, its card shows the remaining time as `MM:SS left` (or `HH:MM:SS left` for longer periods). During generated break/free periods, the break row shows the same live countdown. When the timer reaches zero, the class/break status automatically transitions without a page refresh. The timer uses the routine timezone (`Asia/Dhaka` for the current data).
+
