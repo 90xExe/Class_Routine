@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-26",
+  "updated": "2026-08-20",
   "department": "nfe",
   "source": "https://vu.edu.bd/academics/departments/nutrition-and-food-engineering/faculty-members",
   "faculty": [
@@ -46,6 +46,13 @@
       "profile": "https://vu.edu.bd/profile/02724/mrinal-kanti-debnath"
     },
     {
+      "name": "Sudipto Das Shuvo",
+      "designation": "Lecturer",
+      "email": "sudipto@vu.edu.bd",
+      "image": "https://portfolio.vu.edu.bd/uploads/02762.jpg",
+      "profile": "https://vu.edu.bd/profile/02762/sudipto-das-shuvo"
+    },
+    {
       "name": "Mohosina Hossain Misha",
       "designation": "Lecturer",
       "email": "misha@vu.edu.bd",
@@ -63,21 +70,21 @@
       "name": "Kohinur Akter",
       "designation": "Lecturer",
       "email": "kohinur@vu.edu.bd",
-      "image": "",
+      "image": "https://portfolio.vu.edu.bd/uploads/02742.jpg",
       "profile": "https://vu.edu.bd/profile/02742/kohinur-akter"
     },
     {
-      "name": "Md. Alahi Boxes",
+      "name": "Md Alahi Boxes",
       "designation": "Lecturer",
       "email": "alahi@vu.edu.bd",
-      "image": "",
+      "image": "https://portfolio.vu.edu.bd/uploads/02743.jpg",
       "profile": "https://vu.edu.bd/profile/02743/md-alahi-boxes"
     },
     {
       "name": "Afia Humyra Trisa",
       "designation": "Lecturer",
       "email": "trisa@vu.edu.bd",
-      "image": "",
+      "image": "https://portfolio.vu.edu.bd/uploads/02744.jpg",
       "profile": "https://vu.edu.bd/profile/02744/afia-humyra-trisa"
     }
   ]
