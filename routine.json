@@ -4,8 +4,8 @@
     "program": "B. Sc. in CSE",
     "timezone": "Asia/Dhaka",
     "source": "Varendra University official student routine portal",
-    "updated": "2026-08-20",
-    "lastSyncedAt": "2026-08-20T00:59:24+06:00",
+    "updated": "2026-08-23",
+    "lastSyncedAt": "2026-08-23T13:08:45+06:00",
     "coverage": {
       "loadedSchedules": 38,
       "isComplete": true,
@@ -1805,7 +1805,7 @@
               "type": "theory"
             },
             {
-              "slot": 6,
+              "slot": 5,
               "code": "ECO 1271",
               "title": "Engineering Economics",
               "teachers": [
@@ -2108,14 +2108,26 @@
               "type": "theory"
             },
             {
-              "slot": 4,
-              "code": "ECO 2171",
-              "title": "Engineering Economics",
+              "slot": 3,
+              "code": "CSE 2104",
+              "title": "Data Structures Lab",
               "teachers": [
-                "Md. Faisal Aziz"
+                "S.M. Mahadi Hasan",
+                "Samira Tareque"
               ],
-              "room": "513",
-              "type": "theory"
+              "room": "103 DMSL",
+              "type": "lab"
+            },
+            {
+              "slot": 4,
+              "code": "CSE 2104",
+              "title": "Data Structures Lab",
+              "teachers": [
+                "S.M. Mahadi Hasan",
+                "Samira Tareque"
+              ],
+              "room": "103 DMSL",
+              "type": "lab"
             }
           ]
         },
@@ -2181,16 +2193,6 @@
               ],
               "room": "514",
               "type": "theory"
-            },
-            {
-              "slot": 5,
-              "code": "CSE 2103",
-              "title": "Data Structures",
-              "teachers": [
-                "Samira Tareque"
-              ],
-              "room": "1008",
-              "type": "theory"
             }
           ]
         },
@@ -2198,6 +2200,26 @@
           "name": "Wednesday",
           "short": "Wed",
           "classes": [
+            {
+              "slot": 2,
+              "code": "ECO 2171",
+              "title": "Engineering Economics",
+              "teachers": [
+                "Md. Faisal Aziz"
+              ],
+              "room": "802",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "MAT 2141",
+              "title": "Differential Equations",
+              "teachers": [
+                "Anupoma Barman Shetu"
+              ],
+              "room": "803",
+              "type": "theory"
+            },
             {
               "slot": 5,
               "code": "CSE 2105",
@@ -2207,16 +2229,6 @@
               ],
               "room": "512",
               "type": "theory"
-            },
-            {
-              "slot": 6,
-              "code": "MAT 2141",
-              "title": "Differential Equations",
-              "teachers": [
-                "Anupoma Barman Shetu"
-              ],
-              "room": "413",
-              "type": "theory"
             }
           ]
         },
@@ -2224,6 +2236,16 @@
           "name": "Thursday",
           "short": "Thu",
           "classes": [
+            {
+              "slot": 1,
+              "code": "CSE 2103",
+              "title": "Data Structures",
+              "teachers": [
+                "Samira Tareque"
+              ],
+              "room": "1008",
+              "type": "theory"
+            },
             {
               "slot": 2,
               "code": "CSE 2101",
@@ -2243,28 +2265,6 @@
               ],
               "room": "413",
               "type": "theory"
-            },
-            {
-              "slot": 4,
-              "code": "CSE 2104",
-              "title": "Data Structures Lab",
-              "teachers": [
-                "Umme Rumman",
-                "Samira Tareque"
-              ],
-              "room": "103 DMSL",
-              "type": "lab"
-            },
-            {
-              "slot": 5,
-              "code": "CSE 2104",
-              "title": "Data Structures Lab",
-              "teachers": [
-                "Umme Rumman",
-                "Samira Tareque"
-              ],
-              "room": "103 DMSL",
-              "type": "lab"
             }
           ]
         },
@@ -3948,17 +3948,6 @@
           "short": "Sun",
           "classes": [
             {
-              "slot": 4,
-              "code": "CSE 3104",
-              "title": "Database Management System Lab",
-              "teachers": [
-                "Akib Ikbal",
-                "SUMAYA HANNAN SHOVA"
-              ],
-              "room": "103 DMSL",
-              "type": "lab"
-            },
-            {
               "slot": 5,
               "code": "CSE 3104",
               "title": "Database Management System Lab",
@@ -3971,13 +3960,14 @@
             },
             {
               "slot": 6,
-              "code": "CSE 3101",
-              "title": "Computer Graphics",
+              "code": "CSE 3104",
+              "title": "Database Management System Lab",
               "teachers": [
-                "S.M. Mahadi Hasan"
+                "Akib Ikbal",
+                "SUMAYA HANNAN SHOVA"
               ],
-              "room": "414",
-              "type": "theory"
+              "room": "103 DMSL",
+              "type": "lab"
             }
           ]
         },
@@ -3993,6 +3983,16 @@
                 "Tahrima Sayem Sowa"
               ],
               "room": "1011",
+              "type": "theory"
+            },
+            {
+              "slot": 5,
+              "code": "CSE 3101",
+              "title": "Computer Graphics",
+              "teachers": [
+                "S.M. Mahadi Hasan"
+              ],
+              "room": "902",
               "type": "theory"
             },
             {
