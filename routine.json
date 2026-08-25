@@ -4,8 +4,8 @@
     "program": "B. Sc. in CSE",
     "timezone": "Asia/Dhaka",
     "source": "Varendra University official student routine portal",
-    "updated": "2026-08-23",
-    "lastSyncedAt": "2026-08-23T13:08:45+06:00",
+    "updated": "2026-08-25",
+    "lastSyncedAt": "2026-08-25T13:15:20+06:00",
     "coverage": {
       "loadedSchedules": 38,
       "isComplete": true,
@@ -4967,13 +4967,13 @@
               "type": "theory"
             },
             {
-              "slot": 5,
+              "slot": 4,
               "code": "CSE 3101",
               "title": "Computer Graphics",
               "teachers": [
                 "Shakil Hossan"
               ],
-              "room": "411",
+              "room": "403",
               "type": "theory"
             }
           ]
