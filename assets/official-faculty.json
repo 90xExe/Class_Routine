@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-06",
+  "updated": "2026-09-18",
   "department": "cse",
   "source": "https://vu.edu.bd/academics/departments/computer-science-and-engineering/faculty-members",
   "faculty": [
@@ -324,13 +324,6 @@
       "email": "anupoma@vu.edu.bd",
       "image": "https://portfolio.vu.edu.bd/uploads/02694.jpg",
       "profile": "https://vu.edu.bd/profile/02694/anupoma-barman-shetu"
-    },
-    {
-      "name": "Sajeeb Kumar Ray",
-      "designation": "Lecturer",
-      "email": "sajeeb@vu.edu.bd",
-      "image": "https://portfolio.vu.edu.bd/uploads/02719.jpg",
-      "profile": "https://vu.edu.bd/profile/02719/sajeeb-kumar-ray"
     },
     {
       "name": "Md. Alamin Hossain Pappu",
