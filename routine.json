@@ -4,8 +4,8 @@
     "program": "B. Sc. in CSE",
     "timezone": "Asia/Dhaka",
     "source": "Varendra University official student routine portal",
-    "updated": "2026-08-25",
-    "lastSyncedAt": "2026-08-25T13:15:20+06:00",
+    "updated": "2026-09-27",
+    "lastSyncedAt": "2026-09-27T11:28:13+06:00",
     "coverage": {
       "loadedSchedules": 38,
       "isComplete": true,
@@ -519,7 +519,7 @@
               "title": "Basic Electrical Circuits Lab",
               "teachers": [
                 "Md. Alamin Hossain Pappu",
-                "Fahmida Akter Jesis Shithi"
+                "Md. Zaheer Raihan"
               ],
               "room": "130 DSCAL",
               "type": "lab"
@@ -700,7 +700,7 @@
               "title": "Basic Electrical Circuits Lab",
               "teachers": [
                 "Md. Alamin Hossain Pappu",
-                "Fahmida Akter Jesis Shithi"
+                "Md. Zaheer Raihan"
               ],
               "room": "130 DSCAL",
               "type": "lab"
@@ -765,7 +765,7 @@
               "code": "EEE 1132",
               "title": "Basic Electrical Circuits Lab",
               "teachers": [
-                "Fahmida Akter Jesis Shithi",
+                "Md. Zaheer Raihan",
                 "Mohd Ruhul Ameen"
               ],
               "room": "130 DSCAL",
@@ -792,7 +792,7 @@
               "code": "EEE 1131",
               "title": "Basic Electrical Circuits",
               "teachers": [
-                "Fahmida Akter Jesis Shithi"
+                "Md. Zaheer Raihan"
               ],
               "room": "412",
               "type": "theory"
@@ -880,7 +880,7 @@
               "code": "EEE 1131",
               "title": "Basic Electrical Circuits",
               "teachers": [
-                "Fahmida Akter Jesis Shithi"
+                "Md. Zaheer Raihan"
               ],
               "room": "412",
               "type": "theory"
@@ -945,7 +945,7 @@
               "code": "EEE 1131",
               "title": "Basic Electrical Circuits",
               "teachers": [
-                "Fahmida Akter Jesis Shithi"
+                "Md. Zaheer Raihan"
               ],
               "room": "511",
               "type": "theory"
@@ -1025,7 +1025,7 @@
               "code": "EEE 1131",
               "title": "Basic Electrical Circuits",
               "teachers": [
-                "Fahmida Akter Jesis Shithi"
+                "Md. Zaheer Raihan"
               ],
               "room": "1009",
               "type": "theory"
@@ -1036,7 +1036,7 @@
               "title": "Basic Electrical Circuits Lab",
               "teachers": [
                 "Md. Alamin Hossain Pappu",
-                "Fahmida Akter Jesis Shithi"
+                "Md. Zaheer Raihan"
               ],
               "room": "130 DSCAL",
               "type": "lab"
@@ -1116,7 +1116,7 @@
               "code": "EEE 1131",
               "title": "Basic Electrical Circuits",
               "teachers": [
-                "Fahmida Akter Jesis Shithi"
+                "Md. Zaheer Raihan"
               ],
               "room": "508",
               "type": "theory"
@@ -1153,7 +1153,7 @@
               "code": "EEE 1131",
               "title": "Basic Electrical Circuits",
               "teachers": [
-                "Fahmida Akter Jesis Shithi"
+                "Md. Zaheer Raihan"
               ],
               "room": "411",
               "type": "theory"
@@ -1200,7 +1200,7 @@
               "code": "EEE 1132",
               "title": "Basic Electrical Circuits Lab",
               "teachers": [
-                "Fahmida Akter Jesis Shithi",
+                "Md. Zaheer Raihan",
                 "Mohd Ruhul Ameen"
               ],
               "room": "127 EEL",
@@ -1356,7 +1356,7 @@
               "title": "Electronic Devices and Circuits Lab",
               "teachers": [
                 "Ipshita Tasnim Raha",
-                "Fahmida Akter Jesis Shithi"
+                "Md. Zaheer Raihan"
               ],
               "room": "130 DSCAL",
               "type": "lab"
