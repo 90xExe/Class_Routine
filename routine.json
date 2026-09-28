@@ -4,8 +4,8 @@
     "program": "B. Sc. in CSE",
     "timezone": "Asia/Dhaka",
     "source": "Varendra University official student routine portal",
-    "updated": "2026-09-27",
-    "lastSyncedAt": "2026-09-27T11:28:13+06:00",
+    "updated": "2026-09-29",
+    "lastSyncedAt": "2026-09-29T05:23:48+06:00",
     "coverage": {
       "loadedSchedules": 38,
       "isComplete": true,
@@ -325,17 +325,6 @@
               ],
               "room": "314",
               "type": "theory"
-            },
-            {
-              "slot": 6,
-              "code": "EEE 1132",
-              "title": "Basic Electrical Circuits Lab",
-              "teachers": [
-                "Md. Alamin Hossain Pappu",
-                "Mohd Ruhul Ameen"
-              ],
-              "room": "130 DSCAL",
-              "type": "lab"
             }
           ]
         },
@@ -345,12 +334,23 @@
           "classes": [
             {
               "slot": 2,
+              "code": "EEE 1132",
+              "title": "Basic Electrical Circuits Lab",
+              "teachers": [
+                "Md. Alamin Hossain Pappu",
+                "Mohd Ruhul Ameen"
+              ],
+              "room": "130 DSCAL",
+              "type": "lab"
+            },
+            {
+              "slot": 3,
               "code": "MAT 1141",
               "title": "Differential and Integral Calculus",
               "teachers": [
                 "Md. Mizanur Rahman"
               ],
-              "room": "314",
+              "room": "307",
               "type": "theory"
             }
           ]
@@ -3752,6 +3752,16 @@
               ],
               "room": "812",
               "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "CSE 2205",
+              "title": "Numerical Methods",
+              "teachers": [
+                "Humayra Tasnim"
+              ],
+              "room": "513",
+              "type": "theory"
             }
           ]
         },
@@ -3845,17 +3855,6 @@
           "short": "Wed",
           "classes": [
             {
-              "slot": 1,
-              "code": "CSE 2208",
-              "title": "Computer Networks Lab",
-              "teachers": [
-                "Akib Ikbal",
-                "Ahmed Al Azmain"
-              ],
-              "room": "104 CNL",
-              "type": "lab"
-            },
-            {
               "slot": 2,
               "code": "CSE 2205",
               "title": "Numerical Methods",
@@ -3905,13 +3904,14 @@
             },
             {
               "slot": 3,
-              "code": "CSE 2205",
-              "title": "Numerical Methods",
+              "code": "CSE 2208",
+              "title": "Computer Networks Lab",
               "teachers": [
-                "Humayra Tasnim"
+                "Akib Ikbal",
+                "Ahmed Al Azmain"
               ],
-              "room": "1012",
-              "type": "theory"
+              "room": "104 CNL",
+              "type": "lab"
             },
             {
               "slot": 4,
@@ -4332,6 +4332,16 @@
           "short": "Sun",
           "classes": [
             {
+              "slot": 5,
+              "code": "CSE 3105",
+              "title": "Computer Architecture",
+              "teachers": [
+                "Protik Chakroborty"
+              ],
+              "room": "509",
+              "type": "theory"
+            },
+            {
               "slot": 6,
               "code": "CSE 3107",
               "title": "Communication Engineering",
@@ -4347,6 +4357,16 @@
           "name": "Monday",
           "short": "Mon",
           "classes": [
+            {
+              "slot": 1,
+              "code": "MAT 3141",
+              "title": "Applied Statistics and Probability",
+              "teachers": [
+                "Ahammad Hossain"
+              ],
+              "room": "912",
+              "type": "theory"
+            },
             {
               "slot": 2,
               "code": "CSE 3101",
@@ -4402,17 +4422,6 @@
               ],
               "room": "413",
               "type": "theory"
-            },
-            {
-              "slot": 6,
-              "code": "CSE 3102",
-              "title": "Computer Graphics Lab",
-              "teachers": [
-                "Mst. Jannatul Ferdous",
-                "Ayesha Akter Lima"
-              ],
-              "room": "129 SEL",
-              "type": "lab"
             }
           ]
         },
@@ -4460,16 +4469,6 @@
           "short": "Thu",
           "classes": [
             {
-              "slot": 2,
-              "code": "CSE 3105",
-              "title": "Computer Architecture",
-              "teachers": [
-                "Protik Chakroborty"
-              ],
-              "room": "509",
-              "type": "theory"
-            },
-            {
               "slot": 3,
               "code": "CSE 3103",
               "title": "Database Management System",
@@ -4480,14 +4479,15 @@
               "type": "theory"
             },
             {
-              "slot": 4,
-              "code": "MAT 3141",
-              "title": "Applied Statistics and Probability",
+              "slot": 5,
+              "code": "CSE 3102",
+              "title": "Computer Graphics Lab",
               "teachers": [
-                "Ahammad Hossain"
+                "Mst. Jannatul Ferdous",
+                "Ayesha Akter Lima"
               ],
-              "room": "912",
-              "type": "theory"
+              "room": "103 DMSL",
+              "type": "lab"
             },
             {
               "slot": 6,
@@ -4947,6 +4947,16 @@
           "short": "Mon",
           "classes": [
             {
+              "slot": 1,
+              "code": "CSE 3107",
+              "title": "Communication Engineering",
+              "teachers": [
+                "Md. Alamin Hossain Pappu"
+              ],
+              "room": "514",
+              "type": "theory"
+            },
+            {
               "slot": 2,
               "code": "CSE 3103",
               "title": "Database Management System",
@@ -4954,16 +4964,6 @@
                 "SUMAYA HANNAN SHOVA"
               ],
               "room": "812",
-              "type": "theory"
-            },
-            {
-              "slot": 3,
-              "code": "MAT 3141",
-              "title": "Applied Statistics and Probability",
-              "teachers": [
-                "Sraboni Mostofa"
-              ],
-              "room": "514",
               "type": "theory"
             },
             {
@@ -5012,16 +5012,6 @@
               ],
               "room": "514",
               "type": "theory"
-            },
-            {
-              "slot": 5,
-              "code": "CSE 3103",
-              "title": "Database Management System",
-              "teachers": [
-                "SUMAYA HANNAN SHOVA"
-              ],
-              "room": "513",
-              "type": "theory"
             }
           ]
         },
@@ -5056,13 +5046,13 @@
           "short": "Thu",
           "classes": [
             {
-              "slot": 1,
-              "code": "CSE 3107",
-              "title": "Communication Engineering",
+              "slot": 2,
+              "code": "CSE 3103",
+              "title": "Database Management System",
               "teachers": [
-                "Md. Alamin Hossain Pappu"
+                "SUMAYA HANNAN SHOVA"
               ],
-              "room": "514",
+              "room": "1011",
               "type": "theory"
             },
             {
@@ -5071,6 +5061,16 @@
               "title": "Computer Architecture",
               "teachers": [
                 "Mehedi Hasan Shakil"
+              ],
+              "room": "1011",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "MAT 3141",
+              "title": "Applied Statistics and Probability",
+              "teachers": [
+                "Sraboni Mostofa"
               ],
               "room": "1011",
               "type": "theory"
