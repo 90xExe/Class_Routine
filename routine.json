@@ -5,7 +5,7 @@
     "timezone": "Asia/Dhaka",
     "source": "Varendra University official student routine portal",
     "updated": "2026-09-29",
-    "lastSyncedAt": "2026-09-29T11:53:27+06:00",
+    "lastSyncedAt": "2026-09-29T19:05:19+06:00",
     "coverage": {
       "loadedSchedules": 38,
       "isComplete": true,
@@ -1283,6 +1283,16 @@
           "short": "Sun",
           "classes": [
             {
+              "slot": 1,
+              "code": "MAT 1241",
+              "title": "Coordinate Geometry and Vector Analysis",
+              "teachers": [
+                "Md. Mehedi Hasan"
+              ],
+              "room": "403",
+              "type": "theory"
+            },
+            {
               "slot": 3,
               "code": "CSE 1202",
               "title": "Structured Programming Language Lab",
@@ -1312,16 +1322,6 @@
                 "Nazmussakib"
               ],
               "room": "508",
-              "type": "theory"
-            },
-            {
-              "slot": 6,
-              "code": "MAT 1241",
-              "title": "Coordinate Geometry and Vector Analysis",
-              "teachers": [
-                "Md. Mehedi Hasan"
-              ],
-              "room": "814",
               "type": "theory"
             }
           ]
@@ -2099,16 +2099,6 @@
             },
             {
               "slot": 2,
-              "code": "CSE 2101",
-              "title": "Object Oriented Programming",
-              "teachers": [
-                "Ahmed Al Azmain"
-              ],
-              "room": "314",
-              "type": "theory"
-            },
-            {
-              "slot": 3,
               "code": "CSE 2104",
               "title": "Data Structures Lab",
               "teachers": [
@@ -2119,7 +2109,7 @@
               "type": "lab"
             },
             {
-              "slot": 4,
+              "slot": 3,
               "code": "CSE 2104",
               "title": "Data Structures Lab",
               "teachers": [
@@ -2192,6 +2182,16 @@
                 "Md. Faisal Aziz"
               ],
               "room": "514",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "CSE 2101",
+              "title": "Object Oriented Programming",
+              "teachers": [
+                "Ahmed Al Azmain"
+              ],
+              "room": "1009",
               "type": "theory"
             }
           ]
@@ -3948,7 +3948,7 @@
           "short": "Sun",
           "classes": [
             {
-              "slot": 5,
+              "slot": 4,
               "code": "CSE 3104",
               "title": "Database Management System Lab",
               "teachers": [
@@ -3959,7 +3959,7 @@
               "type": "lab"
             },
             {
-              "slot": 6,
+              "slot": 5,
               "code": "CSE 3104",
               "title": "Database Management System Lab",
               "teachers": [
@@ -6128,6 +6128,17 @@
           "short": "Thu",
           "classes": [
             {
+              "slot": 1,
+              "code": "CSE 3204",
+              "title": "Operating System and System Programming Lab",
+              "teachers": [
+                "MD. FAYZUL ISLAM",
+                "Sajeeb Kumar Ray"
+              ],
+              "room": "129 SEL",
+              "type": "lab"
+            },
+            {
               "slot": 3,
               "code": "CSE 3209",
               "title": "E-commerce and Web Programming",
@@ -6146,17 +6157,6 @@
                 "Akib Ikbal"
               ],
               "room": "128 BCL",
-              "type": "lab"
-            },
-            {
-              "slot": 6,
-              "code": "CSE 3204",
-              "title": "Operating System and System Programming Lab",
-              "teachers": [
-                "MD. FAYZUL ISLAM",
-                "Sajeeb Kumar Ray"
-              ],
-              "room": "129 SEL",
               "type": "lab"
             }
           ]
@@ -6963,21 +6963,20 @@
             },
             {
               "slot": 2,
-              "code": "CSE 4108",
-              "title": "Microcontroller, Computer Peripherals and Interfacing Lab",
-              "teachers": [
-                "Asim Moin Saad",
-                "S.M. Mahadi Hasan"
-              ],
-              "room": "131 MIL",
-              "type": "lab"
-            },
-            {
-              "slot": 3,
               "code": "CSE 4105",
               "title": "Engineering Ethics and Enviromental Protection",
               "teachers": [
                 "Mohd Ruhul Ameen"
+              ],
+              "room": "314",
+              "type": "theory"
+            },
+            {
+              "slot": 3,
+              "code": "CSE 4107",
+              "title": "Microcontroller, Computer Peripherals and Interfacing",
+              "teachers": [
+                "Asim Moin Saad"
               ],
               "room": "411",
               "type": "theory"
@@ -6988,6 +6987,17 @@
           "name": "Monday",
           "short": "Mon",
           "classes": [
+            {
+              "slot": 2,
+              "code": "CSE 4108",
+              "title": "Microcontroller, Computer Peripherals and Interfacing Lab",
+              "teachers": [
+                "Asim Moin Saad",
+                "S.M. Mahadi Hasan"
+              ],
+              "room": "131 MIL",
+              "type": "lab"
+            },
             {
               "slot": 3,
               "code": "CSE 4103",
@@ -7006,16 +7016,6 @@
                 "Md. Rafiqul Islam"
               ],
               "room": "414",
-              "type": "theory"
-            },
-            {
-              "slot": 5,
-              "code": "CSE 4107",
-              "title": "Microcontroller, Computer Peripherals and Interfacing",
-              "teachers": [
-                "Asim Moin Saad"
-              ],
-              "room": "1011",
               "type": "theory"
             }
           ]

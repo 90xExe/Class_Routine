@@ -5,7 +5,7 @@
     "timezone": "Asia/Dhaka",
     "source": "Varendra University official student routine portal",
     "updated": "2026-09-29",
-    "lastSyncedAt": "2026-09-29T05:26:34+06:00",
+    "lastSyncedAt": "2026-09-29T19:08:11+06:00",
     "coverage": {
       "loadedSchedules": 11,
       "isComplete": true,
@@ -192,23 +192,13 @@
           "short": "Sat",
           "classes": [
             {
-              "slot": 3,
+              "slot": 5,
               "code": "AOL 101",
               "title": "Art of Living",
               "teachers": [
                 "Sudipto Das Shuvo"
               ],
-              "room": "1005",
-              "type": "theory"
-            },
-            {
-              "slot": 4,
-              "code": "NFE 1107",
-              "title": "Basic Human Physiology",
-              "teachers": [
-                "Dr. Sultana Rajia"
-              ],
-              "room": "910",
+              "room": "1010",
               "type": "theory"
             },
             {
@@ -278,7 +268,7 @@
               "code": "NFE 1107",
               "title": "Basic Human Physiology",
               "teachers": [
-                "Dr. Sultana Rajia"
+                "Afia Humyra Trisa"
               ],
               "room": "914",
               "type": "theory"
@@ -327,6 +317,16 @@
                 "Fahima Siddikey"
               ],
               "room": "118",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "NFE 1107",
+              "title": "Basic Human Physiology",
+              "teachers": [
+                "Afia Humyra Trisa"
+              ],
+              "room": "1001",
               "type": "theory"
             }
           ]
@@ -400,7 +400,7 @@
           "short": "Sat",
           "classes": [
             {
-              "slot": 4,
+              "slot": 5,
               "code": "AOL 101",
               "title": "Art of Living",
               "teachers": [
@@ -446,13 +446,13 @@
               "type": "theory"
             },
             {
-              "slot": 4,
+              "slot": 5,
               "code": "NFE 1107",
               "title": "Basic Human Physiology",
               "teachers": [
-                "Dr. Sultana Rajia"
+                "Sudipto Das Shuvo"
               ],
-              "room": "802",
+              "room": "814",
               "type": "theory"
             },
             {
@@ -471,16 +471,6 @@
           "name": "Monday",
           "short": "Mon",
           "classes": [
-            {
-              "slot": 1,
-              "code": "AOL 101",
-              "title": "Art of Living",
-              "teachers": [
-                "Md. Alahi Boxes"
-              ],
-              "room": "1012",
-              "type": "theory"
-            },
             {
               "slot": 3,
               "code": "NFE 1104",
@@ -556,6 +546,16 @@
               ],
               "room": "1011",
               "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "NFE 1107",
+              "title": "Basic Human Physiology",
+              "teachers": [
+                "Sudipto Das Shuvo"
+              ],
+              "room": "1009",
+              "type": "theory"
             }
           ]
         },
@@ -564,23 +564,23 @@
           "short": "Wed",
           "classes": [
             {
-              "slot": 5,
-              "code": "NFE 1107",
-              "title": "Basic Human Physiology",
+              "slot": 4,
+              "code": "AOL 101",
+              "title": "Art of Living",
               "teachers": [
-                "Dr. Sultana Rajia"
+                "Md. Alahi Boxes"
               ],
-              "room": "1009",
+              "room": "802",
               "type": "theory"
             },
             {
-              "slot": 6,
+              "slot": 5,
               "code": "NFE 1101",
               "title": "Introductory Food Science",
               "teachers": [
                 "Mohosina Hossain Misha"
               ],
-              "room": "1012",
+              "room": "1004",
               "type": "theory"
             }
           ]
@@ -612,7 +612,7 @@
               "code": "NFE 1107",
               "title": "Basic Human Physiology",
               "teachers": [
-                "Afia Humyra Trisa"
+                "Dr. Sultana Rajia"
               ],
               "room": "1002",
               "type": "theory"
@@ -782,13 +782,13 @@
               "type": "theory"
             },
             {
-              "slot": 3,
+              "slot": 4,
               "code": "NFE 1107",
               "title": "Basic Human Physiology",
               "teachers": [
-                "Afia Humyra Trisa"
+                "Dr. Sultana Rajia"
               ],
-              "room": "1009",
+              "room": "911",
               "type": "theory"
             }
           ]
@@ -816,6 +816,16 @@
           "short": "Sat",
           "classes": [
             {
+              "slot": 3,
+              "code": "NFE 1107",
+              "title": "Basic Human Physiology",
+              "teachers": [
+                "Dr. Sultana Rajia"
+              ],
+              "room": "1008",
+              "type": "theory"
+            },
+            {
               "slot": 4,
               "code": "NFE 1101",
               "title": "Introductory Food Science",
@@ -823,16 +833,6 @@
                 "Fahima Siddikey"
               ],
               "room": "909",
-              "type": "theory"
-            },
-            {
-              "slot": 5,
-              "code": "NFE 1107",
-              "title": "Basic Human Physiology",
-              "teachers": [
-                "Sudipto Das Shuvo"
-              ],
-              "room": "1009",
               "type": "theory"
             },
             {
@@ -852,6 +852,16 @@
           "short": "Sun",
           "classes": [
             {
+              "slot": 3,
+              "code": "NFE 1107",
+              "title": "Basic Human Physiology",
+              "teachers": [
+                "Dr. Sultana Rajia"
+              ],
+              "room": "904",
+              "type": "theory"
+            },
+            {
               "slot": 4,
               "code": "NFE 1104",
               "title": "Inorganic and Physical Chemistry Practical",
@@ -869,16 +879,6 @@
                 "Mysha Binte Mahmood"
               ],
               "room": "1010",
-              "type": "theory"
-            },
-            {
-              "slot": 6,
-              "code": "NFE 1107",
-              "title": "Basic Human Physiology",
-              "teachers": [
-                "Sudipto Das Shuvo"
-              ],
-              "room": "1011",
               "type": "theory"
             }
           ]
@@ -1028,7 +1028,7 @@
               "code": "NFE 1207",
               "title": "Applied Human Physiology",
               "teachers": [
-                "Umme Salma Nahida"
+                "Dr. MD. Khaled Hossain"
               ],
               "room": "1009",
               "type": "theory"
@@ -1074,7 +1074,7 @@
               "code": "NFE 1207",
               "title": "Applied Human Physiology",
               "teachers": [
-                "Umme Salma Nahida"
+                "Dr. MD. Khaled Hossain"
               ],
               "room": "802",
               "type": "theory"
@@ -1314,6 +1314,16 @@
               "type": "theory"
             },
             {
+              "slot": 4,
+              "code": "NFE 1207",
+              "title": "Applied Human Physiology",
+              "teachers": [
+                "Umme Salma Nahida"
+              ],
+              "room": "911",
+              "type": "theory"
+            },
+            {
               "slot": 5,
               "code": "CSE 1003",
               "title": "Computer Fundamentals",
@@ -1334,7 +1344,7 @@
               "code": "NFE 1207",
               "title": "Applied Human Physiology",
               "teachers": [
-                "Dr. MD. Khaled Hossain"
+                "Umme Salma Nahida"
               ],
               "room": "1008",
               "type": "theory"
@@ -1366,16 +1376,6 @@
           "short": "Wed",
           "classes": [
             {
-              "slot": 1,
-              "code": "NFE 1207",
-              "title": "Applied Human Physiology",
-              "teachers": [
-                "Dr. MD. Khaled Hossain"
-              ],
-              "room": "1010",
-              "type": "theory"
-            },
-            {
               "slot": 2,
               "code": "NFE 1205",
               "title": "Post Harvest Technology",
@@ -1386,13 +1386,13 @@
               "type": "theory"
             },
             {
-              "slot": 4,
+              "slot": 3,
               "code": "NFE 1201",
               "title": "Food Chemistry",
               "teachers": [
                 "Mrinal Kanti Debnath"
               ],
-              "room": "507",
+              "room": "1009",
               "type": "theory"
             }
           ]
