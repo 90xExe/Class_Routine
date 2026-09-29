@@ -5,7 +5,7 @@
     "timezone": "Asia/Dhaka",
     "source": "Varendra University official student routine portal",
     "updated": "2026-09-29",
-    "lastSyncedAt": "2026-09-29T05:23:48+06:00",
+    "lastSyncedAt": "2026-09-29T11:53:27+06:00",
     "coverage": {
       "loadedSchedules": 38,
       "isComplete": true,
@@ -1923,16 +1923,6 @@
           "short": "Mon",
           "classes": [
             {
-              "slot": 1,
-              "code": "CSE 2103",
-              "title": "Data Structures",
-              "teachers": [
-                "Md. Golam Rashed"
-              ],
-              "room": "911",
-              "type": "theory"
-            },
-            {
               "slot": 2,
               "code": "CSE 2102",
               "title": "Object Oriented Programming Lab",
@@ -1953,6 +1943,16 @@
               ],
               "room": "129 SEL",
               "type": "lab"
+            },
+            {
+              "slot": 6,
+              "code": "CSE 2103",
+              "title": "Data Structures",
+              "teachers": [
+                "Md. Golam Rashed"
+              ],
+              "room": "912",
+              "type": "theory"
             }
           ]
         },
@@ -2024,16 +2024,6 @@
           "short": "Thu",
           "classes": [
             {
-              "slot": 1,
-              "code": "CSE 2103",
-              "title": "Data Structures",
-              "teachers": [
-                "Md. Golam Rashed"
-              ],
-              "room": "1013",
-              "type": "theory"
-            },
-            {
               "slot": 2,
               "code": "CSE 2101",
               "title": "Object Oriented Programming",
@@ -2061,6 +2051,16 @@
                 "Anupoma Barman Shetu"
               ],
               "room": "508",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "code": "CSE 2103",
+              "title": "Data Structures",
+              "teachers": [
+                "Md. Golam Rashed"
+              ],
+              "room": "1013",
               "type": "theory"
             }
           ]
@@ -4599,23 +4599,13 @@
               "type": "lab"
             },
             {
-              "slot": 3,
+              "slot": 6,
               "code": "CSE 3107",
               "title": "Communication Engineering",
               "teachers": [
                 "Foez Ahmed"
               ],
-              "room": "511",
-              "type": "theory"
-            },
-            {
-              "slot": 4,
-              "code": "CSE 3103",
-              "title": "Database Management System",
-              "teachers": [
-                "Sumaia Rahman"
-              ],
-              "room": "1009",
+              "room": "812",
               "type": "theory"
             }
           ]
@@ -4642,6 +4632,16 @@
                 "Protik Chakroborty"
               ],
               "room": "411",
+              "type": "theory"
+            },
+            {
+              "slot": 4,
+              "code": "CSE 3103",
+              "title": "Database Management System",
+              "teachers": [
+                "Sumaia Rahman"
+              ],
+              "room": "1012",
               "type": "theory"
             }
           ]
