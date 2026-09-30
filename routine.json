@@ -4,8 +4,8 @@
     "program": "B. Sc. in CSE",
     "timezone": "Asia/Dhaka",
     "source": "Varendra University official student routine portal",
-    "updated": "2026-09-29",
-    "lastSyncedAt": "2026-09-29T19:05:19+06:00",
+    "updated": "2026-09-30",
+    "lastSyncedAt": "2026-09-30T21:32:33+06:00",
     "coverage": {
       "loadedSchedules": 38,
       "isComplete": true,
@@ -186,6 +186,38 @@
       "sectionId": 1,
       "semester": "1st Semester",
       "section": "A",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -198,6 +230,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "ENG 0002",
               "title": "English Fundamentals",
               "teachers": [
@@ -208,6 +242,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CHE 1161",
               "title": "Chemistry",
               "teachers": [
@@ -218,6 +254,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "MAT 1141",
               "title": "Differential and Integral Calculus",
               "teachers": [
@@ -234,6 +272,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "PHY 1152",
               "title": "Basic Physics Lab",
               "teachers": [
@@ -245,6 +285,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "PHY 1151",
               "title": "Basic Physics",
               "teachers": [
@@ -255,6 +297,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 1100",
               "title": "Computer Fundamentals Lab",
               "teachers": [
@@ -266,6 +310,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "EEE 1131",
               "title": "Basic Electrical Circuits",
               "teachers": [
@@ -282,6 +328,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CHE 1161",
               "title": "Chemistry",
               "teachers": [
@@ -292,6 +340,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "PHY 1151",
               "title": "Basic Physics",
               "teachers": [
@@ -302,6 +352,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "ENG 0002",
               "title": "English Fundamentals",
               "teachers": [
@@ -318,6 +370,8 @@
           "classes": [
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "EEE 1131",
               "title": "Basic Electrical Circuits",
               "teachers": [
@@ -334,6 +388,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "EEE 1132",
               "title": "Basic Electrical Circuits Lab",
               "teachers": [
@@ -345,6 +401,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "MAT 1141",
               "title": "Differential and Integral Calculus",
               "teachers": [
@@ -367,6 +425,38 @@
       "sectionId": 2,
       "semester": "1st Semester",
       "section": "B",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -379,6 +469,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CHE 1161",
               "title": "Chemistry",
               "teachers": [
@@ -389,6 +481,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "PHY 1151",
               "title": "Basic Physics",
               "teachers": [
@@ -399,6 +493,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 1100",
               "title": "Computer Fundamentals Lab",
               "teachers": [
@@ -416,6 +512,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "PHY 1151",
               "title": "Basic Physics",
               "teachers": [
@@ -426,6 +524,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "MAT 1141",
               "title": "Differential and Integral Calculus",
               "teachers": [
@@ -436,6 +536,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CHE 1161",
               "title": "Chemistry",
               "teachers": [
@@ -446,6 +548,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "EEE 1131",
               "title": "Basic Electrical Circuits",
               "teachers": [
@@ -462,6 +566,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "PHY 1152",
               "title": "Basic Physics Lab",
               "teachers": [
@@ -473,6 +579,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "ENG 0002",
               "title": "English Fundamentals",
               "teachers": [
@@ -483,6 +591,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "MAT 1141",
               "title": "Differential and Integral Calculus",
               "teachers": [
@@ -499,6 +609,8 @@
           "classes": [
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "ENG 0002",
               "title": "English Fundamentals",
               "teachers": [
@@ -515,6 +627,8 @@
           "classes": [
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "EEE 1132",
               "title": "Basic Electrical Circuits Lab",
               "teachers": [
@@ -526,6 +640,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "EEE 1131",
               "title": "Basic Electrical Circuits",
               "teachers": [
@@ -548,6 +664,38 @@
       "sectionId": 3,
       "semester": "1st Semester",
       "section": "C",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -560,6 +708,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "ENG 0002",
               "title": "English Fundamentals",
               "teachers": [
@@ -570,6 +720,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "PHY 1151",
               "title": "Basic Physics",
               "teachers": [
@@ -580,6 +732,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "PHY 1152",
               "title": "Basic Physics Lab",
               "teachers": [
@@ -597,6 +751,8 @@
           "classes": [
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "PHY 1151",
               "title": "Basic Physics",
               "teachers": [
@@ -607,6 +763,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "EEE 1131",
               "title": "Basic Electrical Circuits",
               "teachers": [
@@ -617,6 +775,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 1100",
               "title": "Computer Fundamentals Lab",
               "teachers": [
@@ -634,6 +794,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "EEE 1131",
               "title": "Basic Electrical Circuits",
               "teachers": [
@@ -644,6 +806,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CHE 1161",
               "title": "Chemistry",
               "teachers": [
@@ -654,6 +818,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "MAT 1141",
               "title": "Differential and Integral Calculus",
               "teachers": [
@@ -670,6 +836,8 @@
           "classes": [
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CHE 1161",
               "title": "Chemistry",
               "teachers": [
@@ -680,6 +848,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "MAT 1141",
               "title": "Differential and Integral Calculus",
               "teachers": [
@@ -696,6 +866,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "EEE 1132",
               "title": "Basic Electrical Circuits Lab",
               "teachers": [
@@ -707,6 +879,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "ENG 0002",
               "title": "English Fundamentals",
               "teachers": [
@@ -729,6 +903,38 @@
       "sectionId": 4,
       "semester": "1st Semester",
       "section": "D",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -741,6 +947,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "PHY 1152",
               "title": "Basic Physics Lab",
               "teachers": [
@@ -752,6 +960,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "MAT 1141",
               "title": "Differential and Integral Calculus",
               "teachers": [
@@ -762,6 +972,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "EEE 1132",
               "title": "Basic Electrical Circuits Lab",
               "teachers": [
@@ -779,6 +991,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CHE 1161",
               "title": "Chemistry",
               "teachers": [
@@ -789,6 +1003,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "EEE 1131",
               "title": "Basic Electrical Circuits",
               "teachers": [
@@ -799,6 +1015,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "ENG 0002",
               "title": "English Fundamentals",
               "teachers": [
@@ -815,6 +1033,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "ENG 0002",
               "title": "English Fundamentals",
               "teachers": [
@@ -825,6 +1045,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "PHY 1151",
               "title": "Basic Physics",
               "teachers": [
@@ -841,6 +1063,8 @@
           "classes": [
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CHE 1161",
               "title": "Chemistry",
               "teachers": [
@@ -851,6 +1075,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "MAT 1141",
               "title": "Differential and Integral Calculus",
               "teachers": [
@@ -867,6 +1093,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "PHY 1151",
               "title": "Basic Physics",
               "teachers": [
@@ -877,6 +1105,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "EEE 1131",
               "title": "Basic Electrical Circuits",
               "teachers": [
@@ -887,6 +1117,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 1100",
               "title": "Computer Fundamentals Lab",
               "teachers": [
@@ -910,6 +1142,38 @@
       "sectionId": 5,
       "semester": "1st Semester",
       "section": "E",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -922,6 +1186,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "MAT 1141",
               "title": "Differential and Integral Calculus",
               "teachers": [
@@ -932,6 +1198,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CHE 1161",
               "title": "Chemistry",
               "teachers": [
@@ -942,6 +1210,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "EEE 1131",
               "title": "Basic Electrical Circuits",
               "teachers": [
@@ -958,6 +1228,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "PHY 1151",
               "title": "Basic Physics",
               "teachers": [
@@ -968,6 +1240,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "ENG 0002",
               "title": "English Fundamentals",
               "teachers": [
@@ -984,6 +1258,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "PHY 1151",
               "title": "Basic Physics",
               "teachers": [
@@ -994,6 +1270,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 1100",
               "title": "Computer Fundamentals Lab",
               "teachers": [
@@ -1011,6 +1289,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "PHY 1152",
               "title": "Basic Physics Lab",
               "teachers": [
@@ -1022,6 +1302,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "EEE 1131",
               "title": "Basic Electrical Circuits",
               "teachers": [
@@ -1032,6 +1314,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "EEE 1132",
               "title": "Basic Electrical Circuits Lab",
               "teachers": [
@@ -1049,6 +1333,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "ENG 0002",
               "title": "English Fundamentals",
               "teachers": [
@@ -1059,6 +1345,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "MAT 1141",
               "title": "Differential and Integral Calculus",
               "teachers": [
@@ -1069,6 +1357,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CHE 1161",
               "title": "Chemistry",
               "teachers": [
@@ -1091,6 +1381,38 @@
       "sectionId": 6,
       "semester": "1st Semester",
       "section": "F",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -1103,6 +1425,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "MAT 1141",
               "title": "Differential and Integral Calculus",
               "teachers": [
@@ -1113,6 +1437,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "EEE 1131",
               "title": "Basic Electrical Circuits",
               "teachers": [
@@ -1123,6 +1449,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "ENG 0002",
               "title": "English Fundamentals",
               "teachers": [
@@ -1133,6 +1461,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 1100",
               "title": "Computer Fundamentals Lab",
               "teachers": [
@@ -1150,6 +1480,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "EEE 1131",
               "title": "Basic Electrical Circuits",
               "teachers": [
@@ -1160,6 +1492,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "PHY 1151",
               "title": "Basic Physics",
               "teachers": [
@@ -1176,6 +1510,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "PHY 1152",
               "title": "Basic Physics Lab",
               "teachers": [
@@ -1187,6 +1523,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CHE 1161",
               "title": "Chemistry",
               "teachers": [
@@ -1197,6 +1535,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "EEE 1132",
               "title": "Basic Electrical Circuits Lab",
               "teachers": [
@@ -1214,6 +1554,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "ENG 0002",
               "title": "English Fundamentals",
               "teachers": [
@@ -1224,6 +1566,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "MAT 1141",
               "title": "Differential and Integral Calculus",
               "teachers": [
@@ -1240,6 +1584,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CHE 1161",
               "title": "Chemistry",
               "teachers": [
@@ -1250,6 +1596,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "PHY 1151",
               "title": "Basic Physics",
               "teachers": [
@@ -1272,6 +1620,38 @@
       "sectionId": 1,
       "semester": "2nd Semester",
       "section": "A",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -1284,6 +1664,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "MAT 1241",
               "title": "Coordinate Geometry and Vector Analysis",
               "teachers": [
@@ -1294,6 +1676,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 1202",
               "title": "Structured Programming Language Lab",
               "teachers": [
@@ -1305,6 +1689,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 1202",
               "title": "Structured Programming Language Lab",
               "teachers": [
@@ -1316,6 +1702,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "ECO 1271",
               "title": "Engineering Economics",
               "teachers": [
@@ -1332,6 +1720,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "EEE 1231",
               "title": "Electronic Devices and Circuits",
               "teachers": [
@@ -1342,6 +1732,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "BAN 0001",
               "title": "History of the Emergence of Bangladesh",
               "teachers": [
@@ -1352,6 +1744,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "EEE 1232",
               "title": "Electronic Devices and Circuits Lab",
               "teachers": [
@@ -1369,6 +1763,8 @@
           "classes": [
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "MAT 1241",
               "title": "Coordinate Geometry and Vector Analysis",
               "teachers": [
@@ -1379,6 +1775,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "EEE 1231",
               "title": "Electronic Devices and Circuits",
               "teachers": [
@@ -1389,6 +1787,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 1203",
               "title": "Discrete Mathematics",
               "teachers": [
@@ -1405,6 +1805,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 1201",
               "title": "Structured Programming Language",
               "teachers": [
@@ -1415,6 +1817,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "ECO 1271",
               "title": "Engineering Economics",
               "teachers": [
@@ -1425,6 +1829,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "BAN 0001",
               "title": "History of the Emergence of Bangladesh",
               "teachers": [
@@ -1441,6 +1847,8 @@
           "classes": [
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 1201",
               "title": "Structured Programming Language",
               "teachers": [
@@ -1451,6 +1859,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 1203",
               "title": "Discrete Mathematics",
               "teachers": [
@@ -1473,6 +1883,38 @@
       "sectionId": 2,
       "semester": "2nd Semester",
       "section": "B",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -1490,6 +1932,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "ECO 1271",
               "title": "Engineering Economics",
               "teachers": [
@@ -1500,6 +1944,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 1203",
               "title": "Discrete Mathematics",
               "teachers": [
@@ -1510,6 +1956,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "BAN 0001",
               "title": "History of the Emergence of Bangladesh",
               "teachers": [
@@ -1520,6 +1968,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "EEE 1231",
               "title": "Electronic Devices and Circuits",
               "teachers": [
@@ -1536,6 +1986,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "MAT 1241",
               "title": "Coordinate Geometry and Vector Analysis",
               "teachers": [
@@ -1546,6 +1998,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 1202",
               "title": "Structured Programming Language Lab",
               "teachers": [
@@ -1557,6 +2011,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 1202",
               "title": "Structured Programming Language Lab",
               "teachers": [
@@ -1574,6 +2030,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "ECO 1271",
               "title": "Engineering Economics",
               "teachers": [
@@ -1584,6 +2042,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 1201",
               "title": "Structured Programming Language",
               "teachers": [
@@ -1594,6 +2054,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "BAN 0001",
               "title": "History of the Emergence of Bangladesh",
               "teachers": [
@@ -1604,6 +2066,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "EEE 1232",
               "title": "Electronic Devices and Circuits Lab",
               "teachers": [
@@ -1621,6 +2085,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "EEE 1231",
               "title": "Electronic Devices and Circuits",
               "teachers": [
@@ -1631,6 +2097,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 1201",
               "title": "Structured Programming Language",
               "teachers": [
@@ -1641,6 +2109,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 1203",
               "title": "Discrete Mathematics",
               "teachers": [
@@ -1651,6 +2121,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "MAT 1241",
               "title": "Coordinate Geometry and Vector Analysis",
               "teachers": [
@@ -1673,6 +2145,38 @@
       "sectionId": 3,
       "semester": "2nd Semester",
       "section": "C",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -1685,6 +2189,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 1203",
               "title": "Discrete Mathematics",
               "teachers": [
@@ -1695,6 +2201,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "BAN 0001",
               "title": "History of the Emergence of Bangladesh",
               "teachers": [
@@ -1705,6 +2213,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "EEE 1231",
               "title": "Electronic Devices and Circuits",
               "teachers": [
@@ -1721,6 +2231,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 1202",
               "title": "Structured Programming Language Lab",
               "teachers": [
@@ -1732,6 +2244,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 1202",
               "title": "Structured Programming Language Lab",
               "teachers": [
@@ -1743,6 +2257,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "MAT 1241",
               "title": "Coordinate Geometry and Vector Analysis",
               "teachers": [
@@ -1759,6 +2275,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "BAN 0001",
               "title": "History of the Emergence of Bangladesh",
               "teachers": [
@@ -1769,6 +2287,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 1201",
               "title": "Structured Programming Language",
               "teachers": [
@@ -1785,6 +2305,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "EEE 1232",
               "title": "Electronic Devices and Circuits Lab",
               "teachers": [
@@ -1796,6 +2318,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "MAT 1241",
               "title": "Coordinate Geometry and Vector Analysis",
               "teachers": [
@@ -1806,6 +2330,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "ECO 1271",
               "title": "Engineering Economics",
               "teachers": [
@@ -1822,6 +2348,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 1201",
               "title": "Structured Programming Language",
               "teachers": [
@@ -1832,6 +2360,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 1203",
               "title": "Discrete Mathematics",
               "teachers": [
@@ -1842,6 +2372,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "EEE 1231",
               "title": "Electronic Devices and Circuits",
               "teachers": [
@@ -1852,6 +2384,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "ECO 1271",
               "title": "Engineering Economics",
               "teachers": [
@@ -1874,6 +2408,38 @@
       "sectionId": 1,
       "semester": "3rd Semester",
       "section": "A",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -1886,6 +2452,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 2104",
               "title": "Data Structures Lab",
               "teachers": [
@@ -1897,6 +2465,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 2104",
               "title": "Data Structures Lab",
               "teachers": [
@@ -1908,6 +2478,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "ECO 2171",
               "title": "Engineering Economics",
               "teachers": [
@@ -1924,6 +2496,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 2102",
               "title": "Object Oriented Programming Lab",
               "teachers": [
@@ -1935,6 +2509,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 2102",
               "title": "Object Oriented Programming Lab",
               "teachers": [
@@ -1946,6 +2522,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 2103",
               "title": "Data Structures",
               "teachers": [
@@ -1962,6 +2540,8 @@
           "classes": [
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "ECO 2171",
               "title": "Engineering Economics",
               "teachers": [
@@ -1972,6 +2552,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "MAT 2141",
               "title": "Differential Equations",
               "teachers": [
@@ -1988,6 +2570,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 2106",
               "title": "Digital System Design Lab",
               "teachers": [
@@ -1999,6 +2583,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 2105",
               "title": "Digital System Design",
               "teachers": [
@@ -2009,6 +2595,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 2101",
               "title": "Object Oriented Programming",
               "teachers": [
@@ -2025,6 +2613,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 2101",
               "title": "Object Oriented Programming",
               "teachers": [
@@ -2035,6 +2625,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 2105",
               "title": "Digital System Design",
               "teachers": [
@@ -2045,6 +2637,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "MAT 2141",
               "title": "Differential Equations",
               "teachers": [
@@ -2055,6 +2649,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 2103",
               "title": "Data Structures",
               "teachers": [
@@ -2077,6 +2673,38 @@
       "sectionId": 2,
       "semester": "3rd Semester",
       "section": "B",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -2089,6 +2717,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 2103",
               "title": "Data Structures",
               "teachers": [
@@ -2099,6 +2729,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 2104",
               "title": "Data Structures Lab",
               "teachers": [
@@ -2110,6 +2742,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 2104",
               "title": "Data Structures Lab",
               "teachers": [
@@ -2127,6 +2761,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 2102",
               "title": "Object Oriented Programming Lab",
               "teachers": [
@@ -2138,6 +2774,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 2102",
               "title": "Object Oriented Programming Lab",
               "teachers": [
@@ -2149,6 +2787,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "MAT 2141",
               "title": "Differential Equations",
               "teachers": [
@@ -2159,6 +2799,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 2106",
               "title": "Digital System Design Lab",
               "teachers": [
@@ -2176,6 +2818,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "ECO 2171",
               "title": "Engineering Economics",
               "teachers": [
@@ -2186,6 +2830,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 2101",
               "title": "Object Oriented Programming",
               "teachers": [
@@ -2202,6 +2848,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "ECO 2171",
               "title": "Engineering Economics",
               "teachers": [
@@ -2212,6 +2860,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "MAT 2141",
               "title": "Differential Equations",
               "teachers": [
@@ -2222,6 +2872,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 2105",
               "title": "Digital System Design",
               "teachers": [
@@ -2238,6 +2890,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 2103",
               "title": "Data Structures",
               "teachers": [
@@ -2248,6 +2902,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 2101",
               "title": "Object Oriented Programming",
               "teachers": [
@@ -2258,6 +2914,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 2105",
               "title": "Digital System Design",
               "teachers": [
@@ -2280,6 +2938,38 @@
       "sectionId": 3,
       "semester": "3rd Semester",
       "section": "C",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -2292,6 +2982,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 2106",
               "title": "Digital System Design Lab",
               "teachers": [
@@ -2303,6 +2995,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 2101",
               "title": "Object Oriented Programming",
               "teachers": [
@@ -2319,6 +3013,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "ECO 2171",
               "title": "Engineering Economics",
               "teachers": [
@@ -2329,6 +3025,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 2103",
               "title": "Data Structures",
               "teachers": [
@@ -2339,6 +3037,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 2104",
               "title": "Data Structures Lab",
               "teachers": [
@@ -2350,6 +3050,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 2104",
               "title": "Data Structures Lab",
               "teachers": [
@@ -2367,6 +3069,8 @@
           "classes": [
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "MAT 2141",
               "title": "Differential Equations",
               "teachers": [
@@ -2377,6 +3081,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 2105",
               "title": "Digital System Design",
               "teachers": [
@@ -2387,6 +3093,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 2101",
               "title": "Object Oriented Programming",
               "teachers": [
@@ -2403,6 +3111,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "MAT 2141",
               "title": "Differential Equations",
               "teachers": [
@@ -2413,6 +3123,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 2103",
               "title": "Data Structures",
               "teachers": [
@@ -2429,6 +3141,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "ECO 2171",
               "title": "Engineering Economics",
               "teachers": [
@@ -2439,6 +3153,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 2105",
               "title": "Digital System Design",
               "teachers": [
@@ -2449,6 +3165,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 2102",
               "title": "Object Oriented Programming Lab",
               "teachers": [
@@ -2460,6 +3178,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 2102",
               "title": "Object Oriented Programming Lab",
               "teachers": [
@@ -2483,6 +3203,38 @@
       "sectionId": 4,
       "semester": "3rd Semester",
       "section": "D",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -2495,6 +3247,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "ECO 2171",
               "title": "Engineering Economics",
               "teachers": [
@@ -2505,6 +3259,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 2106",
               "title": "Digital System Design Lab",
               "teachers": [
@@ -2516,6 +3272,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "MAT 2141",
               "title": "Differential Equations",
               "teachers": [
@@ -2532,6 +3290,8 @@
           "classes": [
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "ECO 2171",
               "title": "Engineering Economics",
               "teachers": [
@@ -2542,6 +3302,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 2101",
               "title": "Object Oriented Programming",
               "teachers": [
@@ -2552,6 +3314,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 2105",
               "title": "Digital System Design",
               "teachers": [
@@ -2568,6 +3332,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 2104",
               "title": "Data Structures Lab",
               "teachers": [
@@ -2579,6 +3345,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 2104",
               "title": "Data Structures Lab",
               "teachers": [
@@ -2590,6 +3358,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 2105",
               "title": "Digital System Design",
               "teachers": [
@@ -2600,6 +3370,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "MAT 2141",
               "title": "Differential Equations",
               "teachers": [
@@ -2616,6 +3388,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 2103",
               "title": "Data Structures",
               "teachers": [
@@ -2626,6 +3400,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 2101",
               "title": "Object Oriented Programming",
               "teachers": [
@@ -2642,6 +3418,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 2103",
               "title": "Data Structures",
               "teachers": [
@@ -2652,6 +3430,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 2102",
               "title": "Object Oriented Programming Lab",
               "teachers": [
@@ -2663,6 +3443,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 2102",
               "title": "Object Oriented Programming Lab",
               "teachers": [
@@ -2686,6 +3468,38 @@
       "sectionId": 5,
       "semester": "3rd Semester",
       "section": "E",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -2698,6 +3512,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 2105",
               "title": "Digital System Design",
               "teachers": [
@@ -2708,6 +3524,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 2101",
               "title": "Object Oriented Programming",
               "teachers": [
@@ -2718,6 +3536,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "MAT 2141",
               "title": "Differential Equations",
               "teachers": [
@@ -2734,6 +3554,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 2103",
               "title": "Data Structures",
               "teachers": [
@@ -2744,6 +3566,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "ECO 2171",
               "title": "Engineering Economics",
               "teachers": [
@@ -2754,6 +3578,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 2101",
               "title": "Object Oriented Programming",
               "teachers": [
@@ -2770,6 +3596,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 2102",
               "title": "Object Oriented Programming Lab",
               "teachers": [
@@ -2781,6 +3609,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 2102",
               "title": "Object Oriented Programming Lab",
               "teachers": [
@@ -2792,6 +3622,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 2105",
               "title": "Digital System Design",
               "teachers": [
@@ -2808,6 +3640,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 2106",
               "title": "Digital System Design Lab",
               "teachers": [
@@ -2819,6 +3653,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 2104",
               "title": "Data Structures Lab",
               "teachers": [
@@ -2830,6 +3666,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 2104",
               "title": "Data Structures Lab",
               "teachers": [
@@ -2847,6 +3685,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 2103",
               "title": "Data Structures",
               "teachers": [
@@ -2857,6 +3697,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "ECO 2171",
               "title": "Engineering Economics",
               "teachers": [
@@ -2867,6 +3709,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "MAT 2141",
               "title": "Differential Equations",
               "teachers": [
@@ -2889,6 +3733,38 @@
       "sectionId": 6,
       "semester": "3rd Semester",
       "section": "F",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -2901,6 +3777,8 @@
           "classes": [
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 2105",
               "title": "Digital System Design",
               "teachers": [
@@ -2911,6 +3789,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 2103",
               "title": "Data Structures",
               "teachers": [
@@ -2927,6 +3807,8 @@
           "classes": [
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 2106",
               "title": "Digital System Design Lab",
               "teachers": [
@@ -2938,6 +3820,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "MAT 2141",
               "title": "Differential Equations",
               "teachers": [
@@ -2954,6 +3838,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "ECO 2171",
               "title": "Engineering Economics",
               "teachers": [
@@ -2964,6 +3850,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 2104",
               "title": "Data Structures Lab",
               "teachers": [
@@ -2975,6 +3863,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 2104",
               "title": "Data Structures Lab",
               "teachers": [
@@ -2986,6 +3876,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 2101",
               "title": "Object Oriented Programming",
               "teachers": [
@@ -3002,6 +3894,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 2102",
               "title": "Object Oriented Programming Lab",
               "teachers": [
@@ -3013,6 +3907,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 2102",
               "title": "Object Oriented Programming Lab",
               "teachers": [
@@ -3024,6 +3920,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "ECO 2171",
               "title": "Engineering Economics",
               "teachers": [
@@ -3034,6 +3932,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "MAT 2141",
               "title": "Differential Equations",
               "teachers": [
@@ -3050,6 +3950,8 @@
           "classes": [
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 2105",
               "title": "Digital System Design",
               "teachers": [
@@ -3060,6 +3962,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 2103",
               "title": "Data Structures",
               "teachers": [
@@ -3070,6 +3974,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 2101",
               "title": "Object Oriented Programming",
               "teachers": [
@@ -3092,6 +3998,38 @@
       "sectionId": 7,
       "semester": "3rd Semester",
       "section": "G",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -3104,6 +4042,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 2101",
               "title": "Object Oriented Programming",
               "teachers": [
@@ -3114,6 +4054,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 2105",
               "title": "Digital System Design",
               "teachers": [
@@ -3124,6 +4066,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 2102",
               "title": "Object Oriented Programming Lab",
               "teachers": [
@@ -3135,6 +4079,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 2102",
               "title": "Object Oriented Programming Lab",
               "teachers": [
@@ -3152,6 +4098,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "ECO 2171",
               "title": "Engineering Economics",
               "teachers": [
@@ -3162,6 +4110,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 2101",
               "title": "Object Oriented Programming",
               "teachers": [
@@ -3172,6 +4122,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 2103",
               "title": "Data Structures",
               "teachers": [
@@ -3188,6 +4140,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "ECO 2171",
               "title": "Engineering Economics",
               "teachers": [
@@ -3198,6 +4152,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "MAT 2141",
               "title": "Differential Equations",
               "teachers": [
@@ -3214,6 +4170,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 2106",
               "title": "Digital System Design Lab",
               "teachers": [
@@ -3225,6 +4183,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 2104",
               "title": "Data Structures Lab",
               "teachers": [
@@ -3236,6 +4196,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 2104",
               "title": "Data Structures Lab",
               "teachers": [
@@ -3247,6 +4209,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "MAT 2141",
               "title": "Differential Equations",
               "teachers": [
@@ -3263,6 +4227,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 2103",
               "title": "Data Structures",
               "teachers": [
@@ -3273,6 +4239,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 2105",
               "title": "Digital System Design",
               "teachers": [
@@ -3295,6 +4263,33 @@
       "sectionId": 1,
       "semester": "4th Semester",
       "section": "A",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -3307,6 +4302,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 2205",
               "title": "Numerical Methods",
               "teachers": [
@@ -3317,6 +4314,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 2201",
               "title": "Object Oriented Design and Design Patterns",
               "teachers": [
@@ -3333,6 +4332,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 2203",
               "title": "Computer Algorithms",
               "teachers": [
@@ -3343,6 +4344,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 2206",
               "title": "Numerical Methods Lab",
               "teachers": [
@@ -3354,6 +4357,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 2204",
               "title": "Computer Algorithms Lab",
               "teachers": [
@@ -3365,6 +4370,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 2204",
               "title": "Computer Algorithms Lab",
               "teachers": [
@@ -3382,6 +4389,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 2207",
               "title": "Computer Networks",
               "teachers": [
@@ -3392,6 +4401,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 2205",
               "title": "Numerical Methods",
               "teachers": [
@@ -3402,6 +4413,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 2201",
               "title": "Object Oriented Design and Design Patterns",
               "teachers": [
@@ -3412,6 +4425,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 2208",
               "title": "Computer Networks Lab",
               "teachers": [
@@ -3429,6 +4444,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 2207",
               "title": "Computer Networks",
               "teachers": [
@@ -3439,6 +4456,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 2202",
               "title": "Object Oriented Design and Design Patterns Lab",
               "teachers": [
@@ -3450,6 +4469,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 2202",
               "title": "Object Oriented Design and Design Patterns Lab",
               "teachers": [
@@ -3461,6 +4482,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "MAT 2241",
               "title": "Linear Algebra and Complex Variables",
               "teachers": [
@@ -3477,6 +4500,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "MAT 2241",
               "title": "Linear Algebra and Complex Variables",
               "teachers": [
@@ -3487,6 +4512,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 2203",
               "title": "Computer Algorithms",
               "teachers": [
@@ -3509,6 +4536,33 @@
       "sectionId": 2,
       "semester": "4th Semester",
       "section": "B",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -3521,6 +4575,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 2207",
               "title": "Computer Networks",
               "teachers": [
@@ -3531,6 +4587,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 2206",
               "title": "Numerical Methods Lab",
               "teachers": [
@@ -3542,6 +4600,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 2203",
               "title": "Computer Algorithms",
               "teachers": [
@@ -3552,6 +4612,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 2201",
               "title": "Object Oriented Design and Design Patterns",
               "teachers": [
@@ -3568,6 +4630,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 2201",
               "title": "Object Oriented Design and Design Patterns",
               "teachers": [
@@ -3578,6 +4642,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "MAT 2241",
               "title": "Linear Algebra and Complex Variables",
               "teachers": [
@@ -3588,6 +4654,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 2207",
               "title": "Computer Networks",
               "teachers": [
@@ -3604,6 +4672,8 @@
           "classes": [
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 2204",
               "title": "Computer Algorithms Lab",
               "teachers": [
@@ -3615,6 +4685,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 2204",
               "title": "Computer Algorithms Lab",
               "teachers": [
@@ -3632,6 +4704,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 2203",
               "title": "Computer Algorithms",
               "teachers": [
@@ -3642,6 +4716,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 2205",
               "title": "Numerical Methods",
               "teachers": [
@@ -3652,6 +4728,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 2208",
               "title": "Computer Networks Lab",
               "teachers": [
@@ -3669,6 +4747,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 2205",
               "title": "Numerical Methods",
               "teachers": [
@@ -3679,6 +4759,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 2202",
               "title": "Object Oriented Design and Design Patterns Lab",
               "teachers": [
@@ -3690,6 +4772,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 2202",
               "title": "Object Oriented Design and Design Patterns Lab",
               "teachers": [
@@ -3701,6 +4785,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "MAT 2241",
               "title": "Linear Algebra and Complex Variables",
               "teachers": [
@@ -3723,6 +4809,33 @@
       "sectionId": 3,
       "semester": "4th Semester",
       "section": "C",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -3735,6 +4848,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 2203",
               "title": "Computer Algorithms",
               "teachers": [
@@ -3745,6 +4860,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "MAT 2241",
               "title": "Linear Algebra and Complex Variables",
               "teachers": [
@@ -3755,6 +4872,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 2205",
               "title": "Numerical Methods",
               "teachers": [
@@ -3771,6 +4890,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 2206",
               "title": "Numerical Methods Lab",
               "teachers": [
@@ -3782,6 +4903,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 2201",
               "title": "Object Oriented Design and Design Patterns",
               "teachers": [
@@ -3792,6 +4915,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 2202",
               "title": "Object Oriented Design and Design Patterns Lab",
               "teachers": [
@@ -3803,6 +4928,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 2202",
               "title": "Object Oriented Design and Design Patterns Lab",
               "teachers": [
@@ -3820,6 +4947,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 2203",
               "title": "Computer Algorithms",
               "teachers": [
@@ -3830,6 +4959,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "MAT 2241",
               "title": "Linear Algebra and Complex Variables",
               "teachers": [
@@ -3840,6 +4971,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 2207",
               "title": "Computer Networks",
               "teachers": [
@@ -3856,6 +4989,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 2205",
               "title": "Numerical Methods",
               "teachers": [
@@ -3866,6 +5001,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 2207",
               "title": "Computer Networks",
               "teachers": [
@@ -3882,6 +5019,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 2204",
               "title": "Computer Algorithms Lab",
               "teachers": [
@@ -3893,6 +5032,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 2204",
               "title": "Computer Algorithms Lab",
               "teachers": [
@@ -3904,6 +5045,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 2208",
               "title": "Computer Networks Lab",
               "teachers": [
@@ -3915,6 +5058,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 2201",
               "title": "Object Oriented Design and Design Patterns",
               "teachers": [
@@ -3937,6 +5082,38 @@
       "sectionId": 1,
       "semester": "5th Semester",
       "section": "A",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -3949,6 +5126,8 @@
           "classes": [
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 3104",
               "title": "Database Management System Lab",
               "teachers": [
@@ -3960,6 +5139,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 3104",
               "title": "Database Management System Lab",
               "teachers": [
@@ -3977,6 +5158,8 @@
           "classes": [
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 3107",
               "title": "Communication Engineering",
               "teachers": [
@@ -3987,6 +5170,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 3101",
               "title": "Computer Graphics",
               "teachers": [
@@ -3997,6 +5182,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 3105",
               "title": "Computer Architecture",
               "teachers": [
@@ -4013,6 +5200,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3103",
               "title": "Database Management System",
               "teachers": [
@@ -4023,6 +5212,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 3101",
               "title": "Computer Graphics",
               "teachers": [
@@ -4033,6 +5224,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "MAT 3141",
               "title": "Applied Statistics and Probability",
               "teachers": [
@@ -4049,6 +5242,8 @@
           "classes": [
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 3103",
               "title": "Database Management System",
               "teachers": [
@@ -4059,6 +5254,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 3102",
               "title": "Computer Graphics Lab",
               "teachers": [
@@ -4070,6 +5267,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 3105",
               "title": "Computer Architecture",
               "teachers": [
@@ -4086,6 +5285,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 3107",
               "title": "Communication Engineering",
               "teachers": [
@@ -4096,6 +5297,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "MAT 3141",
               "title": "Applied Statistics and Probability",
               "teachers": [
@@ -4106,6 +5309,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3106",
               "title": "Computer Architecture Lab",
               "teachers": [
@@ -4129,6 +5334,38 @@
       "sectionId": 2,
       "semester": "5th Semester",
       "section": "B",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -4141,6 +5378,8 @@
           "classes": [
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "MAT 3141",
               "title": "Applied Statistics and Probability",
               "teachers": [
@@ -4151,6 +5390,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 3105",
               "title": "Computer Architecture",
               "teachers": [
@@ -4161,6 +5402,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 3101",
               "title": "Computer Graphics",
               "teachers": [
@@ -4177,6 +5420,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 3103",
               "title": "Database Management System",
               "teachers": [
@@ -4187,6 +5432,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 3106",
               "title": "Computer Architecture Lab",
               "teachers": [
@@ -4204,6 +5451,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "MAT 3141",
               "title": "Applied Statistics and Probability",
               "teachers": [
@@ -4214,6 +5463,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3103",
               "title": "Database Management System",
               "teachers": [
@@ -4224,6 +5475,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 3102",
               "title": "Computer Graphics Lab",
               "teachers": [
@@ -4241,6 +5494,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 3107",
               "title": "Communication Engineering",
               "teachers": [
@@ -4251,6 +5506,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 3101",
               "title": "Computer Graphics",
               "teachers": [
@@ -4261,6 +5518,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3105",
               "title": "Computer Architecture",
               "teachers": [
@@ -4277,6 +5536,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 3104",
               "title": "Database Management System Lab",
               "teachers": [
@@ -4288,6 +5549,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 3104",
               "title": "Database Management System Lab",
               "teachers": [
@@ -4299,6 +5562,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3107",
               "title": "Communication Engineering",
               "teachers": [
@@ -4321,6 +5586,38 @@
       "sectionId": 3,
       "semester": "5th Semester",
       "section": "C",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -4333,6 +5630,8 @@
           "classes": [
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 3105",
               "title": "Computer Architecture",
               "teachers": [
@@ -4343,6 +5642,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 3107",
               "title": "Communication Engineering",
               "teachers": [
@@ -4359,6 +5660,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "MAT 3141",
               "title": "Applied Statistics and Probability",
               "teachers": [
@@ -4369,6 +5672,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 3101",
               "title": "Computer Graphics",
               "teachers": [
@@ -4379,6 +5684,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3103",
               "title": "Database Management System",
               "teachers": [
@@ -4395,6 +5702,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 3105",
               "title": "Computer Architecture",
               "teachers": [
@@ -4405,6 +5714,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "MAT 3141",
               "title": "Applied Statistics and Probability",
               "teachers": [
@@ -4415,6 +5726,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 3101",
               "title": "Computer Graphics",
               "teachers": [
@@ -4431,6 +5744,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 3106",
               "title": "Computer Architecture Lab",
               "teachers": [
@@ -4442,6 +5757,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 3104",
               "title": "Database Management System Lab",
               "teachers": [
@@ -4453,6 +5770,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3104",
               "title": "Database Management System Lab",
               "teachers": [
@@ -4470,6 +5789,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3103",
               "title": "Database Management System",
               "teachers": [
@@ -4480,6 +5801,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 3102",
               "title": "Computer Graphics Lab",
               "teachers": [
@@ -4491,6 +5814,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 3107",
               "title": "Communication Engineering",
               "teachers": [
@@ -4513,6 +5838,38 @@
       "sectionId": 4,
       "semester": "5th Semester",
       "section": "D",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -4525,6 +5882,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "MAT 3141",
               "title": "Applied Statistics and Probability",
               "teachers": [
@@ -4535,6 +5894,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3101",
               "title": "Computer Graphics",
               "teachers": [
@@ -4551,6 +5912,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 3106",
               "title": "Computer Architecture Lab",
               "teachers": [
@@ -4562,6 +5925,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 3105",
               "title": "Computer Architecture",
               "teachers": [
@@ -4578,6 +5943,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 3104",
               "title": "Database Management System Lab",
               "teachers": [
@@ -4589,6 +5956,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 3104",
               "title": "Database Management System Lab",
               "teachers": [
@@ -4600,6 +5969,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 3107",
               "title": "Communication Engineering",
               "teachers": [
@@ -4616,6 +5987,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 3101",
               "title": "Computer Graphics",
               "teachers": [
@@ -4626,6 +5999,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 3105",
               "title": "Computer Architecture",
               "teachers": [
@@ -4636,6 +6011,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 3103",
               "title": "Database Management System",
               "teachers": [
@@ -4652,6 +6029,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 3102",
               "title": "Computer Graphics Lab",
               "teachers": [
@@ -4663,6 +6042,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "MAT 3141",
               "title": "Applied Statistics and Probability",
               "teachers": [
@@ -4673,6 +6054,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 3103",
               "title": "Database Management System",
               "teachers": [
@@ -4683,6 +6066,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 3107",
               "title": "Communication Engineering",
               "teachers": [
@@ -4705,6 +6090,38 @@
       "sectionId": 5,
       "semester": "5th Semester",
       "section": "E",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -4717,6 +6134,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 3106",
               "title": "Computer Architecture Lab",
               "teachers": [
@@ -4728,6 +6147,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "MAT 3141",
               "title": "Applied Statistics and Probability",
               "teachers": [
@@ -4744,6 +6165,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 3107",
               "title": "Communication Engineering",
               "teachers": [
@@ -4754,6 +6177,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 3104",
               "title": "Database Management System Lab",
               "teachers": [
@@ -4765,6 +6190,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 3104",
               "title": "Database Management System Lab",
               "teachers": [
@@ -4782,6 +6209,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 3105",
               "title": "Computer Architecture",
               "teachers": [
@@ -4792,6 +6221,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 3107",
               "title": "Communication Engineering",
               "teachers": [
@@ -4802,6 +6233,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3101",
               "title": "Computer Graphics",
               "teachers": [
@@ -4812,6 +6245,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 3103",
               "title": "Database Management System",
               "teachers": [
@@ -4828,6 +6263,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3101",
               "title": "Computer Graphics",
               "teachers": [
@@ -4838,6 +6275,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 3102",
               "title": "Computer Graphics Lab",
               "teachers": [
@@ -4855,6 +6294,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "MAT 3141",
               "title": "Applied Statistics and Probability",
               "teachers": [
@@ -4865,6 +6306,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3103",
               "title": "Database Management System",
               "teachers": [
@@ -4875,6 +6318,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 3105",
               "title": "Computer Architecture",
               "teachers": [
@@ -4897,6 +6342,38 @@
       "sectionId": 6,
       "semester": "5th Semester",
       "section": "F",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -4909,6 +6386,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 3104",
               "title": "Database Management System Lab",
               "teachers": [
@@ -4920,6 +6399,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 3104",
               "title": "Database Management System Lab",
               "teachers": [
@@ -4931,6 +6412,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 3106",
               "title": "Computer Architecture Lab",
               "teachers": [
@@ -4948,6 +6431,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 3107",
               "title": "Communication Engineering",
               "teachers": [
@@ -4958,6 +6443,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 3103",
               "title": "Database Management System",
               "teachers": [
@@ -4968,6 +6455,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 3101",
               "title": "Computer Graphics",
               "teachers": [
@@ -4984,6 +6473,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 3102",
               "title": "Computer Graphics Lab",
               "teachers": [
@@ -4995,6 +6486,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 3105",
               "title": "Computer Architecture",
               "teachers": [
@@ -5005,6 +6498,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 3101",
               "title": "Computer Graphics",
               "teachers": [
@@ -5021,6 +6516,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 3107",
               "title": "Communication Engineering",
               "teachers": [
@@ -5031,6 +6528,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "MAT 3141",
               "title": "Applied Statistics and Probability",
               "teachers": [
@@ -5047,6 +6546,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 3103",
               "title": "Database Management System",
               "teachers": [
@@ -5057,6 +6558,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3105",
               "title": "Computer Architecture",
               "teachers": [
@@ -5067,6 +6570,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "MAT 3141",
               "title": "Applied Statistics and Probability",
               "teachers": [
@@ -5089,6 +6594,38 @@
       "sectionId": 7,
       "semester": "5th Semester",
       "section": "G",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -5101,6 +6638,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 3103",
               "title": "Database Management System",
               "teachers": [
@@ -5111,6 +6650,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3102",
               "title": "Computer Graphics Lab",
               "teachers": [
@@ -5128,6 +6669,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3107",
               "title": "Communication Engineering",
               "teachers": [
@@ -5138,6 +6681,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 3105",
               "title": "Computer Architecture",
               "teachers": [
@@ -5148,6 +6693,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 3101",
               "title": "Computer Graphics",
               "teachers": [
@@ -5164,6 +6711,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 3103",
               "title": "Database Management System",
               "teachers": [
@@ -5174,6 +6723,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3107",
               "title": "Communication Engineering",
               "teachers": [
@@ -5184,6 +6735,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "MAT 3141",
               "title": "Applied Statistics and Probability",
               "teachers": [
@@ -5200,6 +6753,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 3104",
               "title": "Database Management System Lab",
               "teachers": [
@@ -5211,6 +6766,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 3104",
               "title": "Database Management System Lab",
               "teachers": [
@@ -5222,6 +6779,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "MAT 3141",
               "title": "Applied Statistics and Probability",
               "teachers": [
@@ -5232,6 +6791,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 3106",
               "title": "Computer Architecture Lab",
               "teachers": [
@@ -5249,6 +6810,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3101",
               "title": "Computer Graphics",
               "teachers": [
@@ -5259,6 +6822,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 3105",
               "title": "Computer Architecture",
               "teachers": [
@@ -5281,6 +6846,38 @@
       "sectionId": 1,
       "semester": "6th Semester",
       "section": "A",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -5293,6 +6890,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 3207",
               "title": "Digital Signal Processing",
               "teachers": [
@@ -5303,6 +6902,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 3210",
               "title": "E-commerce and Web Programming Project Lab",
               "teachers": [
@@ -5314,6 +6915,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3210",
               "title": "E-commerce and Web Programming Project Lab",
               "teachers": [
@@ -5325,6 +6928,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 3208",
               "title": "Digital Signal Processing Lab",
               "teachers": [
@@ -5342,6 +6947,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 3207",
               "title": "Digital Signal Processing",
               "teachers": [
@@ -5352,6 +6959,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 3201",
               "title": "Theory of Computation and Compiler Design",
               "teachers": [
@@ -5362,6 +6971,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 3205",
               "title": "Microprocessor and Assembly Language",
               "teachers": [
@@ -5372,6 +6983,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 3209",
               "title": "E-commerce and Web Programming",
               "teachers": [
@@ -5388,6 +7001,8 @@
           "classes": [
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 3203",
               "title": "Operating System and System Programming",
               "teachers": [
@@ -5398,6 +7013,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 3205",
               "title": "Microprocessor and Assembly Language",
               "teachers": [
@@ -5414,6 +7031,8 @@
           "classes": [
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "ECO 3271",
               "title": "Engineering Economics",
               "teachers": [
@@ -5424,6 +7043,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 3206",
               "title": "Microprocessor and Assembly Language Lab",
               "teachers": [
@@ -5435,6 +7056,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 3201",
               "title": "Theory of Computation and Compiler Design",
               "teachers": [
@@ -5451,6 +7074,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 3209",
               "title": "E-commerce and Web Programming",
               "teachers": [
@@ -5461,6 +7086,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3204",
               "title": "Operating System and System Programming Lab",
               "teachers": [
@@ -5472,6 +7099,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 3203",
               "title": "Operating System and System Programming",
               "teachers": [
@@ -5482,6 +7111,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "ECO 3271",
               "title": "Engineering Economics",
               "teachers": [
@@ -5504,6 +7135,38 @@
       "sectionId": 2,
       "semester": "6th Semester",
       "section": "B",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -5516,6 +7179,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 3205",
               "title": "Microprocessor and Assembly Language",
               "teachers": [
@@ -5526,6 +7191,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 3207",
               "title": "Digital Signal Processing",
               "teachers": [
@@ -5536,6 +7203,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3203",
               "title": "Operating System and System Programming",
               "teachers": [
@@ -5552,6 +7221,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 3204",
               "title": "Operating System and System Programming Lab",
               "teachers": [
@@ -5563,6 +7234,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 3209",
               "title": "E-commerce and Web Programming",
               "teachers": [
@@ -5573,6 +7246,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3205",
               "title": "Microprocessor and Assembly Language",
               "teachers": [
@@ -5583,6 +7258,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 3201",
               "title": "Theory of Computation and Compiler Design",
               "teachers": [
@@ -5599,6 +7276,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 3209",
               "title": "E-commerce and Web Programming",
               "teachers": [
@@ -5609,6 +7288,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3203",
               "title": "Operating System and System Programming",
               "teachers": [
@@ -5619,6 +7300,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "ECO 3271",
               "title": "Engineering Economics",
               "teachers": [
@@ -5635,6 +7318,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 3207",
               "title": "Digital Signal Processing",
               "teachers": [
@@ -5645,6 +7330,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 3208",
               "title": "Digital Signal Processing Lab",
               "teachers": [
@@ -5656,6 +7343,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3210",
               "title": "E-commerce and Web Programming Project Lab",
               "teachers": [
@@ -5667,6 +7356,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 3210",
               "title": "E-commerce and Web Programming Project Lab",
               "teachers": [
@@ -5684,6 +7375,8 @@
           "classes": [
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "ECO 3271",
               "title": "Engineering Economics",
               "teachers": [
@@ -5694,6 +7387,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 3206",
               "title": "Microprocessor and Assembly Language Lab",
               "teachers": [
@@ -5705,6 +7400,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 3201",
               "title": "Theory of Computation and Compiler Design",
               "teachers": [
@@ -5727,6 +7424,38 @@
       "sectionId": 3,
       "semester": "6th Semester",
       "section": "C",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -5739,6 +7468,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3201",
               "title": "Theory of Computation and Compiler Design",
               "teachers": [
@@ -5749,6 +7480,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 3203",
               "title": "Operating System and System Programming",
               "teachers": [
@@ -5759,6 +7492,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 3209",
               "title": "E-commerce and Web Programming",
               "teachers": [
@@ -5775,6 +7510,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 3205",
               "title": "Microprocessor and Assembly Language",
               "teachers": [
@@ -5785,6 +7522,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "ECO 3271",
               "title": "Engineering Economics",
               "teachers": [
@@ -5795,6 +7534,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3203",
               "title": "Operating System and System Programming",
               "teachers": [
@@ -5811,6 +7552,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 3207",
               "title": "Digital Signal Processing",
               "teachers": [
@@ -5821,6 +7564,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 3208",
               "title": "Digital Signal Processing Lab",
               "teachers": [
@@ -5832,6 +7577,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3210",
               "title": "E-commerce and Web Programming Project Lab",
               "teachers": [
@@ -5843,6 +7590,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 3210",
               "title": "E-commerce and Web Programming Project Lab",
               "teachers": [
@@ -5860,6 +7609,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 3204",
               "title": "Operating System and System Programming Lab",
               "teachers": [
@@ -5871,6 +7622,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "ECO 3271",
               "title": "Engineering Economics",
               "teachers": [
@@ -5881,6 +7634,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 3206",
               "title": "Microprocessor and Assembly Language Lab",
               "teachers": [
@@ -5898,6 +7653,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 3207",
               "title": "Digital Signal Processing",
               "teachers": [
@@ -5908,6 +7665,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 3205",
               "title": "Microprocessor and Assembly Language",
               "teachers": [
@@ -5918,6 +7677,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3201",
               "title": "Theory of Computation and Compiler Design",
               "teachers": [
@@ -5928,6 +7689,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 3209",
               "title": "E-commerce and Web Programming",
               "teachers": [
@@ -5950,6 +7713,38 @@
       "sectionId": 4,
       "semester": "6th Semester",
       "section": "D",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -5962,6 +7757,8 @@
           "classes": [
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 3206",
               "title": "Microprocessor and Assembly Language Lab",
               "teachers": [
@@ -5973,6 +7770,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 3205",
               "title": "Microprocessor and Assembly Language",
               "teachers": [
@@ -5983,6 +7782,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 3201",
               "title": "Theory of Computation and Compiler Design",
               "teachers": [
@@ -5999,6 +7800,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 3207",
               "title": "Digital Signal Processing",
               "teachers": [
@@ -6009,6 +7812,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3209",
               "title": "E-commerce and Web Programming",
               "teachers": [
@@ -6019,6 +7824,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "ECO 3271",
               "title": "Engineering Economics",
               "teachers": [
@@ -6035,6 +7842,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 3203",
               "title": "Operating System and System Programming",
               "teachers": [
@@ -6045,6 +7854,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3205",
               "title": "Microprocessor and Assembly Language",
               "teachers": [
@@ -6055,6 +7866,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "ECO 3271",
               "title": "Engineering Economics",
               "teachers": [
@@ -6065,6 +7878,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 3201",
               "title": "Theory of Computation and Compiler Design",
               "teachers": [
@@ -6081,6 +7896,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3203",
               "title": "Operating System and System Programming",
               "teachers": [
@@ -6091,6 +7908,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 3207",
               "title": "Digital Signal Processing",
               "teachers": [
@@ -6101,6 +7920,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 3210",
               "title": "E-commerce and Web Programming Project Lab",
               "teachers": [
@@ -6112,6 +7933,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 3210",
               "title": "E-commerce and Web Programming Project Lab",
               "teachers": [
@@ -6129,6 +7952,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 3204",
               "title": "Operating System and System Programming Lab",
               "teachers": [
@@ -6140,6 +7965,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 3209",
               "title": "E-commerce and Web Programming",
               "teachers": [
@@ -6150,6 +7977,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 3208",
               "title": "Digital Signal Processing Lab",
               "teachers": [
@@ -6173,6 +8002,38 @@
       "sectionId": 1,
       "semester": "7th Semester",
       "section": "A",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -6185,6 +8046,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
@@ -6195,6 +8058,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 4122",
               "title": "Technical Report Writing",
               "teachers": [
@@ -6212,6 +8077,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 4102",
               "title": "Artificial Intelligence Lab",
               "teachers": [
@@ -6223,6 +8090,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 4105",
               "title": "Engineering Ethics and Enviromental Protection",
               "teachers": [
@@ -6233,6 +8102,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 4108",
               "title": "Microcontroller, Computer Peripherals and Interfacing Lab",
               "teachers": [
@@ -6250,6 +8121,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 4104",
               "title": "Digital Image Processing Lab",
               "teachers": [
@@ -6261,6 +8134,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 4105",
               "title": "Engineering Ethics and Enviromental Protection",
               "teachers": [
@@ -6271,6 +8146,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
@@ -6287,6 +8164,8 @@
           "classes": [
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 4103",
               "title": "Digital Image Processing",
               "teachers": [
@@ -6297,6 +8176,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 4101",
               "title": "Artificial Intelligence",
               "teachers": [
@@ -6307,6 +8188,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 4107",
               "title": "Microcontroller, Computer Peripherals and Interfacing",
               "teachers": [
@@ -6323,6 +8206,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 4103",
               "title": "Digital Image Processing",
               "teachers": [
@@ -6333,6 +8218,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 4101",
               "title": "Artificial Intelligence",
               "teachers": [
@@ -6343,6 +8230,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 4107",
               "title": "Microcontroller, Computer Peripherals and Interfacing",
               "teachers": [
@@ -6365,6 +8254,38 @@
       "sectionId": 2,
       "semester": "7th Semester",
       "section": "B",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -6377,6 +8298,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 4122",
               "title": "Technical Report Writing",
               "teachers": [
@@ -6388,6 +8311,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 4103",
               "title": "Digital Image Processing",
               "teachers": [
@@ -6398,6 +8323,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 4101",
               "title": "Artificial Intelligence",
               "teachers": [
@@ -6408,6 +8335,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 4107",
               "title": "Microcontroller, Computer Peripherals and Interfacing",
               "teachers": [
@@ -6424,6 +8353,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 4102",
               "title": "Artificial Intelligence Lab",
               "teachers": [
@@ -6435,6 +8366,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
@@ -6445,6 +8378,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 4101",
               "title": "Artificial Intelligence",
               "teachers": [
@@ -6461,6 +8396,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 4105",
               "title": "Engineering Ethics and Enviromental Protection",
               "teachers": [
@@ -6471,6 +8408,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 4107",
               "title": "Microcontroller, Computer Peripherals and Interfacing",
               "teachers": [
@@ -6481,6 +8420,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
@@ -6491,6 +8432,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 4104",
               "title": "Digital Image Processing Lab",
               "teachers": [
@@ -6508,6 +8451,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 4103",
               "title": "Digital Image Processing",
               "teachers": [
@@ -6518,6 +8463,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 4108",
               "title": "Microcontroller, Computer Peripherals and Interfacing Lab",
               "teachers": [
@@ -6529,6 +8476,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 4105",
               "title": "Engineering Ethics and Enviromental Protection",
               "teachers": [
@@ -6556,6 +8505,38 @@
       "sectionId": 3,
       "semester": "7th Semester",
       "section": "C",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -6568,6 +8549,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 4103",
               "title": "Digital Image Processing",
               "teachers": [
@@ -6578,6 +8561,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 4101",
               "title": "Artificial Intelligence",
               "teachers": [
@@ -6588,6 +8573,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
@@ -6604,6 +8591,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 4105",
               "title": "Engineering Ethics and Enviromental Protection",
               "teachers": [
@@ -6614,6 +8603,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 4122",
               "title": "Technical Report Writing",
               "teachers": [
@@ -6625,6 +8616,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 4107",
               "title": "Microcontroller, Computer Peripherals and Interfacing",
               "teachers": [
@@ -6641,6 +8634,8 @@
           "classes": [
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 4105",
               "title": "Engineering Ethics and Enviromental Protection",
               "teachers": [
@@ -6651,6 +8646,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 4107",
               "title": "Microcontroller, Computer Peripherals and Interfacing",
               "teachers": [
@@ -6661,6 +8658,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
@@ -6677,6 +8676,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 4103",
               "title": "Digital Image Processing",
               "teachers": [
@@ -6687,6 +8688,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 4101",
               "title": "Artificial Intelligence",
               "teachers": [
@@ -6697,6 +8700,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 4102",
               "title": "Artificial Intelligence Lab",
               "teachers": [
@@ -6714,6 +8719,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 4108",
               "title": "Microcontroller, Computer Peripherals and Interfacing Lab",
               "teachers": [
@@ -6725,6 +8732,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 4104",
               "title": "Digital Image Processing Lab",
               "teachers": [
@@ -6748,6 +8757,38 @@
       "sectionId": 4,
       "semester": "7th Semester",
       "section": "D",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -6760,6 +8801,8 @@
           "classes": [
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 4103",
               "title": "Digital Image Processing",
               "teachers": [
@@ -6770,6 +8813,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 4101",
               "title": "Artificial Intelligence",
               "teachers": [
@@ -6786,6 +8831,8 @@
           "classes": [
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 4101",
               "title": "Artificial Intelligence",
               "teachers": [
@@ -6796,6 +8843,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 4105",
               "title": "Engineering Ethics and Enviromental Protection",
               "teachers": [
@@ -6812,6 +8861,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 4105",
               "title": "Engineering Ethics and Enviromental Protection",
               "teachers": [
@@ -6822,6 +8873,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
@@ -6832,6 +8885,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 4102",
               "title": "Artificial Intelligence Lab",
               "teachers": [
@@ -6849,6 +8904,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
@@ -6859,6 +8916,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 4104",
               "title": "Digital Image Processing Lab",
               "teachers": [
@@ -6870,6 +8929,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 4107",
               "title": "Microcontroller, Computer Peripherals and Interfacing",
               "teachers": [
@@ -6886,6 +8947,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 4103",
               "title": "Digital Image Processing",
               "teachers": [
@@ -6896,6 +8959,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 4108",
               "title": "Microcontroller, Computer Peripherals and Interfacing Lab",
               "teachers": [
@@ -6907,6 +8972,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 4122",
               "title": "Technical Report Writing",
               "teachers": [
@@ -6918,6 +8985,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 4107",
               "title": "Microcontroller, Computer Peripherals and Interfacing",
               "teachers": [
@@ -6940,6 +9009,38 @@
       "sectionId": 5,
       "semester": "7th Semester",
       "section": "E",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -6952,6 +9053,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 4122",
               "title": "Technical Report Writing",
               "teachers": [
@@ -6963,6 +9066,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 4105",
               "title": "Engineering Ethics and Enviromental Protection",
               "teachers": [
@@ -6973,6 +9078,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 4107",
               "title": "Microcontroller, Computer Peripherals and Interfacing",
               "teachers": [
@@ -6989,6 +9096,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 4108",
               "title": "Microcontroller, Computer Peripherals and Interfacing Lab",
               "teachers": [
@@ -7000,6 +9109,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 4103",
               "title": "Digital Image Processing",
               "teachers": [
@@ -7010,6 +9121,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
@@ -7026,6 +9139,8 @@
           "classes": [
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 4105",
               "title": "Engineering Ethics and Enviromental Protection",
               "teachers": [
@@ -7036,6 +9151,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 4102",
               "title": "Artificial Intelligence Lab",
               "teachers": [
@@ -7047,6 +9164,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 4107",
               "title": "Microcontroller, Computer Peripherals and Interfacing",
               "teachers": [
@@ -7063,6 +9182,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 4101",
               "title": "Artificial Intelligence",
               "teachers": [
@@ -7073,6 +9194,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 4103",
               "title": "Digital Image Processing",
               "teachers": [
@@ -7083,6 +9206,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
@@ -7099,6 +9224,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 4104",
               "title": "Digital Image Processing Lab",
               "teachers": [
@@ -7110,6 +9237,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 4101",
               "title": "Artificial Intelligence",
               "teachers": [
@@ -7132,6 +9261,38 @@
       "sectionId": 6,
       "semester": "7th Semester",
       "section": "F",
+      "slots": [
+        {
+          "id": 1,
+          "start": "09:00",
+          "end": "10:15"
+        },
+        {
+          "id": 2,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 3,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 4,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 5,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 6,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -7144,6 +9305,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 4104",
               "title": "Digital Image Processing Lab",
               "teachers": [
@@ -7155,6 +9318,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
@@ -7165,6 +9330,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 4122",
               "title": "Technical Report Writing",
               "teachers": [
@@ -7182,6 +9349,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 4103",
               "title": "Digital Image Processing",
               "teachers": [
@@ -7192,6 +9361,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 4108",
               "title": "Microcontroller, Computer Peripherals and Interfacing Lab",
               "teachers": [
@@ -7203,6 +9374,8 @@
             },
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 4105",
               "title": "Engineering Ethics and Enviromental Protection",
               "teachers": [
@@ -7219,6 +9392,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
               "code": "CSE 4107",
               "title": "Microcontroller, Computer Peripherals and Interfacing",
               "teachers": [
@@ -7229,6 +9404,8 @@
             },
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 4101",
               "title": "Artificial Intelligence",
               "teachers": [
@@ -7245,6 +9422,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 4101",
               "title": "Artificial Intelligence",
               "teachers": [
@@ -7255,6 +9434,8 @@
             },
             {
               "slot": 3,
+              "start": "11:30",
+              "end": "12:45",
               "code": "ACC 4171",
               "title": "Industrial Management and Accountacy",
               "teachers": [
@@ -7265,6 +9446,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 4105",
               "title": "Engineering Ethics and Enviromental Protection",
               "teachers": [
@@ -7281,6 +9464,8 @@
           "classes": [
             {
               "slot": 4,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 4103",
               "title": "Digital Image Processing",
               "teachers": [
@@ -7291,6 +9476,8 @@
             },
             {
               "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 4107",
               "title": "Microcontroller, Computer Peripherals and Interfacing",
               "teachers": [
@@ -7301,6 +9488,8 @@
             },
             {
               "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 4102",
               "title": "Artificial Intelligence Lab",
               "teachers": [
@@ -7324,6 +9513,33 @@
       "sectionId": 1,
       "semester": "8th Semester",
       "section": "A",
+      "slots": [
+        {
+          "id": 1,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 2,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 3,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 4,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 5,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -7336,6 +9552,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 4207",
               "title": "Big Data Analysis",
               "teachers": [
@@ -7346,6 +9564,8 @@
             },
             {
               "slot": 3,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 4201",
               "title": "Parallel Processing and Distributed System",
               "teachers": [
@@ -7362,6 +9582,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 4211",
               "title": "Machine Learning",
               "teachers": [
@@ -7372,6 +9594,8 @@
             },
             {
               "slot": 3,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 4203",
               "title": "Cryptography and Network Security",
               "teachers": [
@@ -7382,6 +9606,8 @@
             },
             {
               "slot": 4,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 4208",
               "title": "Big Data Analysis Lab",
               "teachers": [
@@ -7399,6 +9625,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 4203",
               "title": "Cryptography and Network Security",
               "teachers": [
@@ -7409,6 +9637,8 @@
             },
             {
               "slot": 3,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 4211",
               "title": "Machine Learning",
               "teachers": [
@@ -7425,6 +9655,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 4201",
               "title": "Parallel Processing and Distributed System",
               "teachers": [
@@ -7435,6 +9667,8 @@
             },
             {
               "slot": 3,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 4204",
               "title": "Cryptography and Network Security Lab",
               "teachers": [
@@ -7446,6 +9680,8 @@
             },
             {
               "slot": 5,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 4212",
               "title": "Machine Learning Lab",
               "teachers": [
@@ -7463,6 +9699,8 @@
           "classes": [
             {
               "slot": 4,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 4207",
               "title": "Big Data Analysis",
               "teachers": [
@@ -7473,6 +9711,8 @@
             },
             {
               "slot": 5,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 4202",
               "title": "Parallel Processing and Distributed System Lab",
               "teachers": [
@@ -7496,6 +9736,33 @@
       "sectionId": 2,
       "semester": "8th Semester",
       "section": "B",
+      "slots": [
+        {
+          "id": 1,
+          "start": "10:15",
+          "end": "11:30"
+        },
+        {
+          "id": 2,
+          "start": "11:30",
+          "end": "12:45"
+        },
+        {
+          "id": 3,
+          "start": "13:15",
+          "end": "14:30"
+        },
+        {
+          "id": 4,
+          "start": "14:30",
+          "end": "15:45"
+        },
+        {
+          "id": 5,
+          "start": "15:45",
+          "end": "17:00"
+        }
+      ],
       "days": [
         {
           "name": "Saturday",
@@ -7508,6 +9775,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 4212",
               "title": "Machine Learning Lab",
               "teachers": [
@@ -7519,6 +9788,8 @@
             },
             {
               "slot": 3,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 4208",
               "title": "Big Data Analysis Lab",
               "teachers": [
@@ -7530,6 +9801,8 @@
             },
             {
               "slot": 4,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 4204",
               "title": "Cryptography and Network Security Lab",
               "teachers": [
@@ -7547,6 +9820,8 @@
           "classes": [
             {
               "slot": 1,
+              "start": "10:15",
+              "end": "11:30",
               "code": "CSE 4203",
               "title": "Cryptography and Network Security",
               "teachers": [
@@ -7557,6 +9832,8 @@
             },
             {
               "slot": 2,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 4201",
               "title": "Parallel Processing and Distributed System",
               "teachers": [
@@ -7573,6 +9850,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 4207",
               "title": "Big Data Analysis",
               "teachers": [
@@ -7583,6 +9862,8 @@
             },
             {
               "slot": 5,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 4202",
               "title": "Parallel Processing and Distributed System Lab",
               "teachers": [
@@ -7600,6 +9881,8 @@
           "classes": [
             {
               "slot": 2,
+              "start": "11:30",
+              "end": "12:45",
               "code": "CSE 4211",
               "title": "Machine Learning",
               "teachers": [
@@ -7610,6 +9893,8 @@
             },
             {
               "slot": 3,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 4201",
               "title": "Parallel Processing and Distributed System",
               "teachers": [
@@ -7626,6 +9911,8 @@
           "classes": [
             {
               "slot": 3,
+              "start": "13:15",
+              "end": "14:30",
               "code": "CSE 4207",
               "title": "Big Data Analysis",
               "teachers": [
@@ -7636,6 +9923,8 @@
             },
             {
               "slot": 4,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 4211",
               "title": "Machine Learning",
               "teachers": [
@@ -7646,6 +9935,8 @@
             },
             {
               "slot": 5,
+              "start": "15:45",
+              "end": "17:00",
               "code": "CSE 4203",
               "title": "Cryptography and Network Security",
               "teachers": [
