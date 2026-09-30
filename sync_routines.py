@@ -49,14 +49,7 @@ DAY_ORDER = [
     ("Friday", "Fri"),
 ]
 
-SLOTS = [
-    {"id": 1, "start": "09:00", "end": "10:05"},
-    {"id": 2, "start": "10:05", "end": "11:10"},
-    {"id": 3, "start": "11:10", "end": "12:15"},
-    {"id": 4, "start": "12:15", "end": "13:15"},
-    {"id": 5, "start": "13:50", "end": "14:55"},
-    {"id": 6, "start": "14:55", "end": "16:00"},
-]
+PORTAL_TIME_PATTERN = re.compile(r"\b(\d{1,2}:\d{2}\s*(?:AM|PM)?)\b", re.IGNORECASE)
 
 
 def clean_text(node: object) -> str:
@@ -67,6 +60,44 @@ def clean_text(node: object) -> str:
     else:
         value = str(node)
     return " ".join(value.split())
+
+
+def normalize_portal_time(value: str) -> str:
+    """Convert a portal time such as 01:15 PM or 13:15 to HH:MM."""
+    compact = re.sub(r"\s+", " ", value.strip().upper())
+    formats = ("%I:%M %p", "%H:%M") if compact.endswith(("AM", "PM")) else ("%H:%M",)
+    for time_format in formats:
+        try:
+            return datetime.strptime(compact, time_format).strftime("%H:%M")
+        except ValueError:
+            continue
+    raise RuntimeError(f"The portal returned an invalid routine time: {value!r}.")
+
+
+def slots_from_table(table: object) -> list[dict[str, object]]:
+    """Read every slot time directly from the official routine table header."""
+    headers = table.xpath(".//thead//tr[1]/*[self::th or self::td]")
+    slots: list[dict[str, object]] = []
+    for header in headers:
+        values = PORTAL_TIME_PATTERN.findall(clean_text(header))
+        if len(values) < 2:
+            continue
+        slots.append(
+            {
+                "id": len(slots) + 1,
+                "start": normalize_portal_time(values[-2]),
+                "end": normalize_portal_time(values[-1]),
+            }
+        )
+
+    if not slots:
+        raise RuntimeError("Routine slot times were not found in the official table header.")
+    for slot in slots:
+        start = datetime.strptime(str(slot["start"]), "%H:%M")
+        end = datetime.strptime(str(slot["end"]), "%H:%M")
+        if end <= start:
+            raise RuntimeError(f"The portal returned an invalid slot range: {slot}.")
+    return slots
 
 
 def request_text(
@@ -171,7 +202,7 @@ def parse_routine_fragment(
     page_text: str,
     semester: dict[str, object],
     section: dict[str, object],
-) -> dict[str, object] | None:
+) -> tuple[dict[str, object], list[dict[str, object]]] | None:
     tree = html.fromstring(page_text)
     login_form = tree.xpath(
         '//form[.//input[@name="roll"] and .//input[@name="password"]]'
@@ -207,6 +238,7 @@ def parse_routine_fragment(
             f"Section {section['label']}."
         )
 
+    slots = slots_from_table(tables[0])
     source_days: dict[str, list[dict[str, object]]] = {}
     for row in tables[0].xpath(".//tbody/tr"):
         headers = row.xpath("./th[1]")
@@ -215,7 +247,14 @@ def parse_routine_fragment(
         day_name = clean_text(headers[0])
         classes: list[dict[str, object]] = []
 
-        for slot_index, cell in enumerate(row.xpath("./td"), start=1):
+        cells = row.xpath("./td")
+        if len(cells) != len(slots):
+            raise RuntimeError(
+                f"The official table has {len(cells)} class columns but "
+                f"{len(slots)} slot headers for {semester['label']}, "
+                f"Section {section['label']}."
+            )
+        for slot_index, cell in enumerate(cells, start=1):
             cards = cell.xpath(
                 './/*[contains(concat(" ", normalize-space(@class), " "),'
                 ' " event-card ")]'
@@ -273,13 +312,16 @@ def parse_routine_fragment(
         }
         for day_name, short_name in DAY_ORDER
     ]
-    return {
-        "semesterId": int(semester["id"]),
-        "sectionId": int(section["id"]),
-        "semester": str(semester["label"]),
-        "section": str(section["label"]),
-        "days": days,
-    }
+    return (
+        {
+            "semesterId": int(semester["id"]),
+            "sectionId": int(section["id"]),
+            "semester": str(semester["label"]),
+            "section": str(section["label"]),
+            "days": days,
+        },
+        slots,
+    )
 
 
 def build_payload(
@@ -288,6 +330,7 @@ def build_payload(
     schedules: list[dict[str, object]],
     program: str,
     department: str,
+    slots: list[dict[str, object]],
 ) -> dict[str, object]:
     now = datetime.now(ZoneInfo("Asia/Dhaka"))
     total_classes = sum(
@@ -316,7 +359,7 @@ def build_payload(
             },
         },
         "catalog": {"semesters": semesters, "sections": sections},
-        "slots": SLOTS,
+        "slots": slots,
         "schedules": schedules,
     }
 
@@ -341,6 +384,7 @@ def synchronize(roll: str, password: str) -> bool:
     routine_page, _ = request_text(opener, ROUTINE_URL)
     semesters, sections = option_catalog(routine_page)
     schedules: list[dict[str, object]] = []
+    slots: list[dict[str, object]] | None = None
     program = ""
 
     for semester in semesters:
@@ -357,8 +401,16 @@ def synchronize(roll: str, password: str) -> bool:
                 referer=ROUTINE_URL,
                 ajax=True,
             )
-            schedule = parse_routine_fragment(fragment, semester, section)
-            if schedule is not None:
+            parsed = parse_routine_fragment(fragment, semester, section)
+            if parsed is not None:
+                schedule, fragment_slots = parsed
+                if slots is None:
+                    slots = fragment_slots
+                elif slots != fragment_slots:
+                    raise RuntimeError(
+                        "The portal returned inconsistent slot times between "
+                        "published routines; existing data was kept."
+                    )
                 schedules.append(schedule)
                 if not program:
                     program = program_from_fragment(fragment)
@@ -370,6 +422,8 @@ def synchronize(roll: str, password: str) -> bool:
         raise RuntimeError(
             "The complete scan returned no published routines; existing data was kept."
         )
+    if slots is None:
+        raise RuntimeError("No official routine slot times were found; existing data was kept.")
 
     program = program or EXPECTED_PROGRAM or DEPARTMENT.upper()
     if EXPECTED_PROGRAM:
@@ -387,6 +441,7 @@ def synchronize(roll: str, password: str) -> bool:
         schedules,
         program,
         DEPARTMENT,
+        slots,
     )
     if DESTINATION.exists():
         current = json.loads(DESTINATION.read_text(encoding="utf-8"))
