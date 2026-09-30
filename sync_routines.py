@@ -202,7 +202,7 @@ def parse_routine_fragment(
     page_text: str,
     semester: dict[str, object],
     section: dict[str, object],
-) -> tuple[dict[str, object], list[dict[str, object]]] | None:
+) -> dict[str, object] | None:
     tree = html.fromstring(page_text)
     login_form = tree.xpath(
         '//form[.//input[@name="roll"] and .//input[@name="password"]]'
@@ -293,6 +293,8 @@ def parse_routine_fragment(
                 classes.append(
                     {
                         "slot": slot_index,
+                        "start": slots[slot_index - 1]["start"],
+                        "end": slots[slot_index - 1]["end"],
                         "code": code,
                         "title": title,
                         "teachers": teachers,
@@ -312,16 +314,14 @@ def parse_routine_fragment(
         }
         for day_name, short_name in DAY_ORDER
     ]
-    return (
-        {
-            "semesterId": int(semester["id"]),
-            "sectionId": int(section["id"]),
-            "semester": str(semester["label"]),
-            "section": str(section["label"]),
-            "days": days,
-        },
-        slots,
-    )
+    return {
+        "semesterId": int(semester["id"]),
+        "sectionId": int(section["id"]),
+        "semester": str(semester["label"]),
+        "section": str(section["label"]),
+        "slots": slots,
+        "days": days,
+    }
 
 
 def build_payload(
@@ -384,7 +384,7 @@ def synchronize(roll: str, password: str) -> bool:
     routine_page, _ = request_text(opener, ROUTINE_URL)
     semesters, sections = option_catalog(routine_page)
     schedules: list[dict[str, object]] = []
-    slots: list[dict[str, object]] | None = None
+    observed_slot_layouts: list[list[dict[str, object]]] = []
     program = ""
 
     for semester in semesters:
@@ -401,17 +401,10 @@ def synchronize(roll: str, password: str) -> bool:
                 referer=ROUTINE_URL,
                 ajax=True,
             )
-            parsed = parse_routine_fragment(fragment, semester, section)
-            if parsed is not None:
-                schedule, fragment_slots = parsed
-                if slots is None:
-                    slots = fragment_slots
-                elif slots != fragment_slots:
-                    raise RuntimeError(
-                        "The portal returned inconsistent slot times between "
-                        "published routines; existing data was kept."
-                    )
+            schedule = parse_routine_fragment(fragment, semester, section)
+            if schedule is not None:
                 schedules.append(schedule)
+                observed_slot_layouts.append(schedule["slots"])
                 if not program:
                     program = program_from_fragment(fragment)
             if REQUEST_DELAY:
@@ -422,8 +415,17 @@ def synchronize(roll: str, password: str) -> bool:
         raise RuntimeError(
             "The complete scan returned no published routines; existing data was kept."
         )
-    if slots is None:
+    if not observed_slot_layouts:
         raise RuntimeError("No official routine slot times were found; existing data was kept.")
+
+    # The portal can roll out a new default routine gradually, leaving published
+    # semester/section routines with different time bands. Preserve each
+    # schedule's own official slots and keep the most common layout at the root
+    # for older clients that only understand one shared slot list.
+    slots = max(
+        observed_slot_layouts,
+        key=lambda candidate: sum(candidate == other for other in observed_slot_layouts),
+    )
 
     program = program or EXPECTED_PROGRAM or DEPARTMENT.upper()
     if EXPECTED_PROGRAM:

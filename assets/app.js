@@ -369,13 +369,35 @@ function offDayTask() {
   return OFF_DAY_TASKS[hash % OFF_DAY_TASKS.length];
 }
 
-function slotById(id) {
-  return routine.slots.find((slot) => slot.id === id);
+function slotsForSchedule(schedule = null) {
+  return schedule?.slots?.length ? schedule.slots : routine.slots;
+}
+
+function activeSlots() {
+  if (state.role === "student" && !state.room) {
+    return slotsForSchedule(scheduleForSelection());
+  }
+  return routine.slots;
+}
+
+function slotById(id, course = null) {
+  if (course?.start && course?.end) {
+    return { id, start: course.start, end: course.end };
+  }
+  const schedule = course
+    ? routine.schedules.find(
+        (item) =>
+          item.semesterId === course.semesterId &&
+          item.sectionId === course.sectionId,
+      )
+    : scheduleForSelection();
+  return slotsForSchedule(schedule).find((slot) => slot.id === id);
 }
 
 function freeEndForSlot(slot) {
-  const index = routine.slots.findIndex((item) => item.id === slot.id);
-  const nextSlot = routine.slots[index + 1];
+  const slots = activeSlots();
+  const index = slots.findIndex((item) => item.id === slot.id);
+  const nextSlot = slots[index + 1];
   return nextSlot?.start || slot.end;
 }
 
@@ -1245,7 +1267,7 @@ function openClassDetails(course) {
     return;
   }
 
-  const slot = slotById(course.slot);
+  const slot = slotById(course.slot, course);
   const teachers = Array.isArray(course.teachers) ? course.teachers : [];
   const teacherMarkup = teachers.length
     ? teachers
@@ -1349,7 +1371,7 @@ function makeClassInteractive(element, course) {
 }
 
 function classCard(course, options = {}) {
-  const slot = slotById(course.slot);
+  const slot = slotById(course.slot, course);
   const scheduleDate = options.date || state.selectedDate;
   const status = classTimeStatus(slot.start, slot.end, scheduleDate);
   const article = document.createElement("article");
@@ -1573,10 +1595,11 @@ function renderDayClasses() {
     });
 
     const occupiedSlots = [...classesBySlot.keys()].sort((a, b) => a - b);
-    let cursor = routine.slots[0].start;
+    const slots = activeSlots();
+    let cursor = slots[0].start;
 
     occupiedSlots.forEach((slotId, index) => {
-      const slot = slotById(slotId);
+      const slot = slotById(slotId, classesBySlot.get(slotId)[0]);
       if (timeToMinutes(slot.start) > timeToMinutes(cursor)) {
         list.appendChild(
           breakCard(cursor, slot.start, index === 0 ? "edge" : "break"),
@@ -1588,7 +1611,7 @@ function renderDayClasses() {
       cursor = slot.end;
     });
 
-    const dayEnd = routine.slots[routine.slots.length - 1].end;
+    const dayEnd = slots[slots.length - 1].end;
     if (timeToMinutes(dayEnd) > timeToMinutes(cursor)) {
       list.appendChild(breakCard(cursor, dayEnd, "edge"));
     }
@@ -1616,7 +1639,7 @@ function renderRoomDay() {
   const timeline = document.createElement("div");
   timeline.className = "room-timeline";
 
-  routine.slots.forEach((slot) => {
+  activeSlots().forEach((slot) => {
     const occupancy = roomOccupancyFor(dayName, slot.id);
     const row = document.createElement("article");
     row.className = `room-slot ${occupancy.length ? "occupied" : "available"}`;
@@ -1695,7 +1718,9 @@ function renderFullRoutine() {
   inner.className = "full-routine-grid";
   inner.innerHTML = '<div class="full-corner">Day / time</div>';
 
-  routine.slots.forEach((slot) => {
+  const slots = activeSlots();
+  inner.style.gridTemplateColumns = `118px repeat(${slots.length}, minmax(165px, 1fr))`;
+  slots.forEach((slot) => {
     inner.insertAdjacentHTML(
       "beforeend",
       `<div class="full-slot-head"><strong>Slot ${slot.id}</strong><span>${formatTime(slot.start)} - ${formatTime(slot.end)}</span></div>`,
@@ -1717,7 +1742,7 @@ function renderFullRoutine() {
       return;
     }
 
-    routine.slots.forEach((slot) => {
+    slots.forEach((slot) => {
       const classes = fullGridClasses(dayName, slot.id);
       const cell = document.createElement("div");
       cell.className = `full-cell${classes.length ? "" : " empty"}`;
