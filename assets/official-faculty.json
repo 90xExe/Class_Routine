@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-25",
+  "updated": "2026-10-01",
   "department": "cse",
   "source": "https://vu.edu.bd/academics/departments/computer-science-and-engineering/faculty-members",
   "faculty": [
@@ -373,13 +373,6 @@
       "email": "khalid@vu.edu.bd",
       "image": "https://portfolio.vu.edu.bd/uploads/02733.jpg",
       "profile": "https://vu.edu.bd/profile/02733/md-khalid-sakib"
-    },
-    {
-      "name": "Mohd Ruhul Ameen",
-      "designation": "Lecturer",
-      "email": "ruhul.cse@vu.edu.bd",
-      "image": "https://portfolio.vu.edu.bd/uploads/02737.jpg",
-      "profile": "https://vu.edu.bd/profile/02737/mohd-ruhul-ameen"
     },
     {
       "name": "S.M. Mahadi Hasan",
