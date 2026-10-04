@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-01",
+  "updated": "2026-10-04",
   "department": "cse",
   "source": "https://vu.edu.bd/academics/departments/computer-science-and-engineering/faculty-members",
   "faculty": [
@@ -415,6 +415,27 @@
       "email": "sraboni@vu.edu.bd",
       "image": "https://portfolio.vu.edu.bd/uploads/02760.jpg",
       "profile": "https://vu.edu.bd/profile/02760/sraboni-mostofa"
+    },
+    {
+      "name": "Md. Adnan Hossain Sadi",
+      "designation": "Lecturer",
+      "email": "sadi@vu.edu.bd",
+      "image": "",
+      "profile": "https://vu.edu.bd/profile/02776/md-adnan-hossain-sadi"
+    },
+    {
+      "name": "Md. Mostakin Ali",
+      "designation": "Lecturer",
+      "email": "mostakin@vu.edu.bd",
+      "image": "",
+      "profile": "https://vu.edu.bd/profile/02777/md-mostakin-ali"
+    },
+    {
+      "name": "Md Tomal Ahmed Sajib",
+      "designation": "Lecturer",
+      "email": "tomal@vu.edu.bd",
+      "image": "",
+      "profile": "https://vu.edu.bd/profile/02778/md-tomal-ahmed-sajib"
     },
     {
       "name": "Md. Arifour Rahman",

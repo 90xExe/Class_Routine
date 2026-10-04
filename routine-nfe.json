@@ -4,8 +4,8 @@
     "program": "B.Sc. in Nutrition and Food Engineering",
     "timezone": "Asia/Dhaka",
     "source": "Varendra University official student routine portal",
-    "updated": "2026-09-30",
-    "lastSyncedAt": "2026-09-30T21:35:21+06:00",
+    "updated": "2026-10-04",
+    "lastSyncedAt": "2026-10-04T18:35:18+06:00",
     "coverage": {
       "loadedSchedules": 11,
       "isComplete": true,
@@ -2122,7 +2122,7 @@
               "code": "NFE 2101",
               "title": "Food Chemistry",
               "teachers": [
-                "Prof. Dr. Md. Jahangir Alam"
+                "Dr. MD. Zahangir Alam Saud"
               ],
               "room": "1011",
               "type": "theory"
@@ -2188,7 +2188,7 @@
               "code": "NFE 2101",
               "title": "Food Chemistry",
               "teachers": [
-                "Prof. Dr. Md. Jahangir Alam"
+                "Dr. MD. Zahangir Alam Saud"
               ],
               "room": "1013",
               "type": "theory"
@@ -2248,18 +2248,6 @@
           "short": "Mon",
           "classes": [
             {
-              "slot": 2,
-              "start": "10:15",
-              "end": "11:30",
-              "code": "NFE 2109",
-              "title": "Food Laws and Regulations",
-              "teachers": [
-                "Md. Alahi Boxes"
-              ],
-              "room": "802",
-              "type": "theory"
-            },
-            {
               "slot": 5,
               "start": "14:30",
               "end": "15:45",
@@ -2267,6 +2255,18 @@
               "title": "Sports Nutrition",
               "teachers": [
                 "Kohinur Akter"
+              ],
+              "room": "1012",
+              "type": "theory"
+            },
+            {
+              "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
+              "code": "NFE 2109",
+              "title": "Food Laws and Regulations",
+              "teachers": [
+                "Md. Alahi Boxes"
               ],
               "room": "1012",
               "type": "theory"
