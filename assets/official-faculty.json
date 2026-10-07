@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-04",
+  "updated": "2026-10-07",
   "department": "cse",
   "source": "https://vu.edu.bd/academics/departments/computer-science-and-engineering/faculty-members",
   "faculty": [
@@ -420,14 +420,14 @@
       "name": "Md. Adnan Hossain Sadi",
       "designation": "Lecturer",
       "email": "sadi@vu.edu.bd",
-      "image": "",
+      "image": "https://portfolio.vu.edu.bd/uploads/02776.jpg",
       "profile": "https://vu.edu.bd/profile/02776/md-adnan-hossain-sadi"
     },
     {
-      "name": "Md. Mostakin Ali",
+      "name": "MD. MOSTAKIN ALI",
       "designation": "Lecturer",
       "email": "mostakin@vu.edu.bd",
-      "image": "",
+      "image": "https://portfolio.vu.edu.bd/uploads/02777.jpg",
       "profile": "https://vu.edu.bd/profile/02777/md-mostakin-ali"
     },
     {
