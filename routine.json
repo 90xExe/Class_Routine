@@ -4,8 +4,8 @@
     "program": "B. Sc. in CSE",
     "timezone": "Asia/Dhaka",
     "source": "Varendra University official student routine portal",
-    "updated": "2026-09-30",
-    "lastSyncedAt": "2026-09-30T21:32:33+06:00",
+    "updated": "2026-10-08",
+    "lastSyncedAt": "2026-10-08T12:18:01+06:00",
     "coverage": {
       "loadedSchedules": 38,
       "isComplete": true,
@@ -3090,18 +3090,6 @@
               ],
               "room": "508",
               "type": "theory"
-            },
-            {
-              "slot": 6,
-              "start": "15:45",
-              "end": "17:00",
-              "code": "CSE 2101",
-              "title": "Object Oriented Programming",
-              "teachers": [
-                "A.S.M Delwar Hossain"
-              ],
-              "room": "910",
-              "type": "theory"
             }
           ]
         },
@@ -3109,6 +3097,18 @@
           "name": "Wednesday",
           "short": "Wed",
           "classes": [
+            {
+              "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
+              "code": "CSE 2101",
+              "title": "Object Oriented Programming",
+              "teachers": [
+                "A.S.M Delwar Hossain"
+              ],
+              "room": "408",
+              "type": "theory"
+            },
             {
               "slot": 2,
               "start": "10:15",
