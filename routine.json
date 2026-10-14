@@ -4,8 +4,8 @@
     "program": "B. Sc. in CSE",
     "timezone": "Asia/Dhaka",
     "source": "Varendra University official student routine portal",
-    "updated": "2026-10-08",
-    "lastSyncedAt": "2026-10-08T12:18:01+06:00",
+    "updated": "2026-10-14",
+    "lastSyncedAt": "2026-10-14T18:05:33+06:00",
     "coverage": {
       "loadedSchedules": 38,
       "isComplete": true,
@@ -5496,22 +5496,22 @@
               "slot": 1,
               "start": "09:00",
               "end": "10:15",
-              "code": "CSE 3107",
-              "title": "Communication Engineering",
+              "code": "CSE 3101",
+              "title": "Computer Graphics",
               "teachers": [
-                "Tahrima Sayem Sowa"
+                "Ayesha Akter Lima"
               ],
-              "room": "314",
+              "room": "413",
               "type": "theory"
             },
             {
               "slot": 2,
               "start": "10:15",
               "end": "11:30",
-              "code": "CSE 3101",
-              "title": "Computer Graphics",
+              "code": "CSE 3107",
+              "title": "Communication Engineering",
               "teachers": [
-                "Ayesha Akter Lima"
+                "Tahrima Sayem Sowa"
               ],
               "room": "413",
               "type": "theory"
@@ -5735,6 +5735,19 @@
               ],
               "room": "413",
               "type": "theory"
+            },
+            {
+              "slot": 6,
+              "start": "15:45",
+              "end": "17:00",
+              "code": "CSE 3102",
+              "title": "Computer Graphics Lab",
+              "teachers": [
+                "Mst. Jannatul Ferdous",
+                "Ayesha Akter Lima"
+              ],
+              "room": "104 CNL",
+              "type": "lab"
             }
           ]
         },
@@ -5788,9 +5801,9 @@
           "short": "Thu",
           "classes": [
             {
-              "slot": 3,
-              "start": "11:30",
-              "end": "12:45",
+              "slot": 5,
+              "start": "14:30",
+              "end": "15:45",
               "code": "CSE 3103",
               "title": "Database Management System",
               "teachers": [
@@ -5798,19 +5811,6 @@
               ],
               "room": "1009",
               "type": "theory"
-            },
-            {
-              "slot": 5,
-              "start": "14:30",
-              "end": "15:45",
-              "code": "CSE 3102",
-              "title": "Computer Graphics Lab",
-              "teachers": [
-                "Mst. Jannatul Ferdous",
-                "Ayesha Akter Lima"
-              ],
-              "room": "103 DMSL",
-              "type": "lab"
             },
             {
               "slot": 6,
@@ -6668,6 +6668,18 @@
           "short": "Mon",
           "classes": [
             {
+              "slot": 1,
+              "start": "09:00",
+              "end": "10:15",
+              "code": "CSE 3101",
+              "title": "Computer Graphics",
+              "teachers": [
+                "Ayesha Akter Lima"
+              ],
+              "room": "408",
+              "type": "theory"
+            },
+            {
               "slot": 3,
               "start": "11:30",
               "end": "12:45",
@@ -6689,18 +6701,6 @@
                 "Protik Chakroborty"
               ],
               "room": "411",
-              "type": "theory"
-            },
-            {
-              "slot": 6,
-              "start": "15:45",
-              "end": "17:00",
-              "code": "CSE 3101",
-              "title": "Computer Graphics",
-              "teachers": [
-                "Ayesha Akter Lima"
-              ],
-              "room": "1003",
               "type": "theory"
             }
           ]
