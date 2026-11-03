@@ -4,8 +4,8 @@
     "program": "B. Sc. in CSE",
     "timezone": "Asia/Dhaka",
     "source": "Varendra University official student routine portal",
-    "updated": "2026-10-14",
-    "lastSyncedAt": "2026-10-14T18:05:33+06:00",
+    "updated": "2026-11-04",
+    "lastSyncedAt": "2026-11-04T01:36:23+06:00",
     "coverage": {
       "loadedSchedules": 38,
       "isComplete": true,
@@ -4577,10 +4577,10 @@
               "slot": 1,
               "start": "09:00",
               "end": "10:15",
-              "code": "CSE 2207",
-              "title": "Computer Networks",
+              "code": "CSE 2203",
+              "title": "Computer Algorithms",
               "teachers": [
-                "Akib Ikbal"
+                "Md. Iqbal Aziz Khan"
               ],
               "room": "412",
               "type": "theory"
@@ -4602,10 +4602,10 @@
               "slot": 3,
               "start": "11:30",
               "end": "12:45",
-              "code": "CSE 2203",
-              "title": "Computer Algorithms",
+              "code": "CSE 2207",
+              "title": "Computer Networks",
               "teachers": [
-                "Md. Iqbal Aziz Khan"
+                "Akib Ikbal"
               ],
               "room": "1012",
               "type": "theory"
@@ -4632,10 +4632,10 @@
               "slot": 1,
               "start": "09:00",
               "end": "10:15",
-              "code": "CSE 2201",
-              "title": "Object Oriented Design and Design Patterns",
+              "code": "CSE 2203",
+              "title": "Computer Algorithms",
               "teachers": [
-                "Mohammad Faisal Al-Naser"
+                "Md. Iqbal Aziz Khan"
               ],
               "room": "1013",
               "type": "theory"
@@ -4703,15 +4703,15 @@
           "short": "Wed",
           "classes": [
             {
-              "slot": 3,
-              "start": "11:30",
-              "end": "12:45",
-              "code": "CSE 2203",
-              "title": "Computer Algorithms",
+              "slot": 2,
+              "start": "10:15",
+              "end": "11:30",
+              "code": "CSE 2201",
+              "title": "Object Oriented Design and Design Patterns",
               "teachers": [
-                "Md. Iqbal Aziz Khan"
+                "Mohammad Faisal Al-Naser"
               ],
-              "room": "1013",
+              "room": "310",
               "type": "theory"
             },
             {
